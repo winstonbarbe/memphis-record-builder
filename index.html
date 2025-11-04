@@ -17,17 +17,37 @@
             <input type="text" name="project-name" id="project-name" />
           </div>
 
-          <!-- Quantity -->
-          <div class="form-section">
+          <!-- Quantity (hidden on desktop, shown on mobile) -->
+          <div class="form-section desktop-hide-quantity">
             <label for="record-quantity">Quantity</label>
-            <input
-              type="number"
-              id="record-quantity"
-              name="record-quantity"
-              min="100"
-              value="100"
-              required
-            />
+            <select id="record-quantity" name="record-quantity" required>
+              <option value="100">100</option>
+              <option value="200">200</option>
+              <option value="250">250</option>
+              <option value="300">300</option>
+              <option value="500">500</option>
+              <option value="750">750</option>
+              <option value="1000">1,000</option>
+              <option value="1250">1,250</option>
+              <option value="1500">1,500</option>
+              <option value="2000">2,000</option>
+              <option value="2500">2,500</option>
+              <option value="3000">3,000</option>
+              <option value="3500">3,500</option>
+              <option value="4000">4,000</option>
+              <option value="5000">5,000</option>
+              <option value="6000">6,000</option>
+              <option value="7000">7,000</option>
+              <option value="7500">7,500</option>
+              <option value="8000">8,000</option>
+              <option value="9000">9,000</option>
+              <option value="10000">10,000</option>
+              <option value="12500">12,500</option>
+              <option value="15000">15,000</option>
+              <option value="17500">17,500</option>
+              <option value="20000">20,000</option>
+              <option value="25000">25,000</option>
+            </select>
             <div id="min-qty-display">Min: 100</div>
             <div id="max-qty-display">Max: 25,000</div>
           </div>
@@ -420,8 +440,8 @@
             </select>
           </div>
 
-          <!-- Pricing Display -->
-          <div class="form-section">
+          <!-- Pricing Display (hidden on desktop, shown on mobile) -->
+          <div class="form-section desktop-hide-pricing">
             <div id="slider-total-price-display">$0.00</div>
             <div id="slider-total-price-per-unit">$0.00 per unit</div>
             <button
@@ -440,13 +460,34 @@
             style="display: none"
           >
             <label for="record-quantity-mobile">Quantity</label>
-            <input
-              type="number"
-              id="record-quantity-mobile"
-              name="record-quantity-mobile"
-              min="100"
-              value="100"
-            />
+            <select id="record-quantity-mobile" name="record-quantity-mobile">
+              <option value="100">100</option>
+              <option value="200">200</option>
+              <option value="250">250</option>
+              <option value="300">300</option>
+              <option value="500">500</option>
+              <option value="750">750</option>
+              <option value="1000">1,000</option>
+              <option value="1250">1,250</option>
+              <option value="1500">1,500</option>
+              <option value="2000">2,000</option>
+              <option value="2500">2,500</option>
+              <option value="3000">3,000</option>
+              <option value="3500">3,500</option>
+              <option value="4000">4,000</option>
+              <option value="5000">5,000</option>
+              <option value="6000">6,000</option>
+              <option value="7000">7,000</option>
+              <option value="7500">7,500</option>
+              <option value="8000">8,000</option>
+              <option value="9000">9,000</option>
+              <option value="10000">10,000</option>
+              <option value="12500">12,500</option>
+              <option value="15000">15,000</option>
+              <option value="17500">17,500</option>
+              <option value="20000">20,000</option>
+              <option value="25000">25,000</option>
+            </select>
             <div id="slider-total-price-display-mobile">$0.00</div>
             <div id="slider-total-price-per-unit-mobile">$0.00 per unit</div>
             <button
@@ -599,6 +640,61 @@
       </div>
 
       <div id="visualizer-column">
+        <!-- Quantity and Pricing (shown on desktop, hidden on mobile) -->
+        <div class="visualizer-quantity-section desktop-show-quantity">
+          <label for="record-quantity-visualizer">Quantity</label>
+          <select
+            id="record-quantity-visualizer"
+            name="record-quantity-visualizer"
+            required
+          >
+            <option value="100">100</option>
+            <option value="200">200</option>
+            <option value="250">250</option>
+            <option value="300">300</option>
+            <option value="500">500</option>
+            <option value="750">750</option>
+            <option value="1000">1,000</option>
+            <option value="1250">1,250</option>
+            <option value="1500">1,500</option>
+            <option value="2000">2,000</option>
+            <option value="2500">2,500</option>
+            <option value="3000">3,000</option>
+            <option value="3500">3,500</option>
+            <option value="4000">4,000</option>
+            <option value="5000">5,000</option>
+            <option value="6000">6,000</option>
+            <option value="7000">7,000</option>
+            <option value="7500">7,500</option>
+            <option value="8000">8,000</option>
+            <option value="9000">9,000</option>
+            <option value="10000">10,000</option>
+            <option value="12500">12,500</option>
+            <option value="15000">15,000</option>
+            <option value="17500">17,500</option>
+            <option value="20000">20,000</option>
+            <option value="25000">25,000</option>
+          </select>
+          <div class="qty-display">
+            <span>Min: 100</span>
+            <span>Max: 25,000</span>
+          </div>
+
+          <!-- Pricing Display in Visualizer -->
+          <div class="visualizer-pricing-display">
+            <div id="slider-total-price-display-visualizer">$0.00</div>
+            <div id="slider-total-price-per-unit-visualizer">
+              $0.00 per unit
+            </div>
+            <button
+              type="button"
+              id="pricing-breakdown-button-visualizer"
+              class="button-primary"
+            >
+              View Pricing Breakdown
+            </button>
+          </div>
+        </div>
         <div id="visualizer">
           <div
             id="builder-jacket-front-display"
@@ -779,5 +875,103 @@
     </div>
 
     <script src="builder.js"></script>
+    <script>
+      // Sync quantity selects and pricing displays between form and visualizer
+      // Use an IIFE to avoid conflicts with builder.js variables
+      (function () {
+        window.addEventListener("DOMContentLoaded", () => {
+          const qtyInput = document.getElementById("record-quantity");
+          const qtyVisualizer = document.getElementById(
+            "record-quantity-visualizer"
+          );
+
+          // Pricing display elements
+          const priceDisplay = document.getElementById(
+            "slider-total-price-display"
+          );
+          const pricePerUnitDisplay = document.getElementById(
+            "slider-total-price-per-unit"
+          );
+          const priceDisplayVisualizer = document.getElementById(
+            "slider-total-price-display-visualizer"
+          );
+          const pricePerUnitDisplayVisualizer = document.getElementById(
+            "slider-total-price-per-unit-visualizer"
+          );
+          const pricingButton = document.getElementById(
+            "pricing-breakdown-button"
+          );
+          const pricingButtonVisualizer = document.getElementById(
+            "pricing-breakdown-button-visualizer"
+          );
+
+          // Sync quantity selects
+          if (qtyInput && qtyVisualizer) {
+            // Sync visualizer -> form
+            qtyVisualizer.addEventListener("change", () => {
+              qtyInput.value = qtyVisualizer.value;
+              qtyInput.dispatchEvent(new Event("change", { bubbles: true }));
+              qtyInput.dispatchEvent(new Event("input", { bubbles: true }));
+            });
+
+            // Sync form -> visualizer
+            qtyInput.addEventListener("change", () => {
+              qtyVisualizer.value = qtyInput.value;
+            });
+
+            qtyInput.addEventListener("input", () => {
+              qtyVisualizer.value = qtyInput.value;
+            });
+          }
+
+          // Sync pricing displays - update visualizer when form updates
+          if (priceDisplay && priceDisplayVisualizer) {
+            const observer = new MutationObserver(() => {
+              if (priceDisplay.innerText !== priceDisplayVisualizer.innerText) {
+                priceDisplayVisualizer.innerText = priceDisplay.innerText;
+              }
+            });
+            observer.observe(priceDisplay, {
+              childList: true,
+              characterData: true,
+              subtree: true,
+            });
+
+            // Initial sync
+            priceDisplayVisualizer.innerText = priceDisplay.innerText;
+          }
+
+          if (pricePerUnitDisplay && pricePerUnitDisplayVisualizer) {
+            const observer = new MutationObserver(() => {
+              if (
+                pricePerUnitDisplay.innerText !==
+                pricePerUnitDisplayVisualizer.innerText
+              ) {
+                pricePerUnitDisplayVisualizer.innerText =
+                  pricePerUnitDisplay.innerText;
+              }
+            });
+            observer.observe(pricePerUnitDisplay, {
+              childList: true,
+              characterData: true,
+              subtree: true,
+            });
+
+            // Initial sync
+            pricePerUnitDisplayVisualizer.innerText =
+              pricePerUnitDisplay.innerText;
+          }
+
+          // Sync pricing breakdown button clicks
+          if (pricingButton && pricingButtonVisualizer) {
+            pricingButtonVisualizer.addEventListener("click", (e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              pricingButton.click();
+            });
+          }
+        });
+      })();
+    </script>
   </body>
 </html>

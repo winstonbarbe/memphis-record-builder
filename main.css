@@ -45,17 +45,103 @@ body {
   top: 0;
   background-color: #ffffff;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding: 2rem;
 }
 
 #visualizer {
   width: 100%;
-  height: 100%;
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #fafafa;
+}
+
+/* Visualizer Quantity Section */
+.visualizer-quantity-section {
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.visualizer-quantity-section label {
+  font-weight: 600;
+  color: #333;
+  font-size: 1rem;
+}
+
+.visualizer-quantity-section input,
+.visualizer-quantity-section select {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+  width: 100%;
+}
+
+.visualizer-quantity-section input:focus,
+.visualizer-quantity-section select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.1);
+}
+
+.visualizer-quantity-section .qty-display {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+/* Pricing Display in Visualizer - Horizontal Layout */
+.visualizer-pricing-display {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.visualizer-pricing-display #slider-total-price-display-visualizer {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #007bff;
+  white-space: nowrap;
+}
+
+.visualizer-pricing-display #slider-total-price-per-unit-visualizer {
+  font-size: 0.9rem;
+  color: #666;
+  white-space: nowrap;
+}
+
+.visualizer-pricing-display .button-primary {
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+/* Desktop/Mobile Quantity Visibility */
+.desktop-hide-quantity {
+  display: block;
+}
+
+.desktop-show-quantity {
+  display: none;
+}
+
+/* Desktop/Mobile Pricing Visibility */
+.desktop-hide-pricing {
+  display: block;
 }
 
 /* Scrollbar styling for form column */
@@ -375,6 +461,21 @@ body {
   display: none;
 }
 
+/* Desktop: Hide quantity in form, show in visualizer */
+@media (min-width: 769px) {
+  .desktop-hide-quantity {
+    display: none;
+  }
+
+  .desktop-show-quantity {
+    display: block;
+  }
+
+  .desktop-hide-pricing {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   #builder-container {
     flex-direction: column;
@@ -390,5 +491,23 @@ body {
     width: 100%;
     height: 50vh;
     position: relative;
+    padding: 1rem;
+  }
+
+  /* Mobile: Show quantity in form, hide in visualizer */
+  .desktop-hide-quantity {
+    display: block;
+  }
+
+  .desktop-show-quantity {
+    display: none;
+  }
+
+  .desktop-hide-pricing {
+    display: block;
+  }
+
+  .visualizer-quantity-section {
+    margin-bottom: 1rem;
   }
 }
