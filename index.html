@@ -11,10 +11,483 @@
       <div id="form-column">
         <h1>Memphis Builder</h1>
         <form id="wf-form-Record-Builder-Form">
-          <!-- Project Title -->
-          <div class="form-section">
-            <label for="project-name">Project Name</label>
-            <input type="text" name="project-name" id="project-name" />
+          <!-- Section 1: Record Details -->
+          <div class="form-main-section">
+            <h2 class="form-section-title" data-section-number="01">
+              RECORD DETAILS
+            </h2>
+
+            <!-- Record Cutting -->
+            <div class="form-section">
+              <label for="record-cutting">Record Cutting</label>
+              <select id="record-cutting" name="record-cutting" required>
+                <option value="mrp supplied">MRP Supplied</option>
+                <option value="customer supplied">Customer Supplied</option>
+                <option value="dmm">DMM</option>
+              </select>
+            </div>
+
+            <!-- Record Size -->
+            <div class="form-section">
+              <label for="record-size">Record Size</label>
+              <select id="record-size" name="record-size" required>
+                <option value="12">12 Inch</option>
+                <option value="10">10 Inch</option>
+                <option value="7">7 Inch</option>
+              </select>
+            </div>
+
+            <!-- Amount -->
+            <div class="form-section">
+              <label for="record-amount">Amount</label>
+              <select id="record-amount" name="record-amount" required>
+                <option value="single">Single</option>
+                <option value="double">Double</option>
+                <option value="triple">Triple</option>
+              </select>
+            </div>
+
+            <!-- Record Type -->
+            <div class="form-section">
+              <label for="record-type">Record Type</label>
+              <select id="record-type" name="record-type" required>
+                <option value="black">Black</option>
+                <option value="solids-translucent">Solids Translucent</option>
+                <option value="solids-opaque">Solids Opaque</option>
+                <option value="solids-neon">Solids Neon</option>
+                <option value="eco-mix" id="eco-mix">Eco Mix</option>
+                <option value="standard-blends" id="standard-blends">
+                  Standard Blends
+                </option>
+                <option value="deluxe-blends" id="deluxe-blends">
+                  Deluxe Blends
+                </option>
+                <option value="splatter" id="splatter">Splatter</option>
+                <option value="two-color" id="two-color">Two Color</option>
+                <option value="picture-disc" id="picture-disc">
+                  Picture Disc
+                </option>
+              </select>
+            </div>
+
+            <!-- Record Weight -->
+            <div class="form-section">
+              <label for="record-weight">Record Weight</label>
+              <select id="record-weight" name="record-weight" required>
+                <option value="standard">Standard</option>
+                <option value="heavyweight" id="heavyweight">
+                  Heavyweight
+                </option>
+              </select>
+            </div>
+
+            <!-- Record Color -->
+            <div class="form-section record-color-option-container">
+              <label>Record Color</label>
+              <div id="record-color-button" class="color-button">
+                Select Color
+              </div>
+              <div id="selected-record-color-name">No color selected</div>
+              <input type="hidden" id="record-color" name="record-color" />
+              <div
+                id="record-color-picker-container"
+                class="color-picker-container"
+              >
+                <div id="memphis-color-options-container">
+                  <div id="ecomix-options-container" style="display: none">
+                    <!-- Eco Mix color options -->
+                  </div>
+                  <div
+                    id="soilds-translucent-options-container"
+                    style="display: none"
+                  >
+                    <!-- Solids Translucent color options -->
+                  </div>
+                  <div
+                    id="soilds-opaque-options-container"
+                    style="display: none"
+                  >
+                    <!-- Solids Opaque color options -->
+                  </div>
+                  <div
+                    id="standard-blends-options-container"
+                    style="display: none"
+                  >
+                    <!-- Standard Blends color options -->
+                  </div>
+                  <div
+                    id="deluxe-blends-options-container"
+                    style="display: none"
+                  >
+                    <!-- Deluxe Blends color options -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Splatter Colors -->
+            <div class="form-section" id="splatter-options-container">
+              <label for="splatter-colors">Number of Splatter Colors</label>
+              <select id="splatter-colors" name="splatter-colors">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+
+              <div id="splatter-color-one-label" class="splatter-color-label">
+                <label>Splatter Color 1</label>
+                <div id="splatter-color-one-button" class="color-button">
+                  Select Color
+                </div>
+                <div id="selected-splatter-color-one-name">
+                  No color selected
+                </div>
+                <input
+                  type="hidden"
+                  id="splatter-color-one"
+                  name="splatter-color-one"
+                />
+                <div
+                  id="splatter-picker-color-one-container"
+                  class="color-picker-container"
+                >
+                  <div id="memphis-color-options-container-splatter-one">
+                    <div id="soilds-translucent-options-container-splatter-one">
+                      <!-- Splatter color options -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="splatter-color-two-label" class="splatter-color-label">
+                <label>Splatter Color 2</label>
+                <div id="splatter-color-two-button" class="color-button">
+                  Select Color
+                </div>
+                <div id="selected-splatter-color-two-name">
+                  No color selected
+                </div>
+                <input
+                  type="hidden"
+                  id="splatter-color-two"
+                  name="splatter-color-two"
+                />
+                <div
+                  id="splatter-picker-color-two-container"
+                  class="color-picker-container"
+                >
+                  <div id="memphis-color-options-container-splatter-two">
+                    <div id="soilds-translucent-options-container-splatter-two">
+                      <!-- Splatter color options -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="splatter-color-three-label" class="splatter-color-label">
+                <label>Splatter Color 3</label>
+                <div id="splatter-color-three-button" class="color-button">
+                  Select Color
+                </div>
+                <div id="selected-splatter-color-three-name">
+                  No color selected
+                </div>
+                <input
+                  type="hidden"
+                  id="splatter-color-three"
+                  name="splatter-color-three"
+                />
+                <div
+                  id="splatter-picker-color-three-container"
+                  class="color-picker-container"
+                >
+                  <div id="memphis-color-options-container-splatter-three">
+                    <div
+                      id="soilds-translucent-options-container-splatter-three"
+                    >
+                      <!-- Splatter color options -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 2: Packaging -->
+          <div class="form-main-section">
+            <h2 class="form-section-title" data-section-number="02">
+              PACKAGING
+            </h2>
+
+            <!-- A. Jacket -->
+            <div class="form-subsection">
+              <h3 class="form-subsection-title">Jacket</h3>
+
+              <!-- Jacket Type -->
+              <div class="form-section">
+                <label for="jacket-type">Jacket Type</label>
+                <select id="jacket-type" name="jacket-type" required>
+                  <option value="single pocket">Single Pocket</option>
+                  <option value="wide spine" id="wide-spine">Wide Spine</option>
+                  <option value="gatefold" id="gatefold">Gatefold</option>
+                  <option value="none">None</option>
+                </select>
+              </div>
+
+              <!-- Jacket Options -->
+              <div class="form-section" id="jacket-options-container">
+                <label for="jacket-front-upload">Jacket Front Upload</label>
+                <input
+                  type="file"
+                  id="jacket-front-upload"
+                  name="jacket-front-upload"
+                  accept="image/*"
+                />
+                <div class="file-upload-display" style="display: none">
+                  <span id="jacket-front-upload-file-display"></span>
+                  <button type="button" id="remove-jacket-front-image">
+                    Remove
+                  </button>
+                </div>
+
+                <div>
+                  <label for="jacket-color">Jacket Color</label>
+                  <select id="jacket-color" name="jacket-color" required>
+                    <option value="full color">Full Color</option>
+                    <option value="black & white">Black & White</option>
+                  </select>
+                </div>
+
+                <div id="jacket-finish-options">
+                  <label for="jacket-finish">Jacket Finish</label>
+                  <select id="jacket-finish" name="jacket-finish" required>
+                    <option value="standard gloss">Standard Gloss</option>
+                    <option value="matte">Matte</option>
+                    <option value="soft touch">Soft Touch</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- B. Label -->
+            <div class="form-subsection">
+              <h3 class="form-subsection-title">Label</h3>
+
+              <!-- Label Type -->
+              <div class="form-section">
+                <label for="label-type">Label Type</label>
+                <select id="label-type" name="label-type" required>
+                  <option value="full color">Full Color</option>
+                  <option value="black and white">Black & White</option>
+                  <option value="blank">Blank</option>
+                </select>
+              </div>
+
+              <!-- Label Color (for blank labels) -->
+              <div
+                class="form-section"
+                id="blank-label-options-container"
+                style="display: none"
+              >
+                <label for="label-color">Label Color</label>
+                <select id="label-color" name="label-color">
+                  <option value="white">White</option>
+                  <option value="black">Black</option>
+                </select>
+              </div>
+
+              <!-- Label Upload -->
+              <div class="form-section" id="label-options-container">
+                <label for="label-front-upload">Label Front Upload</label>
+                <input
+                  type="file"
+                  id="label-front-upload"
+                  name="label-front-upload"
+                  accept="image/*"
+                />
+                <div class="file-upload-display" style="display: none">
+                  <span id="label-front-upload-file-display"></span>
+                  <button type="button" id="remove-label-front-image">
+                    Remove
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- C. Inner Sleeve -->
+            <div class="form-subsection">
+              <h3 class="form-subsection-title">Inner Sleeve</h3>
+
+              <!-- Inner Sleeve Type -->
+              <div class="form-section">
+                <label for="sleeve-type">Inner Sleeve Type</label>
+                <select id="sleeve-type" name="sleeve-type" required>
+                  <option value="anti-static">Anti-Static</option>
+                  <option value="paper">Paper</option>
+                  <option value="paper w/ poly lining">
+                    Paper w/ Poly Lining
+                  </option>
+                  <option value="printed">Printed</option>
+                </select>
+              </div>
+
+              <!-- Inner Sleeve Options -->
+              <div class="form-section" id="sleeve-options-container">
+                <div id="inner-sleeve-upload-container" style="display: none">
+                  <label for="sleeve-upload">Inner Sleeve Upload</label>
+                  <input
+                    type="file"
+                    id="sleeve-upload"
+                    name="sleeve-upload"
+                    accept="image/*"
+                  />
+                  <div class="file-upload-display" style="display: none">
+                    <span id="sleeve-upload-file-display"></span>
+                    <button type="button" id="remove-sleeve-image">
+                      Remove
+                    </button>
+                  </div>
+                </div>
+
+                <div>
+                  <label for="sleeve-color">Inner Sleeve Color</label>
+                  <select id="sleeve-color" name="sleeve-color">
+                    <option value="white" id="sleeve-white">White</option>
+                    <option value="black" id="sleeve-black">Black</option>
+                    <option value="black & white" id="sleeve-black-white">
+                      Black & White
+                    </option>
+                    <option value="full color" id="sleeve-full-color">
+                      Full Color
+                    </option>
+                  </select>
+                </div>
+
+                <div id="inner-sleeve-finish-options">
+                  <label for="sleeve-finish">Inner Sleeve Finish</label>
+                  <select id="sleeve-finish" name="sleeve-finish">
+                    <option value="standard gloss">Standard Gloss</option>
+                    <option value="matte">Matte</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- D. Print Insert -->
+            <div class="form-subsection">
+              <h3 class="form-subsection-title">Print Insert</h3>
+
+              <!-- Printed Insert Type -->
+              <div class="form-section">
+                <label for="insert-type">Printed Insert Type</label>
+                <select id="insert-type" name="insert-type" required>
+                  <option value="none">None</option>
+                  <option value="12x12" id="insert-12x12">12x12</option>
+                  <option value="24x12" id="insert-24x12">24x12</option>
+                  <option value="7x7" id="insert-7x7">7x7</option>
+                  <option value="14x7" id="insert-14x7">14x7</option>
+                </select>
+              </div>
+
+              <!-- Printed Insert Options -->
+              <div class="form-section" id="insert-options-container">
+                <label for="insert-upload">Printed Insert Upload</label>
+                <input
+                  type="file"
+                  id="insert-upload"
+                  name="insert-upload"
+                  accept="image/*"
+                />
+                <div class="file-upload-display" style="display: none">
+                  <span id="insert-upload-file-display"></span>
+                  <button type="button" id="remove-insert-image">Remove</button>
+                </div>
+
+                <div>
+                  <label for="insert-sides">Insert Sides</label>
+                  <select id="insert-sides" name="insert-sides" required>
+                    <option value="one sided">One Sided</option>
+                    <option value="two sided">Two Sided</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="insert-color">Insert Color</label>
+                  <select id="insert-color" name="insert-color" required>
+                    <option value="full color">Full Color</option>
+                    <option value="black & white">Black & White</option>
+                  </select>
+                </div>
+
+                <div id="insert-finish-options">
+                  <label for="insert-finish">Insert Finish</label>
+                  <select id="insert-finish" name="insert-finish" required>
+                    <option value="standard gloss">Standard Gloss</option>
+                    <option value="matte">Matte</option>
+                    <option value="soft touch">Soft Touch</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- E. Download Cards -->
+            <div class="form-subsection">
+              <h3 class="form-subsection-title">Download Cards</h3>
+
+              <!-- Download Cards Type -->
+              <div class="form-section">
+                <label for="download-card-type">Download Cards Type</label>
+                <select
+                  id="download-card-type"
+                  name="download-card-type"
+                  required
+                >
+                  <option value="none">None</option>
+                  <option value="standard">Standard</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- F. Outer Wrap -->
+            <div class="form-subsection">
+              <h3 class="form-subsection-title">Outer Wrap</h3>
+
+              <!-- Outer Wrap Type -->
+              <div class="form-section">
+                <label for="outerwrap-type">Outer Wrap Type</label>
+                <select id="outerwrap-type" name="outerwrap-type" required>
+                  <option value="polybag">Polybag</option>
+                  <option value="shrinkwrap">Shrinkwrap</option>
+                  <option value="none">None</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 3: Finalize -->
+          <div class="form-main-section">
+            <h2 class="form-section-title" data-section-number="03">
+              FINALIZE
+            </h2>
+
+            <!-- Project Name -->
+            <div class="form-section">
+              <label for="project-name">Project Name</label>
+              <input type="text" name="project-name" id="project-name" />
+            </div>
+
+            <!-- Full Name -->
+            <div class="form-section">
+              <label for="full-name">Full Name</label>
+              <input type="text" name="full-name" id="full-name" />
+            </div>
+
+            <!-- Email -->
+            <div class="form-section">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+            </div>
           </div>
 
           <!-- Quantity (hidden on desktop, shown on mobile) -->
@@ -50,394 +523,6 @@
             </select>
             <div id="min-qty-display">Min: 100</div>
             <div id="max-qty-display">Max: 25,000</div>
-          </div>
-
-          <!-- Record Size -->
-          <div class="form-section">
-            <label for="record-size">Record Size</label>
-            <select id="record-size" name="record-size" required>
-              <option value="12">12 Inch</option>
-              <option value="10">10 Inch</option>
-              <option value="7">7 Inch</option>
-            </select>
-          </div>
-
-          <!-- Amount -->
-          <div class="form-section">
-            <label for="record-amount">Amount</label>
-            <select id="record-amount" name="record-amount" required>
-              <option value="single">Single</option>
-              <option value="double">Double</option>
-              <option value="triple">Triple</option>
-            </select>
-          </div>
-
-          <!-- Record Type -->
-          <div class="form-section">
-            <label for="record-type">Record Type</label>
-            <select id="record-type" name="record-type" required>
-              <option value="black">Black</option>
-              <option value="solids-translucent">Solids Translucent</option>
-              <option value="solids-opaque">Solids Opaque</option>
-              <option value="solids-neon">Solids Neon</option>
-              <option value="eco-mix" id="eco-mix">Eco Mix</option>
-              <option value="standard-blends" id="standard-blends">
-                Standard Blends
-              </option>
-              <option value="deluxe-blends" id="deluxe-blends">
-                Deluxe Blends
-              </option>
-              <option value="splatter" id="splatter">Splatter</option>
-              <option value="two-color" id="two-color">Two Color</option>
-              <option value="picture-disc" id="picture-disc">
-                Picture Disc
-              </option>
-            </select>
-          </div>
-
-          <!-- Record Color -->
-          <div class="form-section record-color-option-container">
-            <label>Record Color</label>
-            <div id="record-color-button" class="color-button">
-              Select Color
-            </div>
-            <div id="selected-record-color-name">No color selected</div>
-            <input type="hidden" id="record-color" name="record-color" />
-            <div
-              id="record-color-picker-container"
-              class="color-picker-container"
-            >
-              <div id="memphis-color-options-container">
-                <div id="ecomix-options-container" style="display: none">
-                  <!-- Eco Mix color options -->
-                </div>
-                <div
-                  id="soilds-translucent-options-container"
-                  style="display: none"
-                >
-                  <!-- Solids Translucent color options -->
-                </div>
-                <div id="soilds-opaque-options-container" style="display: none">
-                  <!-- Solids Opaque color options -->
-                </div>
-                <div
-                  id="standard-blends-options-container"
-                  style="display: none"
-                >
-                  <!-- Standard Blends color options -->
-                </div>
-                <div id="deluxe-blends-options-container" style="display: none">
-                  <!-- Deluxe Blends color options -->
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Splatter Colors -->
-          <div class="form-section" id="splatter-options-container">
-            <label for="splatter-colors">Number of Splatter Colors</label>
-            <select id="splatter-colors" name="splatter-colors">
-              <option value="0">0</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-            </select>
-
-            <div id="splatter-color-one-label" class="splatter-color-label">
-              <label>Splatter Color 1</label>
-              <div id="splatter-color-one-button" class="color-button">
-                Select Color
-              </div>
-              <div id="selected-splatter-color-one-name">No color selected</div>
-              <input
-                type="hidden"
-                id="splatter-color-one"
-                name="splatter-color-one"
-              />
-              <div
-                id="splatter-picker-color-one-container"
-                class="color-picker-container"
-              >
-                <div id="memphis-color-options-container-splatter-one">
-                  <div id="soilds-translucent-options-container-splatter-one">
-                    <!-- Splatter color options -->
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div id="splatter-color-two-label" class="splatter-color-label">
-              <label>Splatter Color 2</label>
-              <div id="splatter-color-two-button" class="color-button">
-                Select Color
-              </div>
-              <div id="selected-splatter-color-two-name">No color selected</div>
-              <input
-                type="hidden"
-                id="splatter-color-two"
-                name="splatter-color-two"
-              />
-              <div
-                id="splatter-picker-color-two-container"
-                class="color-picker-container"
-              >
-                <div id="memphis-color-options-container-splatter-two">
-                  <div id="soilds-translucent-options-container-splatter-two">
-                    <!-- Splatter color options -->
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div id="splatter-color-three-label" class="splatter-color-label">
-              <label>Splatter Color 3</label>
-              <div id="splatter-color-three-button" class="color-button">
-                Select Color
-              </div>
-              <div id="selected-splatter-color-three-name">
-                No color selected
-              </div>
-              <input
-                type="hidden"
-                id="splatter-color-three"
-                name="splatter-color-three"
-              />
-              <div
-                id="splatter-picker-color-three-container"
-                class="color-picker-container"
-              >
-                <div id="memphis-color-options-container-splatter-three">
-                  <div id="soilds-translucent-options-container-splatter-three">
-                    <!-- Splatter color options -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Record Cutting -->
-          <div class="form-section">
-            <label for="record-cutting">Record Cutting</label>
-            <select id="record-cutting" name="record-cutting" required>
-              <option value="mrp supplied">MRP Supplied</option>
-              <option value="customer supplied">Customer Supplied</option>
-              <option value="dmm">DMM</option>
-            </select>
-          </div>
-
-          <!-- Record Weight -->
-          <div class="form-section">
-            <label for="record-weight">Record Weight</label>
-            <select id="record-weight" name="record-weight" required>
-              <option value="standard">Standard</option>
-              <option value="heavyweight" id="heavyweight">Heavyweight</option>
-            </select>
-          </div>
-
-          <!-- Label Type -->
-          <div class="form-section">
-            <label for="label-type">Label Type</label>
-            <select id="label-type" name="label-type" required>
-              <option value="full color">Full Color</option>
-              <option value="black and white">Black & White</option>
-              <option value="blank">Blank</option>
-            </select>
-          </div>
-
-          <!-- Label Color (for blank labels) -->
-          <div
-            class="form-section"
-            id="blank-label-options-container"
-            style="display: none"
-          >
-            <label for="label-color">Label Color</label>
-            <select id="label-color" name="label-color">
-              <option value="white">White</option>
-              <option value="black">Black</option>
-            </select>
-          </div>
-
-          <!-- Label Upload -->
-          <div class="form-section" id="label-options-container">
-            <label for="label-front-upload">Label Front Upload</label>
-            <input
-              type="file"
-              id="label-front-upload"
-              name="label-front-upload"
-              accept="image/*"
-            />
-            <div class="file-upload-display" style="display: none">
-              <span id="label-front-upload-file-display"></span>
-              <button type="button" id="remove-label-front-image">
-                Remove
-              </button>
-            </div>
-          </div>
-
-          <!-- Inner Sleeve Type -->
-          <div class="form-section">
-            <label for="sleeve-type">Inner Sleeve Type</label>
-            <select id="sleeve-type" name="sleeve-type" required>
-              <option value="anti-static">Anti-Static</option>
-              <option value="paper">Paper</option>
-              <option value="paper w/ poly lining">Paper w/ Poly Lining</option>
-              <option value="printed">Printed</option>
-            </select>
-          </div>
-
-          <!-- Inner Sleeve Options -->
-          <div class="form-section" id="sleeve-options-container">
-            <div id="inner-sleeve-upload-container" style="display: none">
-              <label for="sleeve-upload">Inner Sleeve Upload</label>
-              <input
-                type="file"
-                id="sleeve-upload"
-                name="sleeve-upload"
-                accept="image/*"
-              />
-              <div class="file-upload-display" style="display: none">
-                <span id="sleeve-upload-file-display"></span>
-                <button type="button" id="remove-sleeve-image">Remove</button>
-              </div>
-            </div>
-
-            <div>
-              <label for="sleeve-color">Inner Sleeve Color</label>
-              <select id="sleeve-color" name="sleeve-color">
-                <option value="white" id="sleeve-white">White</option>
-                <option value="black" id="sleeve-black">Black</option>
-                <option value="black & white" id="sleeve-black-white">
-                  Black & White
-                </option>
-                <option value="full color" id="sleeve-full-color">
-                  Full Color
-                </option>
-              </select>
-            </div>
-
-            <div id="inner-sleeve-finish-options">
-              <label for="sleeve-finish">Inner Sleeve Finish</label>
-              <select id="sleeve-finish" name="sleeve-finish">
-                <option value="standard gloss">Standard Gloss</option>
-                <option value="matte">Matte</option>
-              </select>
-            </div>
-          </div>
-
-          <!-- Jacket Type -->
-          <div class="form-section">
-            <label for="jacket-type">Jacket Type</label>
-            <select id="jacket-type" name="jacket-type" required>
-              <option value="single pocket">Single Pocket</option>
-              <option value="wide spine" id="wide-spine">Wide Spine</option>
-              <option value="gatefold" id="gatefold">Gatefold</option>
-              <option value="none">None</option>
-            </select>
-          </div>
-
-          <!-- Jacket Options -->
-          <div class="form-section" id="jacket-options-container">
-            <label for="jacket-front-upload">Jacket Front Upload</label>
-            <input
-              type="file"
-              id="jacket-front-upload"
-              name="jacket-front-upload"
-              accept="image/*"
-            />
-            <div class="file-upload-display" style="display: none">
-              <span id="jacket-front-upload-file-display"></span>
-              <button type="button" id="remove-jacket-front-image">
-                Remove
-              </button>
-            </div>
-
-            <div>
-              <label for="jacket-color">Jacket Color</label>
-              <select id="jacket-color" name="jacket-color" required>
-                <option value="full color">Full Color</option>
-                <option value="black & white">Black & White</option>
-              </select>
-            </div>
-
-            <div id="jacket-finish-options">
-              <label for="jacket-finish">Jacket Finish</label>
-              <select id="jacket-finish" name="jacket-finish" required>
-                <option value="standard gloss">Standard Gloss</option>
-                <option value="matte">Matte</option>
-                <option value="soft touch">Soft Touch</option>
-              </select>
-            </div>
-          </div>
-
-          <!-- Printed Insert Type -->
-          <div class="form-section">
-            <label for="insert-type">Printed Insert Type</label>
-            <select id="insert-type" name="insert-type" required>
-              <option value="none">None</option>
-              <option value="12x12" id="insert-12x12">12x12</option>
-              <option value="24x12" id="insert-24x12">24x12</option>
-              <option value="7x7" id="insert-7x7">7x7</option>
-              <option value="14x7" id="insert-14x7">14x7</option>
-            </select>
-          </div>
-
-          <!-- Printed Insert Options -->
-          <div class="form-section" id="insert-options-container">
-            <label for="insert-upload">Printed Insert Upload</label>
-            <input
-              type="file"
-              id="insert-upload"
-              name="insert-upload"
-              accept="image/*"
-            />
-            <div class="file-upload-display" style="display: none">
-              <span id="insert-upload-file-display"></span>
-              <button type="button" id="remove-insert-image">Remove</button>
-            </div>
-
-            <div>
-              <label for="insert-sides">Insert Sides</label>
-              <select id="insert-sides" name="insert-sides" required>
-                <option value="one sided">One Sided</option>
-                <option value="two sided">Two Sided</option>
-              </select>
-            </div>
-
-            <div>
-              <label for="insert-color">Insert Color</label>
-              <select id="insert-color" name="insert-color" required>
-                <option value="full color">Full Color</option>
-                <option value="black & white">Black & White</option>
-              </select>
-            </div>
-
-            <div id="insert-finish-options">
-              <label for="insert-finish">Insert Finish</label>
-              <select id="insert-finish" name="insert-finish" required>
-                <option value="standard gloss">Standard Gloss</option>
-                <option value="matte">Matte</option>
-                <option value="soft touch">Soft Touch</option>
-              </select>
-            </div>
-          </div>
-
-          <!-- Outer Wrap Type -->
-          <div class="form-section">
-            <label for="outerwrap-type">Outer Wrap Type</label>
-            <select id="outerwrap-type" name="outerwrap-type" required>
-              <option value="polybag">Polybag</option>
-              <option value="shrinkwrap">Shrinkwrap</option>
-              <option value="none">None</option>
-            </select>
-          </div>
-
-          <!-- Download Cards Type -->
-          <div class="form-section">
-            <label for="download-card-type">Download Cards Type</label>
-            <select id="download-card-type" name="download-card-type" required>
-              <option value="none">None</option>
-              <option value="standard">Standard</option>
-            </select>
           </div>
 
           <!-- Pricing Display (hidden on desktop, shown on mobile) -->
