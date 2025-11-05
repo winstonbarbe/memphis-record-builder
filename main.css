@@ -66,7 +66,7 @@ body {
 .visualizer-jacket-display {
   width: 300px;
   height: 300px;
-  background-color: #ff8c42;
+  background-color: #fdb813;
   border: 2px solid #000;
   background-size: cover;
   background-position: center;
@@ -264,7 +264,7 @@ body {
   font-size: 1.25rem;
   font-weight: 700;
   color: #ffffff;
-  background-color: #ff8c42;
+  background-color: #fdb813;
   padding: 0.75rem 1.25rem;
   border-radius: 12px 12px 0 0;
   margin: 0 -2rem 1.5rem -2rem;
@@ -546,14 +546,17 @@ body {
 }
 
 .builder-breakdown-container {
-  background-color: white;
-  border-radius: 8px;
-  padding: 2rem;
-  max-width: 600px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 0;
+  max-width: 900px;
+  width: 90%;
   max-height: 80vh;
   overflow-y: auto;
   position: relative;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  font-family: Arial, sans-serif;
 }
 
 .close-button {
@@ -566,40 +569,96 @@ body {
   cursor: pointer;
   color: #666;
   line-height: 1;
+  z-index: 10;
 }
 
 .close-button:hover {
   color: #000;
 }
 
-/* Breakdown Items */
-.breakdown-section {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  margin-top: 1rem;
+/* Breakdown Header Section */
+.breakdown-header-section {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
 }
 
-.breakdown-item {
-  font-weight: 600;
-  color: #333;
-  padding: 0.5rem 0;
-  border-bottom: 1px solid #eee;
+.breakdown-main-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #fdb813;
+  text-align: center;
+  margin-top: 0;
 }
 
-.breakdown-sub-item {
-  padding-left: 1rem;
-  color: #666;
-  font-size: 0.9rem;
-  margin-bottom: 0.5rem;
-}
-
-.breakdown-total {
-  margin-top: 1.5rem;
-  padding-top: 1rem;
-  border-top: 2px solid #333;
-  font-size: 1.25rem;
+.breakdown-project-title {
+  font-size: 20px;
+  margin: 0;
   font-weight: bold;
+  text-align: center;
+  text-transform: none;
+  color: #333;
+}
+
+/* Breakdown Section Wrapper */
+.breakdown-section-wrapper {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.breakdown-section-title {
+  font-size: 20px;
+  margin: 0;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.breakdown-table {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.breakdown-table td {
+  font-size: 16px;
+  padding: 5px;
+}
+
+.breakdown-table td[width="70%"] {
+  text-align: left;
+}
+
+.breakdown-table td[width="30%"] {
+  text-align: right;
+}
+
+/* Total Cost Section */
+.breakdown-total-section {
+  padding: 20px;
+  text-align: right;
+  border-top: 1px solid #ddd;
+}
+
+.breakdown-total-title {
+  font-size: 24px;
+  margin: 0;
+  color: #333;
+  font-weight: bold;
+}
+
+.breakdown-total-price {
+  font-size: 32px;
+  margin: 10px 0;
+  color: #fdb813;
+  font-weight: bold;
+  display: block;
+}
+
+.breakdown-total-per-unit {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #333;
+  display: block;
 }
 
 /* Visualizer Display - Legacy support */

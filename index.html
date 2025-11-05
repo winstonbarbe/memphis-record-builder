@@ -830,168 +830,429 @@
     <div class="modal-background-2" id="pricing-breakdown-modal">
       <div class="builder-breakdown-container">
         <button id="close-breakdown-modal" class="close-button">×</button>
-        <h2>Pricing Breakdown</h2>
-        <div id="project-title-display">Project Title</div>
 
-        <div class="breakdown-section">
-          <div id="setup-fee-breakdown-display" class="breakdown-item">
-            Setup Fee: $0.00
-          </div>
-          <div id="setup-option-display" class="breakdown-sub-item">
-            <span id="setup-option-sub-price">$0.00</span>
-          </div>
-
-          <div id="cutting-fee-breakdown-display" class="breakdown-item">
-            Cutting Fee: $0.00
-          </div>
-          <div id="cutting-option-display" class="breakdown-sub-item">
-            <span id="cutting-option-sub-price">$0.00</span>
-          </div>
-
-          <div id="plating-fee-breakdown-display" class="breakdown-item">
-            Plating Fee: $0.00
-          </div>
-          <div id="plating-option-display" class="breakdown-sub-item">
-            <span id="plating-option-sub-price">$0.00</span>
-          </div>
-
-          <div id="stampers-fee-breakdown-display" class="breakdown-item">
-            Stampers Fee: $0.00
-          </div>
-
-          <div id="mastering-breakdown-display" class="breakdown-item">
-            Mastering: $0.00
-          </div>
-          <div id="mastering-option-display" class="breakdown-sub-item">
-            <span id="mastering-option-sub-price">$0.00</span>
-          </div>
-
-          <div id="test-pressings-initial-sub-price" class="breakdown-item">
-            Test Pressings: $0.00
-          </div>
-          <div
-            id="num-of-additional-pressings-display"
-            class="breakdown-sub-item"
-          >
-            Additional Pressings: 0
-          </div>
-          <div id="test-pressings-shipping-sub-price" class="breakdown-item">
-            Test Pressings Shipping: $0.00
-          </div>
-
-          <div id="center-labels-fee-breakdown-display" class="breakdown-item">
-            Center Labels: $0.00
-          </div>
-          <div id="center-labels-option-display" class="breakdown-sub-item">
-            <span id="center-labels-option-sub-price">$0.00</span>
-          </div>
-
-          <div id="records-fee-breakdown-display" class="breakdown-item">
-            Records: $0.00
-          </div>
-          <div id="record-option-sub-price" class="breakdown-sub-item">
-            <div id="record-size-breakdown-display">Size: 12 Inch</div>
-            <div id="record-weight-breakdown-display">Weight: Standard</div>
-            <div id="record-type-breakdown-display">Type: Black</div>
-          </div>
-
-          <div id="inner-sleeve-fee-breakdown-display" class="breakdown-item">
-            Inner Sleeve: $0.00
-          </div>
-          <div id="sleeve-option-sub-price" class="breakdown-sub-item">
-            <div id="sleeve-type-breakdown-display">Type: Anti-Static</div>
-            <div id="sleeve-color-breakdown-display">Color: White</div>
-            <div id="sleeve-finish-breakdown-display">
-              Finish: Standard Gloss
-            </div>
-          </div>
-
-          <div id="jacket-fee-breakdown-display" class="breakdown-item">
-            Jacket: $0.00
-          </div>
-          <div id="jacket-option-sub-price" class="breakdown-sub-item">
-            <div id="jacket-type-breakdown-display">Type: Single Pocket</div>
-            <div id="jacket-color-breakdown-display">Color: Full Color</div>
-            <div id="jacket-finish-breakdown-display">
-              Finish: Standard Gloss
-            </div>
-          </div>
-
-          <div id="insert-fee-breakdown-display" class="breakdown-item">
-            Insert: $0.00
-          </div>
-          <div id="insert-option-sub-price" class="breakdown-sub-item">
-            <div id="insert-type-breakdown-display">Type: None</div>
-            <div id="insert-sides-breakdown-display">Sides: One Sided</div>
-            <div id="insert-color-breakdown-display">Color: Full Color</div>
-            <div id="insert-finish-breakdown-display">
-              Finish: Standard Gloss
-            </div>
-          </div>
-
-          <div id="outerwrap-fee-breakdown-display" class="breakdown-item">
-            Outerwrap: $0.00
-          </div>
-          <div id="outerwrap-option-display" class="breakdown-sub-item">
-            <span id="outerwrap-option-sub-price">$0.00</span>
-          </div>
-
-          <div id="download-cards-fee-breakdown-display" class="breakdown-item">
-            Download Cards: $0.00
-          </div>
-          <div id="download-card-option-display" class="breakdown-sub-item">
-            <span id="download-card-option-sub-price">$0.00</span>
-          </div>
-
-          <div id="misc-fee-breakdown-display" class="breakdown-item">
-            Misc: $0.00
-          </div>
-
-          <div id="insertion-fee-breakdown-display" class="breakdown-item">
-            Insertion: $0.00
-          </div>
-          <div
-            id="insertion-of-record-price-display"
-            class="breakdown-sub-item"
-          >
-            Record Insertion: $0.00
-          </div>
-          <div
-            id="insertion-of-sleeve-price-display"
-            class="breakdown-sub-item"
-          >
-            Sleeve Insertion: $0.00
-          </div>
-          <div
-            id="insertion-of-insert-price-display"
-            class="breakdown-sub-item"
-          >
-            Insert Insertion: $0.00
-          </div>
-          <div
-            id="insertion-of-jacket-price-display"
-            class="breakdown-sub-item"
-          >
-            Jacket Insertion: $0.00
-          </div>
-
-          <div
-            id="splatter-surcharge-sub-price"
-            class="breakdown-item"
-            style="display: none"
-          >
-            Splatter Surcharge: <span>$0.00</span>
-          </div>
-
-          <div class="breakdown-total">
-            <div id="order-total-display">Total: $0.00</div>
-            <div id="order-total-per-unit">Per Unit: $0.00</div>
-          </div>
-
-          <button id="continue-editing-button" class="button-primary">
-            Continue Editing
-          </button>
+        <!-- Price Breakdown Header -->
+        <div class="breakdown-header-section">
+          <h2 class="breakdown-main-title">Price Breakdown</h2>
+          <h3 id="project-title-display" class="breakdown-project-title">
+            Project Title
+          </h3>
         </div>
+
+        <!-- Mastering Section -->
+        <div class="breakdown-section-wrapper" id="mastering-section-wrapper">
+          <h4 class="breakdown-section-title">Mastering</h4>
+          <table
+            class="breakdown-table"
+            width="100%"
+            cellpadding="5"
+            cellspacing="0"
+          >
+            <tr>
+              <td width="70%" style="text-align: left">
+                <span id="mastering-option-display">Audio Pre Flight</span>
+              </td>
+              <td width="30%" style="text-align: right">
+                <span id="mastering-option-sub-price" style="display: none"
+                  >$0.00</span
+                >
+                <span id="mastering-breakdown-display">$0.00</span>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Set Up Fee Section -->
+        <div class="breakdown-section-wrapper" id="setup-section-wrapper">
+          <h4 class="breakdown-section-title">Set Up Fee</h4>
+          <table
+            class="breakdown-table"
+            width="100%"
+            cellpadding="5"
+            cellspacing="0"
+          >
+            <tr>
+              <td width="70%" style="text-align: left">
+                <span id="setup-option-display">Single LP</span>
+              </td>
+              <td width="30%" style="text-align: right">
+                <span id="setup-option-sub-price" style="display: none"
+                  >$0.00</span
+                >
+                <span id="setup-fee-breakdown-display">$0.00</span>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Cutting Section -->
+        <div class="breakdown-section-wrapper" id="cutting-section-wrapper">
+          <h4 class="breakdown-section-title">Cutting</h4>
+          <table
+            class="breakdown-table"
+            width="100%"
+            cellpadding="5"
+            cellspacing="0"
+          >
+            <tr>
+              <td width="70%" style="text-align: left">
+                <span id="cutting-option-display">Standard Cutting</span>
+              </td>
+              <td width="30%" style="text-align: right">
+                <span id="cutting-option-sub-price" style="display: none"
+                  >$0.00</span
+                >
+                <span id="cutting-fee-breakdown-display">$0.00</span>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Plating Section -->
+        <div class="breakdown-section-wrapper" id="plating-section-wrapper">
+          <h4 class="breakdown-section-title">Plating</h4>
+          <table
+            class="breakdown-table"
+            width="100%"
+            cellpadding="5"
+            cellspacing="0"
+          >
+            <tr>
+              <td width="70%" style="text-align: left">
+                <span id="plating-option-display">Standard Plating</span>
+              </td>
+              <td width="30%" style="text-align: right">
+                <span id="plating-option-sub-price" style="display: none"
+                  >$0.00</span
+                >
+                <span id="plating-fee-breakdown-display">$0.00</span>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Additional Stampers Section -->
+        <div class="breakdown-section-wrapper" id="stampers-section-wrapper">
+          <h4 class="breakdown-section-title">Additional Stampers</h4>
+          <table
+            class="breakdown-table"
+            width="100%"
+            cellpadding="5"
+            cellspacing="0"
+          >
+            <tr>
+              <td width="70%" style="text-align: left">
+                <span>0 Additional Stampers</span>
+              </td>
+              <td width="30%" style="text-align: right">
+                <span id="stampers-fee-breakdown-display">$0.00</span>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Test Pressings Section -->
+        <div
+          class="breakdown-section-wrapper"
+          id="test-pressings-section-wrapper"
+        >
+          <h4 class="breakdown-section-title">Test Pressings</h4>
+          <table
+            class="breakdown-table"
+            width="100%"
+            cellpadding="5"
+            cellspacing="0"
+          >
+            <tr>
+              <td width="70%" style="text-align: left">
+                5 Initial Test Pressings
+              </td>
+              <td width="30%" style="text-align: right">
+                <span id="test-pressings-initial-sub-price">$0.00</span>
+              </td>
+            </tr>
+            <tr id="additional-pressings-row" style="display: none">
+              <td width="70%" style="text-align: left">
+                <span id="num-of-additional-pressings-display">0</span>
+                Additional Tests
+              </td>
+              <td width="30%" style="text-align: right">
+                <span id="additional-test-pressings-price-display">$0.00</span>
+              </td>
+            </tr>
+            <tr>
+              <td width="70%" style="text-align: left">Shipping Fee</td>
+              <td width="30%" style="text-align: right">
+                <span id="test-pressings-shipping-sub-price">$0.00</span>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Center Labels Section -->
+        <div
+          class="breakdown-section-wrapper"
+          id="center-labels-section-wrapper"
+        >
+          <h4 class="breakdown-section-title">Center Labels</h4>
+          <table
+            class="breakdown-table"
+            width="100%"
+            cellpadding="5"
+            cellspacing="0"
+          >
+            <tr>
+              <td width="70%" style="text-align: left">
+                <span id="center-labels-option-display">Standard Label</span>
+              </td>
+              <td width="30%" style="text-align: right">
+                <span id="center-labels-option-sub-price" style="display: none"
+                  >$0.00</span
+                >
+                <span id="center-labels-fee-breakdown-display">$0.00</span>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Records Section -->
+        <div class="breakdown-section-wrapper" id="records-section-wrapper">
+          <h4 class="breakdown-section-title">Records</h4>
+          <table
+            class="breakdown-table"
+            width="100%"
+            cellpadding="5"
+            cellspacing="0"
+          >
+            <tr>
+              <td width="70%" style="text-align: left">
+                <span id="record-size-breakdown-display">12 Inch</span>
+                <span id="record-weight-breakdown-display">Standard</span>
+                <span id="record-type-breakdown-display">Black</span>
+              </td>
+              <td width="30%" style="text-align: right">
+                <span id="records-fee-breakdown-display">$0.00</span>
+              </td>
+            </tr>
+            <tr>
+              <td width="70%" style="text-align: left">
+                Record Base Color:
+                <span id="record-base-color-display">Black</span>
+              </td>
+            </tr>
+            <tr>
+              <td width="70%" style="text-align: left">
+                Effect Color One: <span id="effect-color-1-display">-</span>
+              </td>
+            </tr>
+            <tr>
+              <td width="70%" style="text-align: left">
+                Effect Color Two: <span id="effect-color-2-display">-</span>
+              </td>
+            </tr>
+            <tr>
+              <td width="70%" style="text-align: left">
+                Effect Color Three: <span id="effect-color-3-display">-</span>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Inner Sleeves Section -->
+        <div
+          class="breakdown-section-wrapper"
+          id="inner-sleeve-section-wrapper"
+        >
+          <h4 class="breakdown-section-title">Inner Sleeves</h4>
+          <table
+            class="breakdown-table"
+            width="100%"
+            cellpadding="5"
+            cellspacing="0"
+          >
+            <tr>
+              <td
+                width="70%"
+                style="text-align: left; text-transform: capitalize"
+              >
+                <span id="sleeve-type-breakdown-display">Anti-Static</span>
+                <span id="sleeve-color-breakdown-display">White</span>
+                <span id="sleeve-finish-breakdown-display">Standard Gloss</span>
+              </td>
+              <td width="30%" style="text-align: right">
+                <span id="inner-sleeve-fee-breakdown-display">$0.00</span>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Jackets Section -->
+        <div class="breakdown-section-wrapper" id="jacket-section-wrapper">
+          <h4 class="breakdown-section-title">Jackets</h4>
+          <table
+            class="breakdown-table"
+            width="100%"
+            cellpadding="5"
+            cellspacing="0"
+          >
+            <tr>
+              <td width="70%" style="text-align: left">
+                <span id="jacket-type-breakdown-display">Single Pocket</span>
+                <span id="jacket-color-breakdown-display">Full Color</span>
+                <span id="jacket-finish-breakdown-display">Standard Gloss</span>
+              </td>
+              <td width="30%" style="text-align: right">
+                <span id="jacket-fee-breakdown-display">$0.00</span>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Inserts Section -->
+        <div class="breakdown-section-wrapper" id="insert-section-wrapper">
+          <h4 class="breakdown-section-title">Inserts</h4>
+          <table
+            class="breakdown-table"
+            width="100%"
+            cellpadding="5"
+            cellspacing="0"
+          >
+            <tr>
+              <td
+                width="70%"
+                style="text-align: left; text-transform: capitalize"
+              >
+                <span id="insert-type-breakdown-display">None</span>
+                <span id="insert-sides-breakdown-display">One Sided</span>
+                <span id="insert-color-breakdown-display">Full Color</span>
+                <span id="insert-finish-breakdown-display">Standard Gloss</span>
+              </td>
+              <td width="30%" style="text-align: right">
+                <span id="insert-fee-breakdown-display">$0.00</span>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Outerwrap Section -->
+        <div class="breakdown-section-wrapper" id="outerwrap-section-wrapper">
+          <h4 class="breakdown-section-title">Outerwrap</h4>
+          <table
+            class="breakdown-table"
+            width="100%"
+            cellpadding="5"
+            cellspacing="0"
+          >
+            <tr>
+              <td
+                width="70%"
+                style="text-align: left; text-transform: capitalize"
+              >
+                <span id="outerwrap-option-display">None</span>
+              </td>
+              <td width="30%" style="text-align: right">
+                <span id="outerwrap-option-sub-price" style="display: none"
+                  >$0.00</span
+                >
+                <span id="outerwrap-fee-breakdown-display">$0.00</span>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Download Cards Section -->
+        <div
+          class="breakdown-section-wrapper"
+          id="download-cards-section-wrapper"
+        >
+          <h4 class="breakdown-section-title">Download Cards</h4>
+          <table
+            class="breakdown-table"
+            width="100%"
+            cellpadding="5"
+            cellspacing="0"
+          >
+            <tr>
+              <td
+                width="70%"
+                style="text-align: left; text-transform: capitalize"
+              >
+                <span id="download-card-option-display">None</span>
+              </td>
+              <td width="30%" style="text-align: right">
+                <span id="download-card-option-sub-price" style="display: none"
+                  >$0.00</span
+                >
+                <span id="download-cards-fee-breakdown-display">$0.00</span>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Insertion Fee Section -->
+        <div class="breakdown-section-wrapper" id="insertion-section-wrapper">
+          <h4 class="breakdown-section-title">Insertion Fee</h4>
+          <table
+            class="breakdown-table"
+            width="100%"
+            cellpadding="5"
+            cellspacing="0"
+          >
+            <tr>
+              <td width="70%" style="text-align: left">
+                Insertion of Inner Sleeve
+              </td>
+              <td width="30%" style="text-align: right">
+                <span id="insertion-of-sleeve-price-display">$0.00</span>
+              </td>
+            </tr>
+            <tr>
+              <td width="70%" style="text-align: left">
+                Insertion of Printed Insert
+              </td>
+              <td width="30%" style="text-align: right">
+                <span id="insertion-of-insert-price-display">$0.00</span>
+              </td>
+            </tr>
+            <tr>
+              <td width="70%" style="text-align: left">Insertion of Jacket</td>
+              <td width="30%" style="text-align: right">
+                <span id="insertion-of-jacket-price-display">$0.00</span>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Misc Charges Section -->
+        <div class="breakdown-section-wrapper" id="misc-section-wrapper">
+          <h4 class="breakdown-section-title">Misc. Charges</h4>
+          <table
+            class="breakdown-table"
+            width="100%"
+            cellpadding="5"
+            cellspacing="0"
+          >
+            <tr>
+              <td width="70%" style="text-align: left; display: none"></td>
+              <td width="30%" style="text-align: right">
+                <span id="misc-fee-breakdown-display">$0.00</span>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Total Cost Section -->
+        <div class="breakdown-total-section">
+          <h2 class="breakdown-total-title">Total Cost</h2>
+          <p class="breakdown-total-price" id="order-total-display">$0.00</p>
+          <p class="breakdown-total-per-unit" id="order-total-per-unit">
+            $0.00/copy
+          </p>
+        </div>
+
+        <button id="continue-editing-button" class="button-primary">
+          Continue Editing
+        </button>
       </div>
     </div>
 
@@ -1266,7 +1527,7 @@
                   jacketDisplay.style.display = "block";
                 } else {
                   jacketDisplay.style.backgroundImage = "";
-                  jacketDisplay.style.backgroundColor = "#ff8c42";
+                  jacketDisplay.style.backgroundColor = "#fdb813";
                   if (jacketImage) {
                     jacketImage.style.display = "none";
                   }
@@ -1333,6 +1594,168 @@
 
         // Immediate attempt
         setTimeout(initAll, 50);
+      })();
+
+      // Map builder.js display changes to section wrappers
+      (function () {
+        // Mapping of display element IDs to their section wrapper IDs
+        const sectionMapping = {
+          "setup-fee-breakdown-display": "setup-section-wrapper",
+          "cutting-fee-breakdown-display": "cutting-section-wrapper",
+          "plating-fee-breakdown-display": "plating-section-wrapper",
+          "stampers-fee-breakdown-display": "stampers-section-wrapper",
+          "mastering-breakdown-display": "mastering-section-wrapper",
+          "center-labels-fee-breakdown-display":
+            "center-labels-section-wrapper",
+          "records-fee-breakdown-display": "records-section-wrapper",
+          "inner-sleeve-fee-breakdown-display": "inner-sleeve-section-wrapper",
+          "jacket-fee-breakdown-display": "jacket-section-wrapper",
+          "insert-fee-breakdown-display": "insert-section-wrapper",
+          "outerwrap-fee-breakdown-display": "outerwrap-section-wrapper",
+          "download-cards-fee-breakdown-display":
+            "download-cards-section-wrapper",
+          "misc-fee-breakdown-display": "misc-section-wrapper",
+          "insertion-fee-breakdown-display": "insertion-section-wrapper",
+        };
+
+        function setupDisplayMapping() {
+          Object.keys(sectionMapping).forEach((displayId) => {
+            const displayEl = document.getElementById(displayId);
+            const sectionWrapper = document.getElementById(
+              sectionMapping[displayId]
+            );
+
+            if (displayEl && sectionWrapper) {
+              // Watch for changes to the display element's parent's style
+              const observer = new MutationObserver(() => {
+                // Check if the display element's parent is hidden
+                const parent = displayEl.parentElement;
+                if (parent) {
+                  const parentDisplay = window.getComputedStyle(parent).display;
+                  if (parentDisplay === "none") {
+                    sectionWrapper.style.display = "none";
+                  } else if (parentDisplay !== "none" && parentDisplay !== "") {
+                    sectionWrapper.style.display = "block";
+                  }
+                }
+              });
+
+              // Watch the parent element for style changes
+              const parent = displayEl.parentElement;
+              if (parent) {
+                observer.observe(parent, {
+                  attributes: true,
+                  attributeFilter: ["style"],
+                  subtree: false,
+                });
+              }
+            }
+          });
+        }
+
+        // Run after builder.js has loaded
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", () => {
+            setTimeout(setupDisplayMapping, 1500);
+          });
+        } else {
+          setTimeout(setupDisplayMapping, 1500);
+        }
+
+        // Function to sync total price from visualizer to modal
+        function syncTotalPrice() {
+          const visualizerTotal = document.getElementById(
+            "slider-total-price-display-visualizer"
+          );
+          const visualizerPerUnit = document.getElementById(
+            "slider-total-price-per-unit-visualizer"
+          );
+          const modalTotal = document.getElementById("order-total-display");
+          const modalPerUnit = document.getElementById("order-total-per-unit");
+
+          if (visualizerTotal && modalTotal) {
+            const visualizerPrice = visualizerTotal.innerText.trim();
+            if (visualizerPrice && visualizerPrice !== "$0.00") {
+              modalTotal.innerText = visualizerPrice;
+            }
+          }
+
+          if (visualizerPerUnit && modalPerUnit) {
+            const perUnitText = visualizerPerUnit.innerText.trim();
+            if (perUnitText && perUnitText !== "$0.00") {
+              // Remove any existing /copy or /per unit suffix
+              const priceOnly = perUnitText.replace(/\/.*$/, "");
+              modalPerUnit.innerText = priceOnly + "/copy";
+            }
+          }
+        }
+
+        // Also run when modal opens
+        const modal = document.getElementById("pricing-breakdown-modal");
+        if (modal) {
+          const modalObserver = new MutationObserver(() => {
+            if (modal.classList.contains("visible")) {
+              setTimeout(setupDisplayMapping, 100);
+              // Sync total price from visualizer to modal after a delay to ensure builder.js has run
+              setTimeout(() => {
+                syncTotalPrice();
+                // Also sync after builder.js updates (give it a moment)
+                setTimeout(syncTotalPrice, 200);
+              }, 100);
+            }
+          });
+          modalObserver.observe(modal, {
+            attributes: true,
+            attributeFilter: ["class"],
+          });
+        }
+
+        // Watch for changes to the visualizer total price and sync to modal
+        function setupPriceSync() {
+          const visualizerTotal = document.getElementById(
+            "slider-total-price-display-visualizer"
+          );
+          const visualizerPerUnit = document.getElementById(
+            "slider-total-price-per-unit-visualizer"
+          );
+
+          if (visualizerTotal) {
+            const totalObserver = new MutationObserver(() => {
+              // Only sync if modal is visible
+              if (modal && modal.classList.contains("visible")) {
+                syncTotalPrice();
+              }
+            });
+            totalObserver.observe(visualizerTotal, {
+              childList: true,
+              characterData: true,
+              subtree: true,
+            });
+          }
+
+          if (visualizerPerUnit) {
+            const perUnitObserver = new MutationObserver(() => {
+              // Only sync if modal is visible
+              if (modal && modal.classList.contains("visible")) {
+                syncTotalPrice();
+              }
+            });
+            perUnitObserver.observe(visualizerPerUnit, {
+              childList: true,
+              characterData: true,
+              subtree: true,
+            });
+          }
+        }
+
+        // Set up price sync after DOM is ready
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", () => {
+            setTimeout(setupPriceSync, 1000);
+          });
+        } else {
+          setTimeout(setupPriceSync, 1000);
+        }
       })();
     </script>
   </body>
