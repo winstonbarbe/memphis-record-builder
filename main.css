@@ -58,6 +58,88 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #fafafa;
+  padding: 2rem;
+  position: relative;
+}
+
+/* Visualizer Jacket Display (Orange Square) */
+.visualizer-jacket-display {
+  width: 300px;
+  height: 300px;
+  background-color: #ff8c42;
+  border: 2px solid #000;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-85%, -50%);
+  z-index: 4;
+  flex-shrink: 0;
+}
+
+/* When background-image is set, hide the orange background */
+#builder-jacket-front-display[style*="background-image"] {
+  background-color: transparent !important;
+}
+
+/* Visualizer Records Container */
+.visualizer-records-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-15%, -50%);
+  min-height: 300px;
+  min-width: 300px;
+}
+
+/* Visualizer Record Discs */
+.visualizer-record-display {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  transition: all 0.3s ease;
+  border: 2px solid #000;
+}
+
+.visualizer-record-display.record-disc-1 {
+  z-index: 3;
+  transform: translate(0, 0);
+}
+
+.visualizer-record-display.record-disc-2 {
+  z-index: 2;
+  transform: translate(25px, 0);
+}
+
+.visualizer-record-display.record-disc-3 {
+  z-index: 1;
+  transform: translate(50px, 0);
+}
+
+/* Record Center Label */
+.record-label-center {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 2px solid #000;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
 }
 
 /* Visualizer Quantity Section */
@@ -382,7 +464,7 @@ body {
   font-weight: bold;
 }
 
-/* Visualizer Display */
+/* Visualizer Display - Legacy support */
 .visualizer-display {
   width: 300px;
   height: 300px;
@@ -392,11 +474,10 @@ body {
   margin: 1rem;
 }
 
-#builder-jacket-front-display {
-  background-image: url("https://uploads-ssl.webflow.com/65ce69671190e385bf638294/66bf9b13573b54cfa514ec51_default_record_image.png");
-}
-
-#builder-record-display {
+/* Default record image */
+#builder-record-display,
+#builder-record-display-2,
+#builder-record-display-3 {
   background-image: url("https://uploads-ssl.webflow.com/65ce69671190e385bf638294/66bf9b13573b54cfa514ec51_default_record_image.png");
 }
 

@@ -696,11 +696,47 @@
           </div>
         </div>
         <div id="visualizer">
+          <!-- Jacket Cover (Orange Square) -->
           <div
             id="builder-jacket-front-display"
-            class="visualizer-display"
-          ></div>
-          <div id="builder-record-display" class="visualizer-display"></div>
+            class="visualizer-jacket-display"
+          >
+            <img
+              id="jacket-image-display"
+              style="
+                display: none;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              "
+              alt="Jacket Cover"
+            />
+          </div>
+
+          <!-- Record Discs Container -->
+          <div class="visualizer-records-container">
+            <!-- Disc 1 - Keep original ID for builder.js compatibility -->
+            <div
+              id="builder-record-display"
+              class="visualizer-record-display record-disc-1"
+            >
+              <div class="record-label-center" id="record-label-1"></div>
+            </div>
+            <div
+              id="builder-record-display-2"
+              class="visualizer-record-display record-disc-2"
+              style="display: none"
+            >
+              <div class="record-label-center" id="record-label-2"></div>
+            </div>
+            <div
+              id="builder-record-display-3"
+              class="visualizer-record-display record-disc-3"
+              style="display: none"
+            >
+              <div class="record-label-center" id="record-label-3"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -879,7 +915,8 @@
       // Sync quantity selects and pricing displays between form and visualizer
       // Use an IIFE to avoid conflicts with builder.js variables
       (function () {
-        window.addEventListener("DOMContentLoaded", () => {
+        // Wait for both DOM and builder.js to be ready
+        function initAll() {
           const qtyInput = document.getElementById("record-quantity");
           const qtyVisualizer = document.getElementById(
             "record-quantity-visualizer"
@@ -970,7 +1007,247 @@
               pricingButton.click();
             });
           }
+
+          // Control disc visibility based on amount selection
+          const amountInput = document.getElementById("record-amount");
+          const recordDisc1 = document.getElementById("builder-record-display");
+          const recordDisc2 = document.getElementById(
+            "builder-record-display-2"
+          );
+          const recordDisc3 = document.getElementById(
+            "builder-record-display-3"
+          );
+
+          function updateDiscVisibility() {
+            if (!amountInput) return;
+
+            const amount = amountInput.value;
+
+            // Show/hide discs based on selection
+            if (recordDisc1) recordDisc1.style.display = "block";
+            if (recordDisc2)
+              recordDisc2.style.display =
+                amount === "double" || amount === "triple" ? "block" : "none";
+            if (recordDisc3)
+              recordDisc3.style.display =
+                amount === "triple" ? "block" : "none";
+          }
+
+          // Initial update
+          updateDiscVisibility();
+
+          // Update when amount changes
+          if (amountInput) {
+            amountInput.addEventListener("change", updateDiscVisibility);
+          }
+
+          // Sync record images to all visible discs from disc 1 (which builder.js updates)
+          // Watch for changes to the original record display (from builder.js)
+          if (recordDisc1) {
+            const recordObserver = new MutationObserver(() => {
+              const bgImage =
+                window.getComputedStyle(recordDisc1).backgroundImage;
+              if (bgImage && bgImage !== "none" && bgImage !== 'url("")') {
+                if (recordDisc2) recordDisc2.style.backgroundImage = bgImage;
+                if (recordDisc3) recordDisc3.style.backgroundImage = bgImage;
+              }
+            });
+            recordObserver.observe(recordDisc1, {
+              attributes: true,
+              attributeFilter: ["style"],
+              subtree: true,
+            });
+
+            // Also use polling to catch style changes
+            let lastRecordImage = "";
+            setInterval(() => {
+              const currentImage =
+                window.getComputedStyle(recordDisc1).backgroundImage;
+              if (
+                currentImage !== lastRecordImage &&
+                currentImage !== "none" &&
+                currentImage !== 'url("")'
+              ) {
+                lastRecordImage = currentImage;
+                if (recordDisc2)
+                  recordDisc2.style.backgroundImage = currentImage;
+                if (recordDisc3)
+                  recordDisc3.style.backgroundImage = currentImage;
+              }
+            }, 100);
+          }
+
+          // Handle label upload to display on record center labels
+          const labelUpload = document.querySelector(
+            "input[name='label-front-upload']"
+          );
+          const recordLabel1 = document.getElementById("record-label-1");
+          const recordLabel2 = document.getElementById("record-label-2");
+          const recordLabel3 = document.getElementById("record-label-3");
+
+          if (labelUpload && recordLabel1) {
+            labelUpload.addEventListener(
+              "change",
+              (e) => {
+                const file = labelUpload.files[0];
+                if (file) {
+                  const imageUrl = URL.createObjectURL(file);
+
+                  // Set label image on all visible discs
+                  if (recordLabel1) {
+                    recordLabel1.style.backgroundImage = `url(${imageUrl})`;
+                    recordLabel1.style.backgroundSize = "cover";
+                    recordLabel1.style.backgroundPosition = "center";
+                    recordLabel1.style.backgroundRepeat = "no-repeat";
+                  }
+                  if (recordLabel2) {
+                    recordLabel2.style.backgroundImage = `url(${imageUrl})`;
+                    recordLabel2.style.backgroundSize = "cover";
+                    recordLabel2.style.backgroundPosition = "center";
+                    recordLabel2.style.backgroundRepeat = "no-repeat";
+                  }
+                  if (recordLabel3) {
+                    recordLabel3.style.backgroundImage = `url(${imageUrl})`;
+                    recordLabel3.style.backgroundSize = "cover";
+                    recordLabel3.style.backgroundPosition = "center";
+                    recordLabel3.style.backgroundRepeat = "no-repeat";
+                  }
+                } else {
+                  // Clear labels if file removed
+                  if (recordLabel1) recordLabel1.style.backgroundImage = "";
+                  if (recordLabel2) recordLabel2.style.backgroundImage = "";
+                  if (recordLabel3) recordLabel3.style.backgroundImage = "";
+                }
+              },
+              true
+            );
+          }
+
+          // Ensure jacket image displays properly
+          // Handle jacket upload directly to ensure it displays
+          const jacketUpload = document.querySelector(
+            "input[name='jacket-front-upload']"
+          );
+          const jacketDisplay = document.getElementById(
+            "builder-jacket-front-display"
+          );
+
+          if (jacketUpload && jacketDisplay) {
+            // Add our own change handler that sets the image
+            // Try using img element as fallback
+            const jacketImage = document.getElementById("jacket-image-display");
+
+            jacketUpload.addEventListener(
+              "change",
+              (e) => {
+                const file = jacketUpload.files[0];
+                if (file) {
+                  const imageUrl = URL.createObjectURL(file);
+
+                  // Method 1: Try background-image
+                  jacketDisplay.style.setProperty(
+                    "background-image",
+                    `url(${imageUrl})`,
+                    "important"
+                  );
+                  jacketDisplay.style.setProperty(
+                    "background-size",
+                    "cover",
+                    "important"
+                  );
+                  jacketDisplay.style.setProperty(
+                    "background-position",
+                    "center",
+                    "important"
+                  );
+                  jacketDisplay.style.setProperty(
+                    "background-repeat",
+                    "no-repeat",
+                    "important"
+                  );
+                  jacketDisplay.style.setProperty(
+                    "background-color",
+                    "transparent",
+                    "important"
+                  );
+
+                  // Method 2: Also set img element as backup
+                  if (jacketImage) {
+                    jacketImage.src = imageUrl;
+                    jacketImage.style.display = "block";
+                  }
+
+                  // Ensure it's visible
+                  jacketDisplay.style.display = "block";
+                } else {
+                  jacketDisplay.style.backgroundImage = "";
+                  jacketDisplay.style.backgroundColor = "#ff8c42";
+                  if (jacketImage) {
+                    jacketImage.style.display = "none";
+                  }
+                }
+              },
+              true
+            ); // Use capture phase
+
+            // Also monitor for changes from builder.js (in case it runs after)
+            const jacketObserver = new MutationObserver(() => {
+              const bgImage = jacketDisplay.style.backgroundImage;
+              if (
+                bgImage &&
+                bgImage !== "none" &&
+                bgImage !== "" &&
+                bgImage !== 'url("")'
+              ) {
+                // Ensure the image is visible with proper styling
+                jacketDisplay.style.backgroundImage = bgImage;
+                jacketDisplay.style.backgroundSize = "cover";
+                jacketDisplay.style.backgroundPosition = "center";
+                jacketDisplay.style.backgroundRepeat = "no-repeat";
+              }
+            });
+
+            jacketObserver.observe(jacketDisplay, {
+              attributes: true,
+              attributeFilter: ["style"],
+              subtree: true,
+            });
+
+            // Check on load if there's already an image
+            setTimeout(() => {
+              const bgImage = jacketDisplay.style.backgroundImage;
+              if (
+                bgImage &&
+                bgImage !== "none" &&
+                bgImage !== "" &&
+                bgImage !== 'url("")'
+              ) {
+                jacketDisplay.style.backgroundSize = "cover";
+                jacketDisplay.style.backgroundPosition = "center";
+                jacketDisplay.style.backgroundRepeat = "no-repeat";
+              }
+            }, 500);
+          } else {
+            // Try again after a delay
+            setTimeout(initAll, 1000);
+          }
+        }
+
+        // Try multiple times to ensure elements are found
+        if (document.readyState === "loading") {
+          window.addEventListener("DOMContentLoaded", initAll);
+        } else {
+          // DOM already loaded
+          setTimeout(initAll, 100);
+        }
+
+        // Also try after builder.js has had time to run
+        window.addEventListener("load", () => {
+          setTimeout(initAll, 500);
         });
+
+        // Immediate attempt
+        setTimeout(initAll, 50);
       })();
     </script>
   </body>
