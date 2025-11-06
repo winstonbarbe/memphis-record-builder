@@ -1,0 +1,1570 @@
+[
+  {
+    "name": "CB01",
+    "fullName": "CB01 - Cocoa Cream",
+    "type": "cream (cb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66bce275d84ad768b2bd3cdf_CB01%20-%20Cocoa%20CreamLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66bce27258f9a2b25aa24b6b_CB01%20-%20Cocoa%20CreamSMALL.png",
+    "slug": "cb01---cocoa-cream-2"
+  },
+  {
+    "name": "CB04",
+    "fullName": "CB04-Blueberry Cream",
+    "type": "cream (cb) blends",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66bce2a37fe7ff0877999f36_CB04%20-%20Blueberry%20CreamLARGE.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66bce29fcaf342fae362e4f0_CB04%20-%20Blueberry%20CreamSMALL.png",
+    "slug": "cb04---blueberry-cream-2"
+  },
+  {
+    "name": "CB05",
+    "fullName": "CB05-Sea Salt Cream",
+    "type": "cream (cb) blends",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66bce2f93bd0712865de7fb1_CB05%20-%20Sea%20Salt%20CreamLARGE.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66bce2f673f69e88dc6aff61_CB05%20-%20Sea%20Salt%20CreamSMALL.png",
+    "slug": "cb05---sea-salt-cream-2"
+  },
+  {
+    "name": "CB07",
+    "fullName": "CB07 - Fig Cream",
+    "type": "cream (cb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66bce31904facc5b981b78ae_CB07%20-%20Fig%20CreamLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66bce3159738070be65481f3_CB07%20-%20Fig%20CreamSMALL.png",
+    "slug": "cb07---fig-cream-2"
+  },
+  {
+    "name": "CB08",
+    "fullName": "CB08 - Mushroom Cream",
+    "type": "cream (cb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66bce335ae3c251ec95e1058_CB08%20-%20Mushroom%20CreamLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66bce33229eaf715128c27fb_CB08%20-%20Mushroom%20CreamSMALL.png",
+    "slug": "cb08---mushroom-cream-2"
+  },
+  {
+    "name": "CB09",
+    "fullName": "CB09 - Honey Dew Melon Cream",
+    "type": "cream (cb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66bce3c94667e46ce8c9cbf3_CB09%20-%20Honey%20Dew%20Melon%20CreamLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66bce3c685440f10f0e2d978_CB09%20-%20Honey%20Dew%20Melon%20CreamSMALL.png",
+    "slug": "cb09---honey-dew-melon-cream-2"
+  },
+  {
+    "name": "CB11",
+    "fullName": "CB11 - Watermelon Cream",
+    "type": "cream (cb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66bce3ed513832b561bf71f5_CB11%20-%20Watermelon%20CreamLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66bce3e97fe7ff08779aba82_CB11%20-%20Watermelon%20CreamSMALL.png",
+    "slug": "cb11---watermelon-cream-2"
+  },
+  {
+    "name": "CB13",
+    "fullName": "CB13 - Guava Cream",
+    "type": "cream (cb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66bce40e57a62337534cab6e_CB13%20-%20Guava%20CreamLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66bce408a804e144c451cecd_CB13%20-%20Guava%20CreamSMALL.png",
+    "slug": "cb13---guava-cream-2"
+  },
+  {
+    "name": "CB14",
+    "fullName": "CB14 - Pear Cream",
+    "type": "cream (cb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66bce4313c2d5ec90a5e3352_CB14%20-%20Pear%20CreamLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66bce42daa05ece83f9a0fd4_CB14%20-%20Pear%20CreamSMALL.png",
+    "slug": "cb14---pear-cream-2"
+  },
+  {
+    "name": "CB15",
+    "fullName": "CB15 - Blue Raspberry Cream",
+    "type": "cream (cb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66bce4507ef8ec4beb0b3e49_CB15%20-%20Blue%20Raspberry%20CreamLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66bce44d3f3a5386300fc507_CB15%20-%20Blue%20Raspberry%20CreamSMALL.png",
+    "slug": "cb15---blue-raspberry-cream-2"
+  },
+  {
+    "name": "CB20",
+    "fullName": "CB20- Green Apple Cream",
+    "type": "cream (cb) blends",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eaf63ca5af12561e2b00d7_CB20-%20Green%20Apple%20Cream.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eaf627fdc8e09d361bae9d_CB20-%20Green%20Apple%20Cream.png",
+    "slug": "cb20--green-apple-cream"
+  },
+  {
+    "name": "ECO1",
+    "fullName": "ECO1 - Blues",
+    "type": "ecomix",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/6662059d8e590be93759e90b_663bf33037b79ff5717d4a9e_ECO1-Blue_wave.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/6662059d8e590be93759e908_663bf33037b79ff5717d4a9e_ECO1-Blue_wave.png",
+    "slug": "eco1---blues"
+  },
+  {
+    "name": "ECO2",
+    "fullName": "ECO2 - Greens",
+    "type": "ecomix",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/6662059d8e590be93759e90e_663bf383e33983dfdaee8ab3_ECO2-Green.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/6662059d8e590be93759e911_663bf383e33983dfdaee8ab3_ECO2-Green.png",
+    "slug": "eco2---greens"
+  },
+  {
+    "name": "ECO3",
+    "fullName": "ECO3 - Magentas",
+    "type": "ecomix",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/6662059d30dcfc8e3124a164_663bf3bf67d5a3d2576ca97e_ECO3-Magentas.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/6662059d30dcfc8e3124a161_663bf3bf67d5a3d2576ca97e_ECO3-Magentas.png",
+    "slug": "eco3---magentas"
+  },
+  {
+    "name": "ECO4",
+    "fullName": "ECO4 - Yellows",
+    "type": "ecomix",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/6662059cabd5e185c0e56659_663bf3d30a4ee964dc7b29ea_ECO4-Yellows.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/6662059cabd5e185c0e5665c_663bf3d30a4ee964dc7b29ea_ECO4-Yellows.png",
+    "slug": "eco4---yellows"
+  },
+  {
+    "name": "ECO5",
+    "fullName": "ECO5 - Reds",
+    "type": "ecomix",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/6662059da48eb46a51f4a055_663bf3f35acff5c9afa05193_ECO5-Red.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/6662059da48eb46a51f4a058_663bf3f35acff5c9afa05193_ECO5-Red.png",
+    "slug": "eco5---reds"
+  },
+  {
+    "name": "ECO6",
+    "fullName": "ECO6 - Grays",
+    "type": "ecomix",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/6662059d752e8c31ab1611db_663bf40c6891378609a7e01f_ECO6-Grays.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/6662059d752e8c31ab1611d8_663bf40c6891378609a7e01f_ECO6-Grays.png",
+    "slug": "eco6---grays"
+  },
+  {
+    "name": "G01",
+    "fullName": "G01-Glow Green",
+    "type": "solids - neon",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66e9ec3a9cb46799447a3b11_G01-Glow-Green.png.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66e9ec189b9c9d613531172e_G01-Glow-Green.png.png",
+    "slug": "g01-glow-green"
+  },
+  {
+    "name": "HB01",
+    "fullName": "HB01-Metallic-Gold",
+    "type": "metallic (hb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c89cc3b626d4c25188b0f0_HB01-Metallic-GoldLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66bcf03f76f0d424bf546b77_HB01-Metallic-GoldSMALL.png.png",
+    "slug": "hb01-metallic-gold"
+  },
+  {
+    "name": "HB02",
+    "fullName": "HB02-Metallic-Silver",
+    "type": "metallic (hb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c89ce5b6dc002d3e734557_HB02-Metallic-SilverLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c89cdf02fc9b7e1607c6d3_HB02-Metallic-SilverSMALL.png.png",
+    "slug": "hb02-metallic-silver"
+  },
+  {
+    "name": "HB03",
+    "fullName": "HB03-Metallic Copper",
+    "type": "metallic (hb) blends",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eaf67611dbd47ac63b30cc_HB03-Metallic%20Copper.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eaf67b346d4381999995aa_HB03-Metallic%20Copper.png",
+    "slug": "hb03-metallic-copper"
+  },
+  {
+    "name": "HB04",
+    "fullName": "HB04-Iridescent-Blue",
+    "type": "metallic (hb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c89dccee236a7588d38e05_HB04-Iridescent-Blue-300x300LARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c89dc71adf2f3e43b671c8_HB04-Iridescent-Blue-300x300SMALL.png.png",
+    "slug": "hb04-iridescent-blue"
+  },
+  {
+    "name": "HB05",
+    "fullName": "HB05-Iridescent White w/ Blue",
+    "type": "metallic (hb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c89e1d5a8aa230999d5b20_HB05-Iridescent-White-w-BlueLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c89e191be1af81d47dbd06_HB05-Iridescent-White-w-BlueSMALL.png.png",
+    "slug": "hb05-iridescent-white-w-blue"
+  },
+  {
+    "name": "HB06",
+    "fullName": "HB06 Iridescent Green",
+    "type": "metallic (hb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c89e4dba967fb6a5d2d2b1_HB06-Iridescent-GreenLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c89e4861640e8d37d4e01d_HB06-Iridescent-GreenSMALL.png.png",
+    "slug": "hb06-iridescent-green"
+  },
+  {
+    "name": "HB07",
+    "fullName": "HB07 Fluorescent Pink",
+    "type": "metallic (hb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c89e76502d2278b74ea4b3_HB07-Fluorescent-PinkLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c89e71ba967fb6a5d2f574_HB07-Fluorescent-PinkSMALL.png.png",
+    "slug": "hb07-fluorescent-pink"
+  },
+  {
+    "name": "HB08",
+    "fullName": "HB08-Fluorescent Yellow",
+    "type": "metallic (hb) blends",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eaf6eb34ce256404ce5fc3_HB08-Fluorescent%20Yellow.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eaf6ebb53782e85c3ec88f_HB08-Fluorescent%20Yellow.png",
+    "slug": "hb08-fluorescent-yellow"
+  },
+  {
+    "name": "HB09",
+    "fullName": "HB09-Fluorescent Green",
+    "type": "metallic (hb) blends",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eaf7110e21097665f92166_HB09-Fluorescent%20Green.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eaf716ed3ec56c375e7856_HB09-Fluorescent%20Green.png",
+    "slug": "hb09-fluorescent-green"
+  },
+  {
+    "name": "HB10",
+    "fullName": "HB10 Metallic Marble",
+    "type": "metallic (hb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c89e9b9aa4235c0bc3cc77_HB10-Metallic-MarbleLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c89e963b83a200869474b9_HB10-Metallic-MarbleSMALL.png.png",
+    "slug": "hb10-metallic-marble"
+  },
+  {
+    "name": "HB11",
+    "fullName": "HB11-Royalty",
+    "type": "metallic (hb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c89ed2a25b293ddfa693fa_HB11-RoyaltyLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c89eb4bc429bee9ac79112_HB11-RoyaltySMALL.png.png",
+    "slug": "hb11-royalty"
+  },
+  {
+    "name": "HB12",
+    "fullName": "HB12 Go Tigers",
+    "type": "metallic (hb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c89efd03e7f3fbd8a756b2_HB12-Go-TigersLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c89ef785b79b32759b1c98_HB12-Go-TigersSMALL.png.png",
+    "slug": "hb12-go-tigers"
+  },
+  {
+    "name": "HB13",
+    "fullName": "HB13 Mercury",
+    "type": "metallic (hb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8a117dc1ea65049de7b8c_HB13-MercuryLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8a112c4f387dff8eca37b_HB13-MercurySMALL.png.png",
+    "slug": "hb13-mercury"
+  },
+  {
+    "name": "HB14",
+    "fullName": "HB14-Centurion",
+    "type": "metallic (hb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8a146e05be8b776009611_HB14-CenturionLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8a1404a4a5419dea9bf95_HB14-CenturionSMALL.png.png",
+    "slug": "hb14-centurion"
+  },
+  {
+    "name": "HB15",
+    "fullName": "HB15-Bioluminescence",
+    "type": "metallic (hb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8a19475eace1737975822_HB15-BioluminescenceLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8a18fbad75ddf681a1c82_HB15-BioluminescenceSMALL.png.png",
+    "slug": "hb15-bioluminescence"
+  },
+  {
+    "name": "HB16",
+    "fullName": "HB16-Garland",
+    "type": "metallic (hb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8a24ddb0339c67f906195_HB16-GarlandLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8a247fcdcac5d1da65a92_HB16-GarlandSMALL.png.png",
+    "slug": "hb16-garland"
+  },
+  {
+    "name": "HB17",
+    "fullName": "HB17-Rust-Alloy",
+    "type": "metallic (hb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66bcf0d9d7ea8751fd8af6ae_HB17-Rust-AlloyLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66bcf0d319c5386fd7094861_HB17-Rust-AlloySMALL.png.png",
+    "slug": "hb17-rust-alloy"
+  },
+  {
+    "name": "HB18",
+    "fullName": "HB18-Tinseltown",
+    "type": "metallic (hb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66bcf0ff4da4b785f35be579_HB18-TinseltownLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66bcf0f999e530c7e8f4b402_HB18-TinseltownSMALL.png.png",
+    "slug": "hb18-tinseltown"
+  },
+  {
+    "name": "HB19",
+    "fullName": "HB19-Christmas-Tree",
+    "type": "metallic (hb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66bcf123d16ca590dce4d342_HB19-Christmas-TreeSMALL.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66bcf123d16ca590dce4d342_HB19-Christmas-TreeSMALL.png.png",
+    "slug": "hb19-christmas-tree"
+  },
+  {
+    "name": "HB20",
+    "fullName": "HB20-Poseidon",
+    "type": "metallic (hb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c89bcfa3eb973454345ae2_HB20-PoseidonLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c89bca5648655842851517_HB20-PoseidonSMALL.png.png",
+    "slug": "hb20-poseidon"
+  },
+  {
+    "name": "HB21",
+    "fullName": "HB21-Khaki Brown",
+    "type": "metallic (hb) blends",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eaf74592a1b977570633d9_HB21-Khaki%20Brown.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eaf73f707dbea6bb438cd7_HB21-Khaki%20Brown.png",
+    "slug": "hb21-khaki-brown"
+  },
+  {
+    "name": "HB22",
+    "fullName": "HB22-Jawbreaker",
+    "type": "metallic (hb) blends",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eaf75f6d60e0077b5da05a_HB22-%20Jawbreaker.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eaf7647fd1ae96dbfe8e87_HB22-%20Jawbreaker.png",
+    "slug": "hb22-jawbreaker"
+  },
+  {
+    "name": "HB23",
+    "fullName": "HB23-Rainbow Road",
+    "type": "metallic (hb) blends",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eaf7a1d1f85fa8ce8201f5_HB23-%20Rainbow%20Road.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eaf79a4ebc3bd6a262cfbf_HB23-%20Rainbow%20Road.png",
+    "slug": "hb23-rainbow-road"
+  },
+  {
+    "name": "HB24",
+    "fullName": "HB24-Baby Shower",
+    "type": "metallic (hb) blends",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eaf7c043d67ed1a39481a9_HB24-%20Baby%20Shower.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eaf7c3146c999f1a9436f4_HB24-%20Baby%20Shower.png",
+    "slug": "hb24-baby-shower"
+  },
+  {
+    "name": "HB25",
+    "fullName": "HB25-Galaxy",
+    "type": "metallic (hb) blends",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eaf7eba0469ebd4911bca9_HB25-%20Galaxy.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eaf7e4fdc8e09d361d3376_HB25-%20Galaxy.png",
+    "slug": "hb25-galaxy"
+  },
+  {
+    "name": "HB26",
+    "fullName": "HB26-Gun Metal Gray",
+    "type": "metallic (hb) blends",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eaf814fcbd10b4e226eed2_HB26-%20Gun%20Metal%20Gray.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eaf8183b410b0a59b6ef63_HB26-%20Gun%20Metal%20Gray.png",
+    "slug": "hb26-gun-metal-gray"
+  },
+  {
+    "name": "HB27",
+    "fullName": "HB27-Cocoa Brown",
+    "type": "metallic (hb) blends",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eaf840aa7f4765a6b474d3_HB27-%20Cocoa%20Brown.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eaf83b92a1b97757071844_HB27-%20Cocoa%20Brown.png",
+    "slug": "hb27-cocoa-brown"
+  },
+  {
+    "name": "HB28",
+    "fullName": "HB28-Peach",
+    "type": "metallic (hb) blends",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eaf864d9eea059ce8dcde1_HB28-%20Peach.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eaf8695cdb8b4873d685ee_HB28-%20Peach.png",
+    "slug": "hb28-peach"
+  },
+  {
+    "name": "HB29",
+    "fullName": "HB29-Grass Green",
+    "type": "metallic (hb) blends",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eaf883fcbd10b4e2276902_HB29-%20Grass%20Green.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eaf87b74af96fb53311370_HB29-%20Grass%20Green.png",
+    "slug": "hb29-grass-green"
+  },
+  {
+    "name": "HB30",
+    "fullName": "HB30-Iridescent Gold",
+    "type": "metallic (hb) blends",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eaf8a1091a536d49cf9b68_HB30-%20Iridescent%20Gold.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eaf8a6d9eea059ce8e06b1_HB30-%20Iridescent%20Gold.png",
+    "slug": "hb30-iridescent-gold"
+  },
+  {
+    "name": "HB31",
+    "fullName": "HB31-Metallic Blue",
+    "type": "metallic (hb) blends",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eaf935a9187f8590bd78ff_HB31-%20Metallic%20Blue.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eaf93a43d67ed1a395ba59_HB31-%20Metallic%20Blue.png",
+    "slug": "hb31-metallic-blue"
+  },
+  {
+    "name": "HB32",
+    "fullName": "HB32-Autobots",
+    "type": "metallic (hb) blends",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eaf96523d8bd40a1221dd7_HB32-%20Autobots.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eaf95fc6bbcdfc80e58e7b_HB32-%20Autobots.png",
+    "slug": "hb32-autobots"
+  },
+  {
+    "name": "HB33",
+    "fullName": "HB33-Decepticons",
+    "type": "metallic (hb) blends",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eaf98819ed23bb3768998a_HB33-%20Decepticons.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eaf98db4b054952a692199_HB33-%20Decepticons.png",
+    "slug": "hb33-decepticons"
+  },
+  {
+    "name": "MB01",
+    "fullName": "MB01-Sky",
+    "type": "standard (mb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8b21714868afe1c3bdc37_MB01-SkyLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8b217ba409133105103f0_MB01-SkySMALL.png.png",
+    "slug": "mb01-sky"
+  },
+  {
+    "name": "MB02",
+    "fullName": "MB02-Hardwood",
+    "type": "standard (mb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8b4c9efca96ab43b27fa2_MB02-HardwoodLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8b4d29d4e88c8fda6009a_MB02-HardwoodSMALL.png.png",
+    "slug": "mb02-hardwood"
+  },
+  {
+    "name": "MB03",
+    "fullName": "MB03-Flume",
+    "type": "standard (mb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8b457bded236fc0806cab_MB03-FlumeLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8b45fbeec1e7c6b14d70f_MB03-FlumeSMALL.png.png",
+    "slug": "mb03-flume"
+  },
+  {
+    "name": "MB04",
+    "fullName": "MB04-Limeade",
+    "type": "standard (mb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8b5db1753398d648e0b81_MB04-LimeadeLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8b5de798ce05b5844bb12_MB04-LimeadeSMALL.png.png",
+    "slug": "mb04-limeade"
+  },
+  {
+    "name": "MB07",
+    "fullName": "MB07-Lapis",
+    "type": "standard (mb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8b64d9ca076a1b8a883c5_MB07-Lapis-LazuliLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8b651fcf965d248ca1be5_MB07-Lapis-LazuliSMALL.png.png",
+    "slug": "mb07-lapis"
+  },
+  {
+    "name": "MB08",
+    "fullName": "MB08-Maelstrom",
+    "type": "standard (mb) blends",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eae846f9fd4a91d5440651_MB08%20Maelstrom.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eae840843b422e15609398_MB08%20Maelstrom.png",
+    "slug": "mb08-maelstrom"
+  },
+  {
+    "name": "MB09",
+    "fullName": "MB09-Serenity",
+    "type": "standard (mb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8b7e8fe73de95da2c9cdf_MB09-SerenityLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8b7e9fe73de95da2c9e12_MB09-SerenitySMALL.png.png",
+    "slug": "mb09-serenity"
+  },
+  {
+    "name": "MB10",
+    "fullName": "MB10-Tigers Eye",
+    "type": "standard (mb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8b84d6b7d9079afa8ca90_MB10-Tigers-EyeLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8b851c5e0cc64b9bb1205_MB10-Tigers-EyeSMALL.png.png",
+    "slug": "mb10-tigers-eye"
+  },
+  {
+    "name": "MB11",
+    "fullName": "MB11-Lily Pad",
+    "type": "standard (mb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8b875ce2afa565e6dee1e_MB11-Lily-PadLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8b877ab24652d04d76855_MB11-Lily-PadSMALL.png.png",
+    "slug": "mb11-lily-pad"
+  },
+  {
+    "name": "MB12",
+    "fullName": "MB12-Eggdrop",
+    "type": "standard (mb) blends",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eae6eb84beed5826e6442c_MB12-Eggdrop.png.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eae6ec91c219ecd10f7629_MB12-Eggdrop.png.png",
+    "slug": "mb12-eggdrop"
+  },
+  {
+    "name": "MB13",
+    "fullName": "MB13-Fog",
+    "type": "standard (mb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8b89ffcf965d248cc72fd_MB13-FogLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8b8a34822c135d9fe2c91_MB13-FogSMALL.png.png",
+    "slug": "mb13-fog"
+  },
+  {
+    "name": "MB14",
+    "fullName": "MB14-Smores",
+    "type": "standard (mb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8b8e6d11f6c295775a272_MB14-SmoresLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8b8e81573a1938bca6073_MB14-SmoresSMALL.png.png",
+    "slug": "mb14-smores"
+  },
+  {
+    "name": "MB15",
+    "fullName": "MB15-Dreamsicle",
+    "type": "standard (mb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8b91f7d5ae864c11f0cba_MB15-DreamsicleLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8b923925cfdad71c8a336_MB15-DreamsicleSMALL.png.png",
+    "slug": "mb15-dreamsicle"
+  },
+  {
+    "name": "MB16",
+    "fullName": "MB16-Sangria",
+    "type": "standard (mb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8b94f104f9ff1fb036a41_MB16-SangriaLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8b953e33aee7a9ec8d1fe_MB16-SangriaSMALL.png.png",
+    "slug": "mb16-sangria"
+  },
+  {
+    "name": "MB17",
+    "fullName": "MB17-Seaside",
+    "type": "standard (mb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8aa06f322da5f1e3a9489_MB17-Seaside-1LARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8aa01fcdcac5d1daed1ee_MB17-Seaside-1SMALL.png.png",
+    "slug": "mb17-seaside"
+  },
+  {
+    "name": "MB18",
+    "fullName": "MB18-Candy Fleece",
+    "type": "standard (mb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8aa35e2f065b4f163b063_MB18-Candy-FleeceLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8aa2f0af9c2b74045b414_MB18-Candy-FleeceSMALL.png.png",
+    "slug": "mb18-candy-fleece"
+  },
+  {
+    "name": "MB23",
+    "fullName": "MB23-Tidal Wave",
+    "type": "standard (mb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8accbe1f361b9905d0e76_MB23-Tidal-WaveLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8acc51c542c6803137b42_MB23-Tidal-WaveSMALL.png.png",
+    "slug": "mb23-tidal-wave"
+  },
+  {
+    "name": "MB29",
+    "fullName": "MB29-Caramel Apple",
+    "type": "standard (mb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8b979beec1e7c6b19a458_MB29-Caramel-AppleLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8b97fd1760249238772f3_MB29-Caramel-AppleSMALL.png.png",
+    "slug": "mb29-caramel-apple"
+  },
+  {
+    "name": "MB31",
+    "fullName": "MB31-Lemonade",
+    "type": "standard (mb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8b9a5784e184ed651fd62_MB31-Lemonade-1LARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8b9a9bfba08a8fd21a176_MB31-Lemonade-1SMALL.png.png",
+    "slug": "mb31-lemonade"
+  },
+  {
+    "name": "MB32",
+    "fullName": "MB32-Ghost",
+    "type": "standard (mb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8b9db80576490d93753a9_MB32-GhostLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8b9df87f6b0d6af48dc09_MB32-GhostSMALL.png.png",
+    "slug": "mb32-ghost"
+  },
+  {
+    "name": "MB36",
+    "fullName": "MB36-Mineral",
+    "type": "standard (mb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8bb3dfe71387c7dea237e_MB36-Mineral-1LARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8bb4253466d1f71bfcdbe_MB36-Mineral-1SMALL.png.png",
+    "slug": "mb36-mineral"
+  },
+  {
+    "name": "MB39",
+    "fullName": "MB39-Bubblegum",
+    "type": "standard (mb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8bb7589a067375090a67c_MB39-BubblegumLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8bb7cda1b278cc910ab1b_MB39-BubblegumSMALL.png.png",
+    "slug": "mb39-bubblegum"
+  },
+  {
+    "name": "MB45",
+    "fullName": "MB45-Surge",
+    "type": "standard (mb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8bc038b66cfbed40aab9a_MB45-SurgeLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8bc09aed2ab2a32022fc7_MB45-SurgeSMALL.png.png",
+    "slug": "mb45-surge"
+  },
+  {
+    "name": "MB48",
+    "fullName": "MB48-Yellow Jacket",
+    "type": "standard (mb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8bc465168c6e40541f57b_MB48-Yellow-JacketLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8bc498c0c65c25c18f8c0_MB48-Yellow-JacketSMALL.png.png",
+    "slug": "mb48-yellow-jacket"
+  },
+  {
+    "name": "MB49",
+    "fullName": "MB49-Poltergeist",
+    "type": "standard (mb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8bd420e2990d07248c3ac_MB49-PoltergeistLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8bd4a3387f30ad06d4000_MB49-PoltergeistSMALL.png.png",
+    "slug": "mb49-poltergeist"
+  },
+  {
+    "name": "MB55",
+    "fullName": "MB55-New Twilight",
+    "type": "standard (mb) blends",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66e9ece3df961d685d4d4ec7_MB55-New-Twilight.png.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66e9ec8bdcc7454cc9e79994_MB55-New-Twilight.png.png",
+    "slug": "mb55-new-twilight"
+  },
+  {
+    "name": "MB56",
+    "fullName": "MB56-Red Velvet",
+    "type": "standard (mb) blends",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66e9ed0ce1a2d0b236a65226_MB56-Red-Velvet.png.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66e9ed076599da1b6cccf721_MB56-Red-Velvet.png.png",
+    "slug": "mb56-red-velvet"
+  },
+  {
+    "name": "MB57",
+    "fullName": "MB57-Transparent Violet",
+    "type": "standard (mb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66c8bfa891ca78d7c4978439_MB57-Transparent-VioletLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66ccb444e3445d950a719021_MB57-Transparent-Violet.png",
+    "slug": "mb57-transparent-violet"
+  },
+  {
+    "name": "MB87",
+    "fullName": "MB87-Up In Smoke",
+    "type": "standard (mb) blends",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eaf9bf45f798c85223d3f9_MB87-%20Up%20In%20Smoke.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eaf9b992a1b9775708604f_MB87-%20Up%20In%20Smoke.png",
+    "slug": "mb87-up-in-smoke"
+  },
+  {
+    "name": "MD05",
+    "fullName": "MD05-Golden Pearl",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eae955fe1aac922be8c317_MD05-Golden-Pearl.png.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eae959c7a7224736d556a6_MD05-Golden-Pearl.png.png",
+    "slug": "md05-golden-pearl"
+  },
+  {
+    "name": "MD06",
+    "fullName": "MD06-Bloodshot",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eae98070742c75d8b41923_MD06-Bloodshot.png.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eae979c23d2cb4321e51ab_MD06-Bloodshot.png.png",
+    "slug": "md06-bloodshot"
+  },
+  {
+    "name": "MD19",
+    "fullName": "MD19-Omelette",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eae92d478d478b6d1329f9_MD19-Omelette.png.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eae92d478d478b6d1329f9_MD19-Omelette.png.png",
+    "slug": "md19-omelette"
+  },
+  {
+    "name": "MD20",
+    "fullName": "MD20-Salt n Peppa",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eae90d23cfc73119ef1361_MD20-Salt-n-Peppa.png.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eae9075743362952486f7c_MD20-Salt-n-Peppa.png.png",
+    "slug": "md20-salt-n-peppa"
+  },
+  {
+    "name": "MD21",
+    "fullName": "MD21-Red Slushie",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eae8dbd718b1e2d7a03c35_MD21-Red-Slushie.png.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eae8e0c5a618e30b551563_MD21-Red-Slushie.png.png",
+    "slug": "md21-red-slushie"
+  },
+  {
+    "name": "MD22",
+    "fullName": "MD22-Fun Dip",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eae89dc5a618e30b54d964_MD22-Fun-Dip.png.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eae89677b4e37e8f888075_MD22-Fun-Dip.png.png",
+    "slug": "md22-fun-dip"
+  },
+  {
+    "name": "MD24",
+    "fullName": "MD24-Koi Pond",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eae86b8826733d3cc2dc3b_MD24-Koi-Pond.png.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eae870f21b1e1e763d322b_MD24-Koi-Pond.png.png",
+    "slug": "md24-koi-pond"
+  },
+  {
+    "name": "MD25",
+    "fullName": "MD25 - America",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66aa41620879f984ad25a5cf_MD25-AmericaLARGE.png.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66aa413f68ff04d18fa2a2e1_MD25-AmericaSMALL.png.png",
+    "slug": "md25---america"
+  },
+  {
+    "name": "MD26",
+    "fullName": "MD26 - Sunspot",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa4134965297e53ad082d4_MD26-SunspotLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa40f3a03dc0aa3167bb7c_MD26-SunspotSMALL.png.png",
+    "slug": "md26---sunspot"
+  },
+  {
+    "name": "MD27",
+    "fullName": "MD27 - Solar Flare",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa40d893e4d1741b1c6001_MD27-Solar-FlareLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa40cf7784046470f07a8d_MD27-Solar-FlareSMALL.png.png",
+    "slug": "md27---solar-flare"
+  },
+  {
+    "name": "MD28",
+    "fullName": "MD28 - Bug Punch",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa40bcaea1a476a08cd7c8_MD28-Bug-PunchLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa40b436a78b201f93dc96_MD28-Bug-PunchSMALL.png.png",
+    "slug": "md28---bug-punch"
+  },
+  {
+    "name": "MD30",
+    "fullName": "MD30 - Bleach",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa40795426ae4873bec52a_MD30-BleachLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa404e7054284ced980108_MD30-BleachSMALL.png.png",
+    "slug": "md30---bleach"
+  },
+  {
+    "name": "MD33",
+    "fullName": "MD33 - Iceberg",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa40a11871ed63b3dde16c_MD33-IcebergLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa409af951d844fac98934_MD33-IcebergSMALL.png.png",
+    "slug": "md33---iceberg"
+  },
+  {
+    "name": "MD34",
+    "fullName": "MD34 - Cobweb",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa4090914ad9ee9e7e8455_MD34-CobwebLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa408755eb1d4e2fb8bce3_MD34-CobwebSMALL.png.png",
+    "slug": "md34---cobweb"
+  },
+  {
+    "name": "MD37",
+    "fullName": "MD37 - Amethyst",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa40420d23fae0b923abbb_MD37-AmethystLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3fbbfbaf345075ad1b81_MD37-AmethystSMALL.png.png",
+    "slug": "md37---amethyst"
+  },
+  {
+    "name": "MD38",
+    "fullName": "MD38 - Sapphire",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3f8c570343d5f683eb94_MD38-SapphireLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3f646a03a4ddad65f656_MD38-SapphireSMALL.png.png",
+    "slug": "md38---sapphire"
+  },
+  {
+    "name": "MD40",
+    "fullName": "MD40 - Jade",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3fab623e7a80fb6f67fc_MD40-JadeLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3fa274a5ffdd8116d15d_MD40-JadeSMALL.png.png",
+    "slug": "md40---jade"
+  },
+  {
+    "name": "MD41",
+    "fullName": "MD41 - Citrine",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3f5546546bdb047af2a2_MD41-CitrineLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3f2d1871ed63b3dcac9f_MD41-CitrineSMALL.png.png",
+    "slug": "md41---citrine"
+  },
+  {
+    "name": "MD42",
+    "fullName": "MD42 - Swamp Thing",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3f1f0de2b1cebbbb5670_MD42-Swamp-ThingLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3eecfe5cce4aca0ff83b_MD42-Swamp-ThingSMALL.png.png",
+    "slug": "md42---swamp-thing"
+  },
+  {
+    "name": "MD43",
+    "fullName": "MD43 - Garnet",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3eab80a8796d987a7c79_MD43-GarnetLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3e77ff384a600bb215f1_MD43-GarnetSMALL.png.png",
+    "slug": "md43---garnet"
+  },
+  {
+    "name": "MD44",
+    "fullName": "MD44 - Zombie Brain",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3edc2c11e89bbdca6970_MD44-Zombie-BrainLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3ed5294595148c2e8063_MD44-Zombie-BrainSMALL.png.png",
+    "slug": "md44---zombie-brain"
+  },
+  {
+    "name": "MD46",
+    "fullName": "MD46 - Plutonium",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3ec7071e02f8bbd10dd8_MD46-PlutoniumLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3ebec8f011823dbd7f68_MD46-PlutoniumSMALL.png.png",
+    "slug": "md46---plutonium"
+  },
+  {
+    "name": "MD47",
+    "fullName": "MD47 - Cheshire",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3e64c657023356cab6c0_MD47-CheshireLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3e5ef951d844fac7a4cf_MD47-CheshireSMALL.png.png",
+    "slug": "md47---cheshire"
+  },
+  {
+    "name": "MD50",
+    "fullName": "MD50 - Onyx",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3e4c402822f06924b0a7_MD50-OnyxLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3e370de2b1cebbba66e6_MD50-OnyxSMALL.png.png",
+    "slug": "md50---onyx"
+  },
+  {
+    "name": "MD51",
+    "fullName": "MD51 - Ink & Paint",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3e2850e00780482ce347_MD51-Ink-PaintLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3e22033a952fca676d5b_MD51-Ink-PaintSMALL.png.png",
+    "slug": "md51---ink-paint"
+  },
+  {
+    "name": "MD52",
+    "fullName": "MD52 - Lavender",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3d839d92705ef07877f5_MD52-LavenderLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3d7b071e02f8bbd024d4_MD52-LavenderSMALL.png.png",
+    "slug": "md52---lavender"
+  },
+  {
+    "name": "MD53",
+    "fullName": "MD53 - Glass of Port",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3e15b55e6852ff1d57e7_MD53-Glass-of-PortLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3d91623e7a80fb6de4d8_MD53-Glass-of-PortSMALL.png.png",
+    "slug": "md53---glass-of-port"
+  },
+  {
+    "name": "MD54",
+    "fullName": "MD54 - Sun Drop",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3d6412c391602bc17205_MD54-Sun-DropLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3d5e5426ae4873bc5601_MD54-Sun-DropSMALL.png.png",
+    "slug": "md54---sun-drop"
+  },
+  {
+    "name": "MD58",
+    "fullName": "MD58 - Mardi Gras",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/666205afcd2acecae73985b5_6606f4540215bc73820c926c_MD58-Mardi-Gras.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa31db1a97d4da69a8cabd_MD58-Mardi-GrasSMALL.png.png",
+    "slug": "md58---mardi-gras"
+  },
+  {
+    "name": "MD59",
+    "fullName": "MD59-Peppermint",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eaf9f6d9eea059ce8f29a9_MD59-%20Peppermint.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eaf9fd7fd1ae96db014f2c_MD59-%20Peppermint.png",
+    "slug": "md59-peppermint"
+  },
+  {
+    "name": "MD60",
+    "fullName": "MD60 - Sakura",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3d52623e7a80fb6dbc0d_MD60-SakuraLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3d4a6bb1e305d3c6a979_MD60-SakuraSMALL.png.png",
+    "slug": "md60---sakura"
+  },
+  {
+    "name": "MD61",
+    "fullName": "MD61 - Amber",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3d3ac657023356c9db6d_MD61-AmberLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3d07d47ce7880cefa45e_MD61-AmberSMALL.png.png",
+    "slug": "md61---amber"
+  },
+  {
+    "name": "MD62",
+    "fullName": "MD62 - Joker",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/666205aedc3204e8112d6dee_660701620e17ead2df53c120_MD62-Joker%25201.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3cd580cbf9d2453b6146_MD62-JokerSMALL.png.png",
+    "slug": "md62---joker"
+  },
+  {
+    "name": "MD63",
+    "fullName": "MD63 - Flamingo",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3cc9e2fd8629c33a460c_MD63-FlamingoLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3cc1ff384a600bb0cb43_MD63-FlamingoSMALL.png.png",
+    "slug": "md63---flamingo"
+  },
+  {
+    "name": "MD64",
+    "fullName": "MD64 - Algae",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa32cb484c3ffcca11b036_MD64-AlgaeLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa329ed9e8a1aad332e17f_MD64-AlgaeSMALL.png.png",
+    "slug": "md64---algae"
+  },
+  {
+    "name": "MD65",
+    "fullName": "MD65 - Happy Meal",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3290bf595981523b6041_MD65-Happy-MealLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3270d14f57ae435c64b8_MD65-Happy-MealSMALL.png.png",
+    "slug": "md65---happy-meal"
+  },
+  {
+    "name": "MD66",
+    "fullName": "MD66 - Eruption",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3265a2e58a6302a8516e_MD66-EruptionLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3260d14f57ae435c576c_MD66-EruptionSMALL.png.png",
+    "slug": "md66---eruption"
+  },
+  {
+    "name": "MD67",
+    "fullName": "MD67 - Yuletide",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/666205aff876ceab6ce4c5ae_6606f4e09a1d238a60bd7cce_MD67-Yuletide.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3219e5ceb5ee1b3ffe95_MD67-YuletideSMALL.png.png",
+    "slug": "md67---yuletide"
+  },
+  {
+    "name": "MD68",
+    "fullName": "MD68 - Martian",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa31d0af8499bdca2dcd93_MD68-MartianLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa31a0c95dba59bb64cd73_MD68-MartianSMALL.png.png",
+    "slug": "md68---martian"
+  },
+  {
+    "name": "MD69",
+    "fullName": "MD69 - Lemon Pepper",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3181238c1e56d3489a9f_MD69-Lemon-PepperLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3196ac1c0ef394eb88e2_MD69-Lemon-PepperSMALL.png.png",
+    "slug": "md69---lemon-pepper"
+  },
+  {
+    "name": "MD70",
+    "fullName": "MD70 - Wild Berries",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa315391cc768cd6ce5d87_MD70-Clear-w-RedBlueBlack-SwirlLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3123c1f3fa690d2eb76c_MD70-Clear-w-RedBlueBlack-SwirlSMALL.png.png",
+    "slug": "md70---wild-berries"
+  },
+  {
+    "name": "MD71",
+    "fullName": "MD71 - Oriole",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa316c52967fb59d9909e0_MD71-OrioleLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa31623968ecfde57a31b5_MD71-OrioleSMALL.png.png",
+    "slug": "md71---oriole"
+  },
+  {
+    "name": "MD72",
+    "fullName": "MD72 - Tide Pods",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3112f96129683e4f1f9e_MD72-Tide-PodsLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa30c6c1f3fa690d2e6a40_MD72-Tide-PodsSMALL.png.png",
+    "slug": "md72---tide-pods"
+  },
+  {
+    "name": "MD73",
+    "fullName": "MD73 - Sweetart",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa302be98dbde88ebe5bb3_MD73-SweetartLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa3024a249280b985a6d91_MD73-SweetartSMALL.png.png",
+    "slug": "md73---sweetart"
+  },
+  {
+    "name": "MD74",
+    "fullName": "MD74 - Candyland",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa309ccf9b504793a1a2c7_MD74-CandylandLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa303bf96129683e4e98e6_MD74-CandylandSMALL.png.png",
+    "slug": "md74---candyland"
+  },
+  {
+    "name": "MD75",
+    "fullName": "MD75 - The Hulk",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2ff8adbf7925f0fe1127_MD75-The-HulkLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2ff2ce1c1cb9d4a70c70_MD75-The-HulkSMALL.png.png",
+    "slug": "md75---the-hulk"
+  },
+  {
+    "name": "MD76",
+    "fullName": "MD76 - Tropical Sunset",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/669abf9f5dd8821e16e90d68_MD76-Clear-w-PurpleOrangePink-SwirlLARGE.jpg",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/669abf60e7b6d446bf52c68c_MD76-Clear-w-PurpleOrangePink-SwirlSMALL.png.png",
+    "slug": "md76---tropical-sunset"
+  },
+  {
+    "name": "MD77",
+    "fullName": "MD77 - Fat Tuesday",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa301210252118d7bdc576_MD77-Fat-TuesdayLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa301210252118d7bdc576_MD77-Fat-TuesdayLARGE.png.png",
+    "slug": "md77---fat-tuesday"
+  },
+  {
+    "name": "MD78",
+    "fullName": "MD78 - Black Widow",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2fe5fa795f8b74eb049f_MD78-Black-WidowLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2fbbfec6edfcbe33b63b_MD78-Black-WidowSMALL.png.png",
+    "slug": "md78---black-widow"
+  },
+  {
+    "name": "MD79",
+    "fullName": "MD79 - Candy Corn",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2fa556bb5389bd96e533_MD79-Candy-CornLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2f9fc72c49716b23e83b_MD79-Candy-CornSMALL.png.png",
+    "slug": "md79---candy-corn"
+  },
+  {
+    "name": "MD80",
+    "fullName": "MD80 - Kintsugi",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/669abf37b6c5dd237e4e91c8_MD80-KintsugiLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2f888077b61b52954027_MD80-KintsugiSMALL.png.png",
+    "slug": "md80---kintsugi"
+  },
+  {
+    "name": "MD81",
+    "fullName": "MD81-Ultra-Violet",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eafa35328388e6d0fcf110_MD81-%20Ultra-Violet.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eafa2d0aaac44c2e5d19af_MD81-%20Ultra-Violet.png",
+    "slug": "md81-ultra-violet"
+  },
+  {
+    "name": "MD82",
+    "fullName": "MD82-Vaporwave",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eafa649e39c9c69dd97872_MD82-%20Vaporwave.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eafa6a561597b819d3f0b4_MD82-%20Vaporwave.png",
+    "slug": "md82-vaporwave"
+  },
+  {
+    "name": "MD83",
+    "fullName": "MD83-Blizzard",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eafa949ff7c97160ef26a3_MD83-%20Blizzard.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eafa8d7cbda721ee601ef3_MD83-%20Blizzard.png",
+    "slug": "md83-blizzard"
+  },
+  {
+    "name": "MD84",
+    "fullName": "MD84-Ursula",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eafad703bd8a04db00f2b5_MD84-%20Ursula.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eafadb66e3704595fcbf5f_MD84-%20Ursula.png",
+    "slug": "md84-ursula"
+  },
+  {
+    "name": "MD85",
+    "fullName": "MD85-Mountain Ore",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eafb179998697b514f3e93_MD85-%20Mountain%20Ore.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eafb0f6aa024c10c028185_MD85-%20Mountain%20Ore.png",
+    "slug": "md85-mountain-ore"
+  },
+  {
+    "name": "MD86",
+    "fullName": "MD86-Thunder Storm",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eafb3d478f7396289e9635_MD86-%20Thunder%20Storm.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eafb425bb8b022c6746590_MD86-%20Thunder%20Storm.png",
+    "slug": "md86-thunder-storm"
+  },
+  {
+    "name": "MD88",
+    "fullName": "MD88-Bloodlust",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eafb79aad150a907353f44_MD88-%20Bloodlust.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eafb711dcddd2e50e6ba98_MD88-%20Bloodlust.png",
+    "slug": "md88-bloodlust"
+  },
+  {
+    "name": "MD89",
+    "fullName": "MD89-Crimson Moon",
+    "type": "deluxe (md) blends",
+    "imageUrl": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eafba066e3704595fd4713_MD89-%20Crimson%20Moon.png",
+    "imageUrlSmall": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66eafba6987db542d2a362a2_MD89-%20Crimson%20Moon.png",
+    "slug": "md89-crimson-moon"
+  },
+  {
+    "name": "N01",
+    "fullName": "N01 - Neon Violet",
+    "type": "solids - neon",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2c957845222185769bb4_N01-Neon-VioletLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2c90de999baf715f3e25_N01-Neon-VioletSMALL.png.png",
+    "slug": "n01---neon-violet"
+  },
+  {
+    "name": "N02",
+    "fullName": "N02 - Neon Green",
+    "type": "solids - neon",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2c78ea80783abad7a316_N02-Neon-GreenLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2c744df33b9bbea06c1e_N02-Neon-GreenSMALL.png.png",
+    "slug": "n02---neon-green"
+  },
+  {
+    "name": "N03",
+    "fullName": "N03 - Neon Yellow",
+    "type": "solids - neon",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2c48dd4dca1f16787c40_N03-Neon-YellowLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2c3f303ba140e7648821_N03-Neon-YellowSMALL.png.png",
+    "slug": "n03---neon-yellow"
+  },
+  {
+    "name": "N04",
+    "fullName": "N04 - Neon Orange",
+    "type": "solids - neon",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2c5b56bb5389bd948ac4_N04-Neon-OrangeLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2c551a97d4da69a4f926_N04-Neon-OrangeSMALL.png",
+    "slug": "n04---neon-orange"
+  },
+  {
+    "name": "N05",
+    "fullName": "N05 - Neon Coral",
+    "type": "solids - neon",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2c15d3e382ff3da4a71a_N05-Neon-CoralLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2c10971e38f7a0e3a685_N05-Neon-CoralSMALL.png",
+    "slug": "n05---neon-coral"
+  },
+  {
+    "name": "N06",
+    "fullName": "N06 - Neon Pink",
+    "type": "solids - neon",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2c2bc1f3fa690d2b59c6_N06-Neon-PinkLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2c26314bbc16106afe9b_N06-Neon-PinkSMALL.png",
+    "slug": "n06---neon-pink"
+  },
+  {
+    "name": "O01",
+    "fullName": "O01 - Opaque Brown",
+    "type": "solids - opaque",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2bdf2bcbfea902a3a1d6_O01-Opaque-Brown-2LARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2bda6cd30f083b355953_O01-Opaque-Brown-2SMALL.png",
+    "slug": "o01---opaque-brown"
+  },
+  {
+    "name": "O02",
+    "fullName": "O02 - Opaque White",
+    "type": "solids - opaque",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2bf122d42f54a86bcfd6_O02-Opaque-WhiteLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2bea91cc768cd6ca3601_O02-Opaque-WhiteSMALL.png",
+    "slug": "o02---opaque-white"
+  },
+  {
+    "name": "O03",
+    "fullName": "O03 - Opaque Apple Red",
+    "type": "solids - opaque",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2bacfec6edfcbe30b3c2_O03-Opaque-Apple-RedLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2ba53c350caec4831384_O03-Opaque-Apple-RedSMALL.png",
+    "slug": "o03---opaque-apple-red"
+  },
+  {
+    "name": "O04",
+    "fullName": "O04 - Opaque Orchid",
+    "type": "solids - opaque",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/669abde0d17d730263e9a5f1_O04-Opaque-OrchidLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2b926618ecbd512021cb_O04-Opaque-OrchidSMALL.png",
+    "slug": "o04---opaque-orchid"
+  },
+  {
+    "name": "O05",
+    "fullName": "O05 - Opaque Sky Blue",
+    "type": "solids - opaque",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2bc45a73fa0c70a82f42_O05-Opaque-Sky-BlueLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2bbd22d42f54a86bb19c_O05-Opaque-Sky-BlueSMALL.png",
+    "slug": "o05---opaque-sky-blue"
+  },
+  {
+    "name": "O06",
+    "fullName": "O06 - Opaque Baby Blue",
+    "type": "solids - opaque",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2b865637d455e5358d62_O06-Opaque-Baby-BlueLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2b81f96129683e4b380d_O06-Opaque-Baby-BlueSMALL.png",
+    "slug": "o06---opaque-baby-blue"
+  },
+  {
+    "name": "O07",
+    "fullName": "O07 - Opaque Tangerine",
+    "type": "solids - opaque",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2b4978a65d50f4c37ed4_O07-Opaque-TangerineLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2b4273be1d9686fec117_O07-Opaque-TangerineSMALL.png",
+    "slug": "o07---opaque-tangerine"
+  },
+  {
+    "name": "O08",
+    "fullName": "O08 - Opaque Baby Pink",
+    "type": "solids - opaque",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2b71ecf7062c165e5c6a_O08-Opaque-Baby-PinkLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2b6978a65d50f4c3bf24_O08-Opaque-Baby-PinkSMALL.png",
+    "slug": "o08---opaque-baby-pink"
+  },
+  {
+    "name": "O09",
+    "fullName": "O09 - Opaque Canary Yellow",
+    "type": "solids - opaque",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2b5ede4d1bc447ba0b27_O09-Opaque-Canary-YellowLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2b57bb4726f9fe8a7a83_O09-Opaque-Canary-YellowSMALL.png",
+    "slug": "o09---opaque-canary-yellow"
+  },
+  {
+    "name": "O10",
+    "fullName": "O10 - Opaque Magenta",
+    "type": "solids - opaque",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2b1f903fd04b6fae1805_O10-Opaque-MagentaLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2b16d687005dc4f5f823_O10-Opaque-MagentaSMALL.png",
+    "slug": "o10---opaque-magenta"
+  },
+  {
+    "name": "O11",
+    "fullName": "O11 - Opaque Silver",
+    "type": "solids - opaque",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2b370a655c083849354c_O11-Opaque-SilverLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2b2fafb93cfa81e6a1db_O11-Opaque-SilverSMALL.png",
+    "slug": "o11---opaque-silver"
+  },
+  {
+    "name": "O12",
+    "fullName": "O12 - Opaque Spring Green",
+    "type": "solids - opaque",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2af0b6e9f3dd66b5f306_O12-Opaque-Spring-GreenSMALL.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2af0b6e9f3dd66b5f306_O12-Opaque-Spring-GreenSMALL.png",
+    "slug": "o12---opaque-spring-green"
+  },
+  {
+    "name": "O13",
+    "fullName": "O13 - Opaque Gray",
+    "type": "solids - opaque",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2adc0e69338da4fe935d_O13-Opaque-GraySMALL.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2adc0e69338da4fe935d_O13-Opaque-GraySMALL.png",
+    "slug": "o13---opaque-gray"
+  },
+  {
+    "name": "O14",
+    "fullName": "O14 - Opaque Bone",
+    "type": "solids - opaque",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2b0be98dbde88ebaab11_O14-Opaque-BoneLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2b053d8bf576f59ddb90_O14-Opaque-BoneSMALL.png",
+    "slug": "o14---opaque-bone"
+  },
+  {
+    "name": "O15",
+    "fullName": "O15 - Opaque Hot Pink",
+    "type": "solids - opaque",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa27a0c63f906550c57b55_O15-Opaque-Hot-PinkLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa279a22d42f54a868716e_O15-Opaque-Hot-PinkSMALL.png",
+    "slug": "o15---opaque-hot-pink"
+  },
+  {
+    "name": "O16",
+    "fullName": "O16 - Opaque Gold",
+    "type": "solids - opaque",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2ac965ec6f542b4713d2_O16-Opaque-GoldSMALL.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2ac965ec6f542b4713d2_O16-Opaque-GoldSMALL.png",
+    "slug": "o16---opaque-gold"
+  },
+  {
+    "name": "O17",
+    "fullName": "O17 - Opaque Fruit Punch",
+    "type": "solids - opaque",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2ab89d36130c6a305b92_O17-Opaque-Fruit-PunchLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2ab2edbce57fe64b99a2_O17-Opaque-Fruit-PunchSMALL.png",
+    "slug": "o17---opaque-fruit-punch"
+  },
+  {
+    "name": "O18",
+    "fullName": "O18 - Opaque Olive Green",
+    "type": "solids - opaque",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2a923fc8ed78496b151b_O18-Opaque-Olive-GreenLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2a8b8f15a0a355c16e7c_O18-Opaque-Olive-GreenSMALL.png",
+    "slug": "o18---opaque-olive-green"
+  },
+  {
+    "name": "O19",
+    "fullName": "O19 - Opaque Aqua",
+    "type": "solids - opaque",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2aa610252118d7b9e212_O19-Opaque-AquaLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2aa0394083c02eae58cb_O19-Opaque-AquaSMALL.png",
+    "slug": "o19---opaque-aqua"
+  },
+  {
+    "name": "O20",
+    "fullName": "O20 - Opaque Custard",
+    "type": "solids - opaque",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/669aace332c79a41ea737660_O20-Opaque-CustardLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2a79f96129683e4a683d_O20-Opaque-CustardSMALL.png",
+    "slug": "o20---opaque-custard"
+  },
+  {
+    "name": "O21",
+    "fullName": "O21 - Opaque Lemon",
+    "type": "solids - opaque",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2a2b8f15a0a355c128d8_O21-Opaque-LemonLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2a26f6a0394b6960eb7a_O21-Opaque-LemonSMALL.png",
+    "slug": "o21---opaque-lemon"
+  },
+  {
+    "name": "O22",
+    "fullName": "O22 - Opaque Bluejay",
+    "type": "solids - opaque",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2a10f6a0394b6960da11_O22-Opaque-BluejayLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2a0bae2aea6fca915990_O22-Opaque-BluejaySMALL.png",
+    "slug": "o22---opaque-bluejay"
+  },
+  {
+    "name": "O23",
+    "fullName": "O23 - Opaque Evergreen",
+    "type": "solids - opaque",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa29b9e6fe51f7bc1ab390_O23-Opaque-EvergreenLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa29b4ce1c1cb9d4a2a998_O23-Opaque-EvergreenSMALL.png",
+    "slug": "o23---opaque-evergreen"
+  },
+  {
+    "name": "O24",
+    "fullName": "O24 - Opaque Violet",
+    "type": "solids - opaque",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/669aac6d79eae475928c769c_O24-Opaque-VioletLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa29fd365ecc5f4b2fa3ec_O24-Opaque-VioletSMALL.png",
+    "slug": "o24---opaque-violet"
+  },
+  {
+    "name": "SB01",
+    "fullName": "SB01 - Clear Smoke",
+    "type": "smoke (sb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa284cfec6edfcbe2e5ebf_SB01-Clear-SmokeLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa25e12a4ae92c26c012f4_SB01-Clear-SmokeSMALL.png.png",
+    "slug": "sb01---clear-smoke"
+  },
+  {
+    "name": "SB02",
+    "fullName": "SB02 - Red Smoke",
+    "type": "smoke (sb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa27f0730b76d3551da1f1_SB02-Red-SmokeLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa27eb303ba140e7616a83_SB02-Red-SmokeSMALL.png.png",
+    "slug": "sb02---red-smoke"
+  },
+  {
+    "name": "SB03",
+    "fullName": "SB03 - Green Smoke",
+    "type": "smoke (sb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa283a568aa2491c2a58a9_SB03-Green-SmokeLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2833a2e58a6302a128d5_SB03-Green-SmokeSMALL.png.png",
+    "slug": "sb03---green-smoke"
+  },
+  {
+    "name": "SB05",
+    "fullName": "SB05 - Silver Smoke",
+    "type": "smoke (sb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2805e5ceb5ee1b384988_SB05-Silver-SmokeLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2800568aa2491c2a1c98_SB05-Silver-SmokeSMALL.png.png",
+    "slug": "sb05---silver-smoke"
+  },
+  {
+    "name": "SB06",
+    "fullName": "SB06 - Electric Smoke",
+    "type": "smoke (sb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa28281658782563f47469_SB06-Electric-SmokeLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2822de4d1bc447b6b738_SB06-Electric-SmokeSMALL.png.png",
+    "slug": "sb06---electric-smoke"
+  },
+  {
+    "name": "SB07",
+    "fullName": "SB07 - Blue Smoke",
+    "type": "smoke (sb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa28176109517a8fc16790_SB07-Blue-SmokeLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa28120a6775a0bc8c0013_SB07-Blue-SmokeSMALL.png.png",
+    "slug": "sb07---blue-smoke"
+  },
+  {
+    "name": "SB08",
+    "fullName": "SB08 - Yellow Smoke",
+    "type": "smoke (sb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa273d3a85e5c62d0e2d33_SB08-Yellow-SmokeLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa27372f395b9e5a0fc4df_SB08-Yellow-SmokeSMALL.png.png",
+    "slug": "sb08---yellow-smoke"
+  },
+  {
+    "name": "SB09",
+    "fullName": "SB09 - Orange Smoke",
+    "type": "smoke (sb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa27b8f9db5768cdb72020_SB09-Orange-SmokeLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa27b22a320c20553757d4_SB09-Orange-SmokeSMALL.png.png",
+    "slug": "sb09---orange-smoke"
+  },
+  {
+    "name": "SB10",
+    "fullName": "SB10 - Coke Bottle Clear Smoke",
+    "type": "smoke (sb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa277502f0bfecf6aa3b97_SB10-Coke-Bottle-Clear-SmokeLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa276ef9ef9db58cb0c37c_SB10-Coke-Bottle-Clear-SmokeSMALL.png.png",
+    "slug": "sb10---coke-bottle-clear-smoke"
+  },
+  {
+    "name": "SB11",
+    "fullName": "SB11 - Highlighter Smoke",
+    "type": "smoke (sb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa27e03a13743a13b2eb48_SB11-Highlighter-SmokeLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa27da314bbc161067c735_SB11-Highlighter-SmokeSMALL.png.png",
+    "slug": "sb11---highlighter-smoke"
+  },
+  {
+    "name": "SB14",
+    "fullName": "SB14 - Sea Blue Smoke",
+    "type": "smoke (sb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa272b41235064825c5b9b_SB14-Sea-Blue-SmokeLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa261c1e6484914cce6758_SB14-Sea-Blue-SmokeSMALL.png.png",
+    "slug": "sb14---sea-blue-smoke"
+  },
+  {
+    "name": "SB15",
+    "fullName": "SB15 - Tan Smoke",
+    "type": "smoke (sb) blends",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2764fdf06946b409705b_SB15-Tan-SmokeLARGE.png.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa275ff9ef9db58cb0ba93_SB15-Tan-SmokeSMALL.png.png",
+    "slug": "sb15---tan-smoke"
+  },
+  {
+    "name": "T01",
+    "fullName": "T01 - Translucent Ruby",
+    "type": "solids - translucent",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa25b6c65fd4b13a79f5af_T01-Translucent-RubyLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa25af70936f464dbdaceb_T01-Translucent-RubySMALL.png",
+    "slug": "t01---translucent-ruby"
+  },
+  {
+    "name": "T02",
+    "fullName": "T02 - Ultra Clear",
+    "type": "solids - translucent",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa260cf825a20d6f8a130d_T02-Ultra-ClearLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa260676959f01a6429563_T02-Ultra-ClearSMALL.png",
+    "slug": "t02---ultra-clear"
+  },
+  {
+    "name": "T03",
+    "fullName": "T03 - Translucent Cobalt",
+    "type": "solids - translucent",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa25a11f5faeea3f8753d6_T03-Translucent-CobaltLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa259a1f6026476c260123_T03-Translucent-CobaltSMALL.png",
+    "slug": "t03---translucent-cobalt"
+  },
+  {
+    "name": "T04",
+    "fullName": "T04 - Translucent Emerald",
+    "type": "solids - translucent",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa25471e6484914ccd9d0e_T04-Translucent-EmeraldLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2541e5146ece34f557df_T04-Translucent-EmeraldSMALL.png",
+    "slug": "t04---translucent-emerald"
+  },
+  {
+    "name": "T05",
+    "fullName": "T05 - Translucent Grape",
+    "type": "solids - translucent",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2538959952a9dd906c6e_T05-Translucent-GrapeLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa252d68fbc0ae8ea647de_T05-Translucent-GrapeSMALL.png",
+    "slug": "t05--translucent-grape"
+  },
+  {
+    "name": "T06",
+    "fullName": "T06 - Translucent Light Blue",
+    "type": "solids - translucent",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2524c0809bc1016b2e41_T06-Translucent-Light-BlueLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa251e70936f464dbd368d_T06-Translucent-Light-BlueSMALL.png",
+    "slug": "t06--translucent-light-blue"
+  },
+  {
+    "name": "T07",
+    "fullName": "T07 - Translucent Lemonade",
+    "type": "solids - translucent",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2512bb40967b329277f8_T07-Translucent-LemonadeLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa250d2404e0e629ca4a5b_T07-Translucent-LemonadeSMALL.png",
+    "slug": "t07--translucent-lemonade"
+  },
+  {
+    "name": "T08",
+    "fullName": "T08 - Translucent Orange Crush",
+    "type": "solids - translucent",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/669ac47375eaf8dfeb1ad3c8_T08-Translucent-Orange-Crush.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa241beb170c7325926335_T08-Translucent-Orange-CrushSMALL.png",
+    "slug": "t08--translucent-orange-crush"
+  },
+  {
+    "name": "T09",
+    "fullName": "T09 - Translucent Coke Bottle Clear",
+    "type": "solids - translucent",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa24861e6484914cccf4ad_T09-Translucent-Coke-Bottle-ClearLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa247ec5383270048fed9b_T09-Translucent-Coke-Bottle-ClearSMALL.png",
+    "slug": "t09--translucent-coke-bottle-clear"
+  },
+  {
+    "name": "T10",
+    "fullName": "T10 - Translucent Highlighter Yellow",
+    "type": "solids - translucent",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2504583e7130a8982d55_T10-Translucent-Highlighter-YellowLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa24fed6ed5b4d1772172c_T10-Translucent-Highlighter-YellowSMALL.png",
+    "slug": "t10---translucent-highlighter-yellow"
+  },
+  {
+    "name": "T11",
+    "fullName": "T11 - Translucent Milky Clear",
+    "type": "solids - translucent",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2469e5146ece34f4c60e_T11-Translucent-Milky-ClearLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa247149932e8425e1fee2_T11-Translucent-Milky-ClearSMALL.png",
+    "slug": "t11---translucent-milky-clear"
+  },
+  {
+    "name": "T12",
+    "fullName": "T12 - Translucent Forest Green",
+    "type": "solids - translucent",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa24f1f084149e30f4b1e6_T12-Translucent-Forest-GreenLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa24ecf0bfbd0c70f8ec04_T12-Translucent-Forest-GreenSMALL.png",
+    "slug": "t12---translucent-forest-green"
+  },
+  {
+    "name": "T13",
+    "fullName": "T13 - Translucent Sea Blue",
+    "type": "solids - translucent",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa245c043240e4ebbe016b_T13-Translucent-Sea-BlueLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa24554cae209048d45d24_T13-Translucent-Sea-BlueSMALL.png",
+    "slug": "t13---translucent-sea-blue"
+  },
+  {
+    "name": "T14",
+    "fullName": "T14 - Translucent Tan",
+    "type": "solids - translucent",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa244a4f3af9d07dc521cb_T14-Translucent-TanLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa24455f829628a0a56de5_T14-Translucent-TanSMALL.png",
+    "slug": "t14---translucent-tan"
+  },
+  {
+    "name": "T15",
+    "fullName": "T15 - Translucent Black Ice",
+    "type": "solids - translucent",
+    "imageUrl": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa2437c0d81f08040dab31_T15-Translucent-Black-IceLARGE.png",
+    "imageUrlSmall": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/66aa242ce94036a575912752_T15-Translucent-Black-IceSMALL.png",
+    "slug": "t15---translucent-black-ice"
+  }
+]
