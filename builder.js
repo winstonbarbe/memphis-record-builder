@@ -101,6 +101,7 @@ const jacketFrontUpload = document.querySelector(
 const labelFrontUpload = document.querySelector(
   "input[name='label-front-upload']"
 );
+const pictureDiscUpload = document.getElementById("picture-disc-upload");
 const innerSleeveUpload = document.querySelector("input[name='sleeve-upload']");
 const printedInsertUpload = document.querySelector(
   "input[name='insert-upload']"
@@ -118,6 +119,12 @@ const labelFrontFilenameDisplay = document.getElementById(
 const removeLabelFrontImage = document.getElementById(
   "remove-label-front-image"
 );
+const pictureDiscFilenameDisplay = document.getElementById(
+  "picture-disc-upload-file-display"
+);
+const removePictureDiscImage = document.getElementById(
+  "remove-picture-disc-image"
+);
 const sleeveFilenameDisplay = document.getElementById(
   "sleeve-upload-file-display"
 );
@@ -133,7 +140,7 @@ const quantityInput = document.getElementById("record-quantity");
 
 // modal selectors
 const closeModalButton = document.getElementById("close-breakdown-modal");
-const modalBackground = document.querySelector(".modal-background-2");
+const modalBackground = document.getElementById("pricing-breakdown-modal");
 const pricingBreakdownButton = document.getElementById(
   "pricing-breakdown-button"
 );
@@ -529,7 +536,9 @@ function updateSelectedState(input, name) {
 
 function setElementsDisplay(nodeList, display) {
   nodeList.forEach((node) => {
-    node.style.display = display;
+    if (node) {
+      node.style.display = display;
+    }
   });
 }
 
@@ -601,7 +610,7 @@ const colorContainerMap = {
   "eco-mix": "ecomix-options-container",
   "solids-translucent": "soilds-translucent-options-container",
   "solids-opaque": "soilds-opaque-options-container",
-  // "solids-neon": "soilds-neon-options-container",
+  "solids-neon": "soilds-opaque-options-container", // Neon uses same container as opaque
   "standard-blends": "standard-blends-options-container",
   "deluxe-blends": "deluxe-blends-options-container",
   splatter: "soilds-translucent-options-container",
@@ -609,15 +618,24 @@ const colorContainerMap = {
 };
 
 function setValidColorOptions() {
-  if (selected.recordType === "black") {
+  if (
+    selected.recordType === "black" ||
+    selected.recordType === "picture-disc"
+  ) {
+    return;
+  }
+
+  if (!colorContainerMap[selected.recordType]) {
     return;
   }
 
   setElementsDisplay(Array.from(memphisColorOptionsContainer.children), "none");
-  setElementsDisplay(
-    [document.getElementById(colorContainerMap[selected.recordType])],
-    "block"
+  const colorContainer = document.getElementById(
+    colorContainerMap[selected.recordType]
   );
+  if (colorContainer) {
+    setElementsDisplay([colorContainer], "block");
+  }
 }
 
 function setJacketOptions() {
@@ -777,9 +795,41 @@ recordTypeInput.addEventListener("change", () => {
 
     selected.splatterTwoColorName = null;
     selected.splatterThreeColorName = null;
+  } else if (recordTypeInput.value === "picture-disc") {
+    // Picture disc - show upload field, hide color picker
+    setElementsDisplay([recordColorOptionContainer], "none");
+    setElementsDisplay([splatterOptionsContainer], "none");
+    const pictureDiscUploadContainer = document.getElementById(
+      "picture-disc-upload-container"
+    );
+    if (pictureDiscUploadContainer) {
+      pictureDiscUploadContainer.style.display = "block";
+      pictureDiscUploadContainer.style.setProperty(
+        "display",
+        "block",
+        "important"
+      );
+      setElementsDisplay([pictureDiscUploadContainer], "block");
+    } else {
+      console.error("Picture disc upload container not found!");
+    }
+    setInputsRequiredFalse([recordColorInput]);
+
+    clearInput(splatterColorsInput, "splatterColors");
+    clearInput(splatterColorOneInput, "splatterOneColorName");
+    clearInput(splatterColorTwoInput, "splatterTwoColorName");
+    clearInput(splatterColorThreeInput, "splatterThreeColorName");
+
+    clearSelectedColors();
   } else {
     setElementsDisplay([recordColorOptionContainer], "block");
     setElementsDisplay([splatterOptionsContainer], "none");
+    const pictureDiscUploadContainer = document.getElementById(
+      "picture-disc-upload-container"
+    );
+    if (pictureDiscUploadContainer) {
+      setElementsDisplay([pictureDiscUploadContainer], "none");
+    }
     setInputsRequiredTrue([recordColorInput]);
 
     clearInput(splatterColorsInput, "splatterColors");
@@ -1289,6 +1339,48 @@ labelFrontUpload.addEventListener("change", () => {
   }
 });
 
+if (pictureDiscUpload) {
+  pictureDiscUpload.addEventListener("change", () => {
+    let file = pictureDiscUpload.files[0];
+
+    if (file) {
+      let imageUrl = URL.createObjectURL(file);
+      setElementsDisplay([pictureDiscFilenameDisplay.parentElement], "block");
+      pictureDiscFilenameDisplay.innerText = file.name;
+      // Display on all record discs
+      const recordDisc1 = document.getElementById("builder-record-display");
+      const recordDisc2 = document.getElementById("builder-record-display-2");
+      const recordDisc3 = document.getElementById("builder-record-display-3");
+
+      const discs = [recordDisc1, recordDisc2, recordDisc3];
+      discs.forEach((disc) => {
+        if (disc) {
+          disc.style.backgroundImage = `url(${imageUrl})`;
+          disc.style.backgroundSize = "cover";
+          disc.style.backgroundPosition = "center";
+          disc.style.backgroundRepeat = "no-repeat";
+        }
+      });
+    } else {
+      setElementsDisplay([pictureDiscFilenameDisplay.parentElement], "none");
+      // Reset to default black record
+      const defaultImage =
+        "url(https://uploads-ssl.webflow.com/65ce69671190e385bf638294/66c35137e88fe82114818e60_Black_Record.png)";
+      const recordDisc1 = document.getElementById("builder-record-display");
+      const recordDisc2 = document.getElementById("builder-record-display-2");
+      const recordDisc3 = document.getElementById("builder-record-display-3");
+
+      const discs = [recordDisc1, recordDisc2, recordDisc3];
+      discs.forEach((disc) => {
+        if (disc) {
+          disc.style.backgroundImage = defaultImage;
+          disc.style.backgroundSize = "contain";
+        }
+      });
+    }
+  });
+}
+
 innerSleeveUpload.addEventListener("change", () => {
   let file = innerSleeveUpload.files[0];
 
@@ -1318,6 +1410,29 @@ removeJacketFrontImage.addEventListener("click", () => {
   setElementsDisplay([jacketFrontFilenameDisplay.parentElement], "none");
   jacketVisualDisplay.style.backgroundImage = "";
 });
+
+if (removePictureDiscImage && pictureDiscUpload) {
+  removePictureDiscImage.addEventListener("click", () => {
+    pictureDiscUpload.value = "";
+    setElementsDisplay([pictureDiscFilenameDisplay.parentElement], "none");
+    // Reset to default black record
+    const defaultImage =
+      "url(https://uploads-ssl.webflow.com/65ce69671190e385bf638294/66c35137e88fe82114818e60_Black_Record.png)";
+    const recordDisc1 = document.getElementById("builder-record-display");
+    const recordDisc2 = document.getElementById("builder-record-display-2");
+    const recordDisc3 = document.getElementById("builder-record-display-3");
+
+    const discs = [recordDisc1, recordDisc2, recordDisc3];
+    discs.forEach((disc) => {
+      if (disc) {
+        disc.style.backgroundImage = defaultImage;
+        disc.style.backgroundSize = "contain";
+      }
+    });
+    // Trigger change event to update display
+    pictureDiscUpload.dispatchEvent(new Event("change", { bubbles: true }));
+  });
+}
 
 removeLabelFrontImage.addEventListener("click", () => {
   labelFrontUpload.value = "";

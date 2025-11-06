@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Splatter",
+    "slug": "splatter",
+    "effectImage": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66f5923d87fcc26327e42da7_SplatterMockup_Layer_One.jpg",
+    "effectLayer2": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66f5924041a5900937dc9c60_SplatterMockup_Layer_Two.jpg",
+    "effectLayer3": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66f5924279920d6110c6713f_SplatterMockup_Layer_Three.jpg",
+    "buttonIcon": "https://cdn.prod.website-files.com/647500086bc1051dc12ba03d/66719a7314944f2914e842ff_Frame%201160444426.svg",
+    "numberOfLayers": 3
+  },
+  {
+    "name": "Swirl",
+    "slug": "swirl",
+    "effectImage": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/6658bde86dc34818dc550bb7_65a7ec94419a58fe3aa20844_smoke.jpg",
+    "effectLayer2": null,
+    "effectLayer3": null,
+    "buttonIcon": "https://uploads-ssl.webflow.com/647500086bc1051dc12ba03d/6658bdeb9a3737b680b4cee9_65a171d6cf89999c715c28cb_Frame%201160444426.svg",
+    "numberOfLayers": 1
+  }
+]

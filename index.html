@@ -5,6 +5,267 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Memphis Builder</title>
     <link rel="stylesheet" href="main.css" />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Q6E0V4YB7B"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-Q6E0V4YB7B");
+    </script>
+
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i;
+
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "ojk647k75k");
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      jQuery(document).ready(function () {
+        jQuery(document).on("click", ".printed-label", function (event) {
+          $("#black-white-2").parent().trigger("click");
+        });
+
+        /*jQuery(document).on('click', '.record-type-standard-label', function(event) { 
+	 jQuery('#short-run-record-type-color-container').addClass('visible');
+});*/
+
+        jQuery(document).on("click", ".custom-splatter", function (event) {
+          jQuery(this)
+            .parent()
+            .find(".builder-splatter-color-picker")
+            .addClass("visible");
+          jQuery(".splater-colors .color-picker-option").css(
+            "pointer-events",
+            ""
+          );
+        });
+
+        jQuery(document).on("click", ".custom-color", function (event) {
+          jQuery(this)
+            .parent()
+            .find(".builder-record-color-picker")
+            .addClass("visible");
+          jQuery(".splater-colors .color-picker-option").css(
+            "pointer-events",
+            ""
+          );
+        });
+
+        jQuery(document).on("click", ".custom-swirl", function (event) {
+          jQuery(this)
+            .parent()
+            .find(".builder-swirl-color-picker")
+            .addClass("visible");
+          jQuery(".splater-colors .color-picker-option").css(
+            "pointer-events",
+            ""
+          );
+        });
+
+        jQuery(".splatter-colors .color-picker-option").click(function () {
+          var forthItmeSelected = jQuery(this).attr("data-name");
+          var recordColorSelected = jQuery(
+            ".record-color-option.selected-record-color"
+          ).attr("data-name");
+          console.log(forthItmeSelected);
+
+          if (jQuery(this).hasClass("selected-effect-color")) {
+            jQuery(this).removeClass("selected-effect-color");
+            jQuery(this).css("pointer-events", "");
+          } else {
+            var selectedCount = jQuery(
+              ".splatter-colors .color-picker-option.selected-effect-color"
+            ).length;
+
+            if (selectedCount < 4) {
+              jQuery(this).addClass("selected-effect-color");
+              jQuery(this).css("pointer-events", "none");
+
+              if (selectedCount + 1 === 4) {
+                setTimeout(function () {
+                  jQuery("#black").parent().trigger("click");
+                  jQuery("#splatter").parent().removeClass("selected-radio");
+                  jQuery("#splatter").parent().trigger("click");
+                  jQuery(
+                    '.record-color-option[data-name="' +
+                      recordColorSelected +
+                      '"]'
+                  ).trigger("click");
+                  jQuery(
+                    '.record-color-option[data-name="' +
+                      recordColorSelected +
+                      '"]'
+                  ).addClass("selected-effect-color");
+                  jQuery(
+                    '.splatter-color-option[data-name="' +
+                      forthItmeSelected +
+                      '"]'
+                  ).trigger("click");
+                  jQuery(
+                    '.splatter-color-option[data-name="' +
+                      forthItmeSelected +
+                      '"]'
+                  ).addClass("selected-effect-color");
+                }, 500);
+              }
+            } else {
+              alert("You can only select up to 3 options.");
+            }
+          }
+
+          jQuery(".splatter-colors .color-picker-option")
+            .not(".selected-effect-color")
+            .css("pointer-events", "");
+        });
+
+        jQuery(".splater-colors .color-picker-option").click(function () {
+          var forthItmeSelected = jQuery(this).attr("data-name");
+          var recordColorSelected = jQuery(
+            ".record-color-option.selected-record-color"
+          ).attr("data-name");
+          console.log(forthItmeSelected);
+
+          if (jQuery(this).hasClass("selected-effect-color")) {
+            jQuery(this).removeClass("selected-effect-color");
+            jQuery(this).css("pointer-events", "");
+          } else {
+            var selectedCount = jQuery(
+              ".splater-colors .color-picker-option.selected-effect-color"
+            ).length;
+
+            if (selectedCount < 4) {
+              jQuery(this).addClass("selected-effect-color");
+              jQuery(this).css("pointer-events", "none");
+
+              if (selectedCount + 1 === 4) {
+                setTimeout(function () {
+                  jQuery("#black").parent().trigger("click");
+                  jQuery("#splatter").parent().removeClass("selected-radio");
+                  jQuery("#splatter").parent().trigger("click");
+                  jQuery(
+                    '.record-color-option[data-name="' +
+                      recordColorSelected +
+                      '"]'
+                  ).trigger("click");
+                  jQuery(
+                    '.record-color-option[data-name="' +
+                      recordColorSelected +
+                      '"]'
+                  ).addClass("selected-effect-color");
+                  jQuery(
+                    '.splater-colors .splatter-color-option[data-name="' +
+                      forthItmeSelected +
+                      '"]'
+                  ).trigger("click");
+                  jQuery(
+                    '.splater-colors .splatter-color-option[data-name="' +
+                      forthItmeSelected +
+                      '"]'
+                  ).addClass("selected-effect-color");
+                }, 500);
+              }
+            } else {
+              alert("You can only select up to 3 options.");
+            }
+          }
+
+          jQuery(".splater-colors .color-picker-option")
+            .not(".selected-effect-color")
+            .css("pointer-events", "");
+        });
+      });
+
+      $(document).ready(function () {
+        $(".record-color-option").on("click", function () {
+          $(".record-color-option").removeClass("selected-effect-color");
+
+          $(this).addClass("selected-effect-color");
+        });
+      });
+
+      $(document).ready(function () {
+        // Array of class selectors to target the containers
+        var containers = [
+          ".solids-translucent",
+          ".solids-opaque",
+          ".solid-neon",
+          ".smoke-blends",
+          ".standard-blends",
+          ".deluxe-blends",
+          ".metallic-blends",
+          ".cream-blends",
+        ];
+
+        // Loop through each container and sort the items
+        containers.forEach(function (container) {
+          var $listContainer = $(container);
+          var $items = $listContainer.find(".w-dyn-item");
+
+          $items.sort(function (a, b) {
+            var nameA = $(a).find(".memphis-color-option").data("name");
+            var nameB = $(b).find(".memphis-color-option").data("name");
+            return nameA.localeCompare(nameB);
+          });
+
+          $listContainer.append($items); // Append sorted items back to the container
+        });
+      });
+
+      $(document).on("change", "#upload-center-file", function (e) {
+        var file = e.target.files[0];
+        if (file) {
+          var reader = new FileReader();
+
+          reader.onload = function (event) {
+            // Display the image in the builder-record-display div
+            $("#builder-record-display").append(
+              '<div class="label-upload-display single" style="background-image: url(' +
+                event.target.result +
+                ');background-size: cover;"><div class="center-label-circle"></div></div>'
+            );
+          };
+          reader.readAsDataURL(file);
+          $(".front-upload-display").show();
+          $("#upload-center-file-display").text(file.name);
+        } else {
+          $(".front-upload-display").hide();
+          $(".label-upload-display").remove();
+          $("#upload-center-file-display").text("");
+        }
+      });
+      $(document).on(
+        "click",
+        ".front-upload-display .remove-file",
+        function () {
+          $(".front-upload-display").hide();
+          $(".label-upload-display").remove();
+        }
+      );
+
+      $(document).on(
+        "click",
+        "form input, form select, form textarea",
+        function () {
+          $(".visualizer").css("position", "fixed");
+        }
+      );
+    </script>
   </head>
   <body>
     <div id="builder-container">
@@ -87,13 +348,25 @@
               <div id="record-color-button" class="color-button">
                 Select Color
               </div>
-              <div id="selected-record-color-name">No color selected</div>
+              <div
+                id="selected-record-color-display"
+                class="selected-color-display"
+              >
+                <div
+                  id="selected-record-color-swatch"
+                  class="selected-color-swatch"
+                  style="display: none"
+                ></div>
+                <div id="selected-record-color-name">No color selected</div>
+              </div>
               <input type="hidden" id="record-color" name="record-color" />
+              <!-- Old color picker container - hidden, using modal instead -->
               <div
                 id="record-color-picker-container"
                 class="color-picker-container"
+                style="display: none !important"
               >
-                <div id="memphis-color-options-container">
+                <div id="memphis-color-options-container" style="display: none">
                   <div id="ecomix-options-container" style="display: none">
                     <!-- Eco Mix color options -->
                   </div>
@@ -122,6 +395,27 @@
                     <!-- Deluxe Blends color options -->
                   </div>
                 </div>
+              </div>
+            </div>
+
+            <!-- Picture Disc Upload -->
+            <div
+              class="form-section"
+              id="picture-disc-upload-container"
+              style="display: none"
+            >
+              <label for="picture-disc-upload">Picture Disc Upload</label>
+              <input
+                type="file"
+                id="picture-disc-upload"
+                name="picture-disc-upload"
+                accept="image/*"
+              />
+              <div class="file-upload-display" style="display: none">
+                <span id="picture-disc-upload-file-display"></span>
+                <button type="button" id="remove-picture-disc-image">
+                  Remove
+                </button>
               </div>
             </div>
 
@@ -806,6 +1100,18 @@
               class="visualizer-record-display record-disc-1"
             >
               <div class="record-label-center" id="record-label-1"></div>
+              <div
+                class="record-effect-layer effect-layer-1"
+                id="record-effect-layer-1"
+              ></div>
+              <div
+                class="record-effect-layer effect-layer-2"
+                id="record-effect-layer-2"
+              ></div>
+              <div
+                class="record-effect-layer effect-layer-3"
+                id="record-effect-layer-3"
+              ></div>
             </div>
             <div
               id="builder-record-display-2"
@@ -813,6 +1119,18 @@
               style="display: none"
             >
               <div class="record-label-center" id="record-label-2"></div>
+              <div
+                class="record-effect-layer effect-layer-1"
+                id="record-effect-layer-1-2"
+              ></div>
+              <div
+                class="record-effect-layer effect-layer-2"
+                id="record-effect-layer-2-2"
+              ></div>
+              <div
+                class="record-effect-layer effect-layer-3"
+                id="record-effect-layer-3-2"
+              ></div>
             </div>
             <div
               id="builder-record-display-3"
@@ -820,6 +1138,57 @@
               style="display: none"
             >
               <div class="record-label-center" id="record-label-3"></div>
+              <div
+                class="record-effect-layer effect-layer-1"
+                id="record-effect-layer-1-3"
+              ></div>
+              <div
+                class="record-effect-layer effect-layer-2"
+                id="record-effect-layer-2-3"
+              ></div>
+              <div
+                class="record-effect-layer effect-layer-3"
+                id="record-effect-layer-3-3"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Color Picker Modal -->
+    <div class="modal-background-2" id="color-picker-modal">
+      <div class="color-picker-modal-container">
+        <button class="close-button" id="color-picker-close-button">×</button>
+        <h2 class="color-picker-modal-title">Select Record Color</h2>
+        <div class="color-picker-modal-content">
+          <div id="color-picker-modal-options-container">
+            <div id="ecomix-options-container-modal" style="display: none">
+              <!-- Eco Mix color options -->
+            </div>
+            <div
+              id="soilds-translucent-options-container-modal"
+              style="display: none"
+            >
+              <!-- Solids Translucent color options -->
+            </div>
+            <div
+              id="soilds-opaque-options-container-modal"
+              style="display: none"
+            >
+              <!-- Solids Opaque color options -->
+            </div>
+            <div
+              id="standard-blends-options-container-modal"
+              style="display: none"
+            >
+              <!-- Standard Blends color options -->
+            </div>
+            <div
+              id="deluxe-blends-options-container-modal"
+              style="display: none"
+            >
+              <!-- Deluxe Blends color options -->
             </div>
           </div>
         </div>
@@ -1354,6 +1723,32 @@
             });
           }
 
+          // Ensure pricing breakdown buttons aren't intercepted by color picker handlers
+          // Check if any pricing breakdown button clicks are being caught incorrectly
+          const pricingBreakdownButtons = [
+            document.getElementById("pricing-breakdown-button"),
+            document.getElementById("pricing-breakdown-button-visualizer"),
+            document.getElementById("pricing-breakdown-button-mobile"),
+          ];
+
+          pricingBreakdownButtons.forEach((button) => {
+            if (button) {
+              // Add a handler in capture phase to ensure it's not being blocked
+              // But don't prevent the event - just log for debugging
+              button.addEventListener(
+                "click",
+                (e) => {
+                  console.log(
+                    "Pricing breakdown button clicked (our handler):",
+                    button.id
+                  );
+                  // Don't prevent or stop - let builder.js handle it
+                },
+                true // Capture phase - runs before other handlers
+              );
+            }
+          });
+
           // Control disc visibility based on amount selection
           const amountInput = document.getElementById("record-amount");
           const recordDisc1 = document.getElementById("builder-record-display");
@@ -1423,6 +1818,119 @@
             }, 100);
           }
 
+          // Handle picture disc upload
+          // Wait for DOM to be ready and try multiple times
+          function setupPictureDiscHandler() {
+            const pictureDiscUpload = document.getElementById(
+              "picture-disc-upload"
+            );
+
+            if (pictureDiscUpload && recordDisc1) {
+              // Add event listener for picture disc upload
+              pictureDiscUpload.addEventListener(
+                "change",
+                (e) => {
+                  const file = pictureDiscUpload.files[0];
+                  if (file) {
+                    const imageUrl = URL.createObjectURL(file);
+                    // Apply to all visible discs
+                    const discs = [recordDisc1, recordDisc2, recordDisc3];
+                    discs.forEach((disc) => {
+                      if (disc) {
+                        disc.style.backgroundImage = `url(${imageUrl})`;
+                        disc.style.backgroundSize = "cover";
+                        disc.style.backgroundPosition = "center";
+                        disc.style.backgroundRepeat = "no-repeat";
+                      }
+                    });
+                  } else {
+                    // Reset to default black record
+                    const defaultImage =
+                      "url(https://uploads-ssl.webflow.com/65ce69671190e385bf638294/66c35137e88fe82114818e60_Black_Record.png)";
+                    const discs = [recordDisc1, recordDisc2, recordDisc3];
+                    discs.forEach((disc) => {
+                      if (disc) {
+                        disc.style.backgroundImage = defaultImage;
+                        disc.style.backgroundSize = "contain";
+                      }
+                    });
+                  }
+                },
+                true
+              );
+            } else if (!pictureDiscUpload) {
+              // Retry if element not found yet
+              setTimeout(setupPictureDiscHandler, 100);
+            }
+          }
+
+          // Set up after DOM is ready
+          if (document.readyState === "loading") {
+            document.addEventListener("DOMContentLoaded", () => {
+              setTimeout(setupPictureDiscHandler, 500);
+            });
+          } else {
+            setTimeout(setupPictureDiscHandler, 500);
+          }
+
+          // Handle record type changes to update eco-mix display
+          // This needs to access colorsData from the color picker scope
+          // We'll set up the handler after colors are loaded
+          function setupEcoMixHandler() {
+            const recordTypeInput = document.getElementById("record-type");
+            const recordColorInput = document.getElementById("record-color");
+
+            if (!recordTypeInput || !recordColorInput) return;
+
+            function updateEcoMixDisplay() {
+              const recordType = recordTypeInput.value;
+              const colorName = recordColorInput.value;
+
+              // If switching to eco-mix and a color is already selected, update display
+              if (recordType === "eco-mix" && colorName) {
+                // Try to get colorsData from the color picker scope or reload it
+                fetch("./colors.json")
+                  .then((response) => response.json())
+                  .then((colors) => {
+                    const color = colors.find((c) => c.name === colorName);
+                    if (color && color.imageUrl) {
+                      const recordDiscs = [
+                        document.getElementById("builder-record-display"),
+                        document.getElementById("builder-record-display-2"),
+                        document.getElementById("builder-record-display-3"),
+                      ];
+
+                      recordDiscs.forEach((disc) => {
+                        if (disc) {
+                          disc.style.backgroundImage = `url(${color.imageUrl})`;
+                          disc.style.backgroundSize = "cover";
+                          disc.style.backgroundPosition = "center";
+                          disc.style.backgroundRepeat = "no-repeat";
+                        }
+                      });
+                    }
+                  })
+                  .catch((error) => {
+                    console.error("Error loading colors for eco-mix:", error);
+                  });
+              }
+            }
+
+            // Watch for record type changes
+            recordTypeInput.addEventListener("change", () => {
+              setTimeout(updateEcoMixDisplay, 100);
+            });
+          }
+
+          // Set up after DOM is ready
+          if (document.readyState === "loading") {
+            document.addEventListener("DOMContentLoaded", () => {
+              setTimeout(setupEcoMixHandler, 500);
+            });
+          } else {
+            setTimeout(setupEcoMixHandler, 500);
+          }
+
           // Handle label upload to display on record center labels
           const labelUpload = document.querySelector(
             "input[name='label-front-upload']"
@@ -1445,24 +1953,36 @@
                     recordLabel1.style.backgroundSize = "cover";
                     recordLabel1.style.backgroundPosition = "center";
                     recordLabel1.style.backgroundRepeat = "no-repeat";
+                    recordLabel1.style.opacity = "1";
                   }
                   if (recordLabel2) {
                     recordLabel2.style.backgroundImage = `url(${imageUrl})`;
                     recordLabel2.style.backgroundSize = "cover";
                     recordLabel2.style.backgroundPosition = "center";
                     recordLabel2.style.backgroundRepeat = "no-repeat";
+                    recordLabel2.style.opacity = "1";
                   }
                   if (recordLabel3) {
                     recordLabel3.style.backgroundImage = `url(${imageUrl})`;
                     recordLabel3.style.backgroundSize = "cover";
                     recordLabel3.style.backgroundPosition = "center";
                     recordLabel3.style.backgroundRepeat = "no-repeat";
+                    recordLabel3.style.opacity = "1";
                   }
                 } else {
-                  // Clear labels if file removed
-                  if (recordLabel1) recordLabel1.style.backgroundImage = "";
-                  if (recordLabel2) recordLabel2.style.backgroundImage = "";
-                  if (recordLabel3) recordLabel3.style.backgroundImage = "";
+                  // Clear labels if file removed - make transparent again
+                  if (recordLabel1) {
+                    recordLabel1.style.backgroundImage = "";
+                    recordLabel1.style.opacity = "0";
+                  }
+                  if (recordLabel2) {
+                    recordLabel2.style.backgroundImage = "";
+                    recordLabel2.style.opacity = "0";
+                  }
+                  if (recordLabel3) {
+                    recordLabel3.style.backgroundImage = "";
+                    recordLabel3.style.opacity = "0";
+                  }
                 }
               },
               true
@@ -1756,6 +2276,1375 @@
         } else {
           setTimeout(setupPriceSync, 1000);
         }
+      })();
+
+      // Load and populate color options from colors.json
+      (function () {
+        let colorsData = null;
+
+        // Map JSON color types to record types and container IDs
+        const colorTypeMap = {
+          ecomix: {
+            recordTypes: ["eco-mix"],
+            containerId: "ecomix-options-container",
+          },
+          "solids - translucent": {
+            recordTypes: ["solids-translucent", "splatter", "two-color"],
+            containerId: "soilds-translucent-options-container",
+          },
+          "solids - opaque": {
+            recordTypes: ["solids-opaque"],
+            containerId: "soilds-opaque-options-container",
+          },
+          "solids - neon": {
+            recordTypes: ["solids-neon"],
+            containerId: "soilds-opaque-options-container", // Fallback to opaque container
+          },
+          "standard (mb) blends": {
+            recordTypes: ["standard-blends"],
+            containerId: "standard-blends-options-container",
+          },
+          "deluxe (md) blends": {
+            recordTypes: ["deluxe-blends"],
+            containerId: "deluxe-blends-options-container",
+          },
+          "metallic (hb) blends": {
+            recordTypes: ["deluxe-blends"], // Map to deluxe blends
+            containerId: "deluxe-blends-options-container",
+          },
+          "smoke (sb) blends": {
+            recordTypes: ["standard-blends"], // Map to standard blends
+            containerId: "standard-blends-options-container",
+          },
+          "cream (cb) blends": {
+            recordTypes: ["standard-blends"], // Map to standard blends
+            containerId: "standard-blends-options-container",
+          },
+        };
+
+        // Function to create a color option element
+        function createColorOption(color, options = {}) {
+          const option = document.createElement("div");
+          // Add base class
+          option.className = "memphis-color-option";
+
+          // Add additional classes based on context
+          if (options.isRecordColor) {
+            option.classList.add("record-color-option");
+          }
+          if (options.isSplatterColor) {
+            option.classList.add("splatter-color-option");
+            option.classList.add("color-picker-option");
+          }
+          if (options.isInSplatterContainer) {
+            option.classList.add("color-picker-option");
+          }
+
+          option.setAttribute("data-name", color.name);
+          option.setAttribute("data-image-url", color.imageUrl);
+          option.style.backgroundImage = `url(${color.imageUrl})`;
+          option.style.backgroundSize = "cover";
+          option.style.backgroundPosition = "center";
+          option.title = color.fullName || color.name;
+          return option;
+        }
+
+        // Function to populate color containers
+        function populateColorContainers() {
+          if (!colorsData) return;
+
+          // Map container IDs to their modal equivalents
+          const containerMap = {
+            "ecomix-options-container": "ecomix-options-container-modal",
+            "soilds-translucent-options-container":
+              "soilds-translucent-options-container-modal",
+            "soilds-opaque-options-container":
+              "soilds-opaque-options-container-modal",
+            "standard-blends-options-container":
+              "standard-blends-options-container-modal",
+            "deluxe-blends-options-container":
+              "deluxe-blends-options-container-modal",
+          };
+
+          // Clear all containers first (both regular and modal)
+          const containers = [
+            "ecomix-options-container",
+            "soilds-translucent-options-container",
+            "soilds-opaque-options-container",
+            "standard-blends-options-container",
+            "deluxe-blends-options-container",
+          ];
+
+          containers.forEach((containerId) => {
+            const container = document.getElementById(containerId);
+            if (container) {
+              container.innerHTML = "";
+            }
+            // Also clear modal container
+            const modalContainerId = containerMap[containerId];
+            if (modalContainerId) {
+              const modalContainer = document.getElementById(modalContainerId);
+              if (modalContainer) {
+                modalContainer.innerHTML = "";
+              }
+            }
+          });
+
+          // Populate containers based on color type (both regular and modal)
+          colorsData.forEach((color) => {
+            const mapping = colorTypeMap[color.type];
+            if (mapping) {
+              const container = document.getElementById(mapping.containerId);
+              if (container) {
+                // Determine if this is a record color container
+                const isRecordColor =
+                  mapping.containerId.includes("record") ||
+                  mapping.containerId.includes("ecomix") ||
+                  mapping.containerId.includes("soilds-opaque") ||
+                  mapping.containerId.includes("standard-blends") ||
+                  mapping.containerId.includes("deluxe-blends");
+                const option = createColorOption(color, {
+                  isRecordColor: isRecordColor,
+                });
+                container.appendChild(option);
+              }
+              // Also populate modal container
+              const modalContainerId = containerMap[mapping.containerId];
+              if (modalContainerId) {
+                const modalContainer =
+                  document.getElementById(modalContainerId);
+                if (modalContainer) {
+                  const isRecordColor =
+                    mapping.containerId.includes("record") ||
+                    mapping.containerId.includes("ecomix") ||
+                    mapping.containerId.includes("soilds-opaque") ||
+                    mapping.containerId.includes("standard-blends") ||
+                    mapping.containerId.includes("deluxe-blends");
+                  // Translucent colors can be used for splatter, so add those classes too
+                  const isSplatterColor =
+                    mapping.containerId.includes("soilds-translucent");
+                  const modalOption = createColorOption(color, {
+                    isRecordColor: isRecordColor,
+                    isSplatterColor: isSplatterColor,
+                    isInSplatterContainer: isSplatterColor,
+                  });
+                  modalContainer.appendChild(modalOption);
+                }
+              }
+            }
+          });
+
+          // Also populate splatter color containers (use translucent colors)
+          const splatterContainers = [
+            "soilds-translucent-options-container-splatter-one",
+            "soilds-translucent-options-container-splatter-two",
+            "soilds-translucent-options-container-splatter-three",
+          ];
+
+          const splatterColors = colorsData.filter(
+            (c) => c.type === "solids - translucent"
+          );
+
+          splatterContainers.forEach((containerId) => {
+            const container = document.getElementById(containerId);
+            if (container) {
+              container.innerHTML = "";
+              // Add splatter-colors class for jQuery compatibility
+              container.classList.add("splatter-colors");
+              container.classList.add("splater-colors"); // Support both spellings
+              splatterColors.forEach((color) => {
+                const option = createColorOption(color, {
+                  isSplatterColor: true,
+                  isInSplatterContainer: true,
+                });
+                container.appendChild(option);
+              });
+            }
+          });
+        }
+
+        // Load colors.json
+        async function loadColors() {
+          try {
+            const response = await fetch("./colors.json");
+            if (!response.ok) {
+              throw new Error("Failed to load colors.json");
+            }
+            colorsData = await response.json();
+            populateColorContainers();
+          } catch (error) {
+            console.error("Error loading colors:", error);
+          }
+        }
+
+        // Initialize when DOM is ready
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", () => {
+            setTimeout(loadColors, 100);
+          });
+        } else {
+          setTimeout(loadColors, 100);
+        }
+
+        // Also try after builder.js loads
+        window.addEventListener("load", () => {
+          setTimeout(() => {
+            if (colorsData) {
+              populateColorContainers();
+            } else {
+              loadColors();
+            }
+          }, 500);
+        });
+
+        // Color Picker Modal functionality
+        const colorPickerModal = document.getElementById("color-picker-modal");
+        const colorPickerCloseButton = document.getElementById(
+          "color-picker-close-button"
+        );
+        const recordColorButton = document.getElementById(
+          "record-color-button"
+        );
+
+        // Track which input we're selecting a color for
+        let currentColorSelectionTarget = null; // 'record', 'splatter-1', 'splatter-2', 'splatter-3'
+
+        // Map record types to modal container IDs
+        const recordTypeToModalContainer = {
+          "eco-mix": "ecomix-options-container-modal",
+          "solids-translucent": "soilds-translucent-options-container-modal",
+          "solids-opaque": "soilds-opaque-options-container-modal",
+          "solids-neon": "soilds-opaque-options-container-modal", // Neon uses same container as opaque
+          "standard-blends": "standard-blends-options-container-modal",
+          "deluxe-blends": "deluxe-blends-options-container-modal",
+          splatter: "soilds-opaque-options-container-modal", // Splatter uses solids-opaque as base
+        };
+
+        // Function to show the appropriate color container in modal
+        function showModalColorContainer(recordType, isSplatterColor = false) {
+          // Hide all modal containers and remove splatter-colors class
+          const modalContainers = [
+            "ecomix-options-container-modal",
+            "soilds-translucent-options-container-modal",
+            "soilds-opaque-options-container-modal",
+            "standard-blends-options-container-modal",
+            "deluxe-blends-options-container-modal",
+          ];
+
+          modalContainers.forEach((containerId) => {
+            const container = document.getElementById(containerId);
+            if (container) {
+              container.style.display = "none";
+              // Remove splatter-colors class from all containers
+              container.classList.remove("splatter-colors");
+              container.classList.remove("splater-colors");
+            }
+          });
+
+          // Show the appropriate container
+          const containerId = recordTypeToModalContainer[recordType];
+          if (containerId) {
+            const container = document.getElementById(containerId);
+            if (container) {
+              container.style.display = "grid";
+
+              // If showing neon colors, filter to show only neon colors
+              if (recordType === "solids-neon") {
+                // Hide all color options first
+                const allOptions = container.querySelectorAll(
+                  ".memphis-color-option"
+                );
+                allOptions.forEach((option) => {
+                  option.style.display = "none";
+                });
+
+                // Show only neon colors (if colorsData is loaded, otherwise show all and filter later)
+                if (colorsData) {
+                  const neonColors = colorsData.filter(
+                    (c) => c.type === "solids - neon"
+                  );
+                  neonColors.forEach((neonColor) => {
+                    const colorName = neonColor.name;
+                    const neonOption = Array.from(allOptions).find(
+                      (opt) => opt.getAttribute("data-name") === colorName
+                    );
+                    if (neonOption) {
+                      neonOption.style.display = "block";
+                    }
+                  });
+                } else {
+                  // If colorsData not loaded yet, show all and filter when it loads
+                  // This ensures the modal opens even if data isn't ready
+                  allOptions.forEach((option) => {
+                    option.style.display = "block";
+                  });
+                }
+              } else {
+                // For other types, show all colors in the container
+                const allOptions = container.querySelectorAll(
+                  ".memphis-color-option"
+                );
+                allOptions.forEach((option) => {
+                  option.style.display = "block";
+                });
+              }
+
+              // Add splatter-colors class if this is for splatter color selection
+              if (isSplatterColor) {
+                container.classList.add("splatter-colors");
+                container.classList.add("splater-colors"); // Support both spellings
+              }
+            }
+          }
+        }
+
+        // Open modal when "Select Color" button is clicked
+        // Wait for builder.js to load, then override its behavior
+        function setupColorPickerModal() {
+          const recordColorButton = document.getElementById(
+            "record-color-button"
+          );
+          const splatterColorOneButton = document.getElementById(
+            "splatter-color-one-button"
+          );
+          const splatterColorTwoButton = document.getElementById(
+            "splatter-color-two-button"
+          );
+          const splatterColorThreeButton = document.getElementById(
+            "splatter-color-three-button"
+          );
+          const colorPickerModal =
+            document.getElementById("color-picker-modal");
+
+          // Function to open modal for a specific target
+          function openColorModal(target, recordType) {
+            if (!recordType || recordType === "black") {
+              console.log("Modal not opened - recordType:", recordType);
+              return;
+            }
+
+            console.log("Opening color modal for:", { target, recordType });
+
+            // Prevent old dropdowns from opening
+            const oldPickers = [
+              document.getElementById("record-color-picker-container"),
+              document.getElementById("splatter-picker-color-one-container"),
+              document.getElementById("splatter-picker-color-two-container"),
+              document.getElementById("splatter-picker-color-three-container"),
+            ];
+            oldPickers.forEach((picker) => {
+              if (picker) picker.classList.remove("visible");
+            });
+
+            currentColorSelectionTarget = target;
+
+            // Determine if this is for splatter color selection
+            const isSplatterColor = target.startsWith("splatter-");
+
+            // Update modal title
+            const modalTitle = document.querySelector(
+              ".color-picker-modal-title"
+            );
+            if (modalTitle) {
+              if (isSplatterColor) {
+                modalTitle.textContent = "Select Splatter Color";
+              } else {
+                modalTitle.textContent = "Select Record Color";
+              }
+            }
+
+            showModalColorContainer(recordType, isSplatterColor);
+            colorPickerModal.classList.add("visible");
+            document.body.style.overflow = "hidden";
+          }
+
+          if (recordColorButton && colorPickerModal) {
+            // Use capture phase to intercept before builder.js
+            // But make sure we only handle clicks on the record-color-button specifically
+            recordColorButton.addEventListener(
+              "click",
+              (e) => {
+                // Only handle if this is actually the record-color-button or its children
+                const clickedElement = e.target;
+                const isRecordColorButton =
+                  clickedElement.id === "record-color-button" ||
+                  clickedElement.closest("#record-color-button") !== null;
+
+                // Explicitly exclude pricing breakdown buttons
+                const isPricingButton =
+                  clickedElement.id === "pricing-breakdown-button" ||
+                  clickedElement.id === "pricing-breakdown-button-visualizer" ||
+                  clickedElement.id === "pricing-breakdown-button-mobile" ||
+                  clickedElement.closest("#pricing-breakdown-button") !==
+                    null ||
+                  clickedElement.closest(
+                    "#pricing-breakdown-button-visualizer"
+                  ) !== null ||
+                  clickedElement.closest("#pricing-breakdown-button-mobile") !==
+                    null;
+
+                if (!isRecordColorButton || isPricingButton) {
+                  return; // Not our button or it's a pricing button, let it pass through
+                }
+
+                e.stopPropagation();
+                e.preventDefault();
+                const recordTypeInput = document.getElementById("record-type");
+                if (recordTypeInput && recordTypeInput.value) {
+                  openColorModal("record", recordTypeInput.value);
+                  return false;
+                }
+              },
+              true
+            ); // Use capture phase
+          }
+
+          // Set up splatter color buttons
+          if (splatterColorOneButton && colorPickerModal) {
+            splatterColorOneButton.addEventListener(
+              "click",
+              (e) => {
+                e.stopPropagation();
+                const recordTypeInput = document.getElementById("record-type");
+                if (recordTypeInput && recordTypeInput.value === "splatter") {
+                  openColorModal("splatter-1", "solids-translucent");
+                  return false;
+                }
+              },
+              true
+            );
+          }
+
+          if (splatterColorTwoButton && colorPickerModal) {
+            splatterColorTwoButton.addEventListener(
+              "click",
+              (e) => {
+                e.stopPropagation();
+                const recordTypeInput = document.getElementById("record-type");
+                if (recordTypeInput && recordTypeInput.value === "splatter") {
+                  openColorModal("splatter-2", "solids-translucent");
+                  return false;
+                }
+              },
+              true
+            );
+          }
+
+          if (splatterColorThreeButton && colorPickerModal) {
+            splatterColorThreeButton.addEventListener(
+              "click",
+              (e) => {
+                e.stopPropagation();
+                const recordTypeInput = document.getElementById("record-type");
+                if (recordTypeInput && recordTypeInput.value === "splatter") {
+                  openColorModal("splatter-3", "solids-translucent");
+                  return false;
+                }
+              },
+              true
+            );
+          }
+        }
+
+        // Set up after builder.js loads
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", () => {
+            setTimeout(setupColorPickerModal, 1500);
+          });
+        } else {
+          setTimeout(setupColorPickerModal, 1500);
+        }
+
+        window.addEventListener("load", () => {
+          setTimeout(setupColorPickerModal, 2000);
+        });
+
+        // Close modal handlers
+        function closeColorPickerModal() {
+          if (colorPickerModal) {
+            colorPickerModal.classList.remove("visible");
+            document.body.style.overflow = "";
+            currentColorSelectionTarget = null;
+          }
+        }
+
+        if (colorPickerCloseButton) {
+          colorPickerCloseButton.addEventListener("click", (e) => {
+            e.stopPropagation();
+            closeColorPickerModal();
+          });
+        }
+
+        // Close modal when clicking backdrop
+        if (colorPickerModal) {
+          colorPickerModal.addEventListener("click", (e) => {
+            if (e.target === colorPickerModal) {
+              closeColorPickerModal();
+            }
+          });
+        }
+
+        // Handle color selection in modal - trigger builder.js logic
+        if (colorPickerModal) {
+          colorPickerModal.addEventListener("click", (e) => {
+            if (e.target.classList.contains("memphis-color-option")) {
+              e.stopPropagation();
+
+              // Get color data from the clicked element
+              const colorName = e.target.getAttribute("data-name");
+              const imageUrl = e.target.getAttribute("data-image-url");
+
+              // Determine which input we're updating based on currentColorSelectionTarget
+              if (currentColorSelectionTarget === "record") {
+                // Handle record color selection
+                const recordColorNameDisplay = document.getElementById(
+                  "selected-record-color-name"
+                );
+                const recordColorInput =
+                  document.getElementById("record-color");
+                const recordColorButton = document.getElementById(
+                  "record-color-button"
+                );
+                const recordVisualDisplay = document.getElementById(
+                  "builder-record-display"
+                );
+                const recordTypeInput = document.getElementById("record-type");
+
+                // Update display with swatch and name
+                const recordColorDisplay = document.getElementById(
+                  "selected-record-color-display"
+                );
+                const recordColorSwatch = document.getElementById(
+                  "selected-record-color-swatch"
+                );
+
+                if (recordColorNameDisplay) {
+                  recordColorNameDisplay.innerText = colorName;
+                }
+
+                // Update swatch image
+                if (recordColorSwatch && imageUrl) {
+                  recordColorSwatch.style.backgroundImage = `url(${imageUrl})`;
+                  recordColorSwatch.style.backgroundSize = "cover";
+                  recordColorSwatch.style.backgroundPosition = "center";
+                  recordColorSwatch.style.backgroundRepeat = "no-repeat";
+                  recordColorSwatch.style.display = "block";
+                }
+
+                if (recordColorDisplay) {
+                  recordColorDisplay.style.display = "flex";
+                }
+
+                // Update button
+                if (recordColorButton) {
+                  recordColorButton.classList.add("color-selected");
+                }
+
+                // Update input
+                if (recordColorInput) {
+                  recordColorInput.value = colorName;
+                }
+
+                // Update visual display (including eco-mix)
+                if (recordVisualDisplay && recordTypeInput) {
+                  recordVisualDisplay.style.backgroundImage = `url(${imageUrl})`;
+                  recordVisualDisplay.style.backgroundSize = "cover";
+                  recordVisualDisplay.style.backgroundPosition = "center";
+                  recordVisualDisplay.style.backgroundRepeat = "no-repeat";
+                }
+
+                // Also update all record discs for eco-mix and other types
+                const recordDisc1 = document.getElementById(
+                  "builder-record-display"
+                );
+                const recordDisc2 = document.getElementById(
+                  "builder-record-display-2"
+                );
+                const recordDisc3 = document.getElementById(
+                  "builder-record-display-3"
+                );
+
+                [recordDisc1, recordDisc2, recordDisc3].forEach((disc) => {
+                  if (disc) {
+                    disc.style.backgroundImage = `url(${imageUrl})`;
+                    disc.style.backgroundSize = "cover";
+                    disc.style.backgroundPosition = "center";
+                    disc.style.backgroundRepeat = "no-repeat";
+                  }
+                });
+
+                // Update builder.js's selected state
+                if (typeof selected !== "undefined") {
+                  selected.recordColorName = colorName;
+
+                  // Trigger price calculations
+                  if (typeof getRecordPrice === "function") {
+                    getRecordPrice();
+                  }
+                  if (typeof getTotalPrice === "function") {
+                    getTotalPrice();
+                  }
+                }
+
+                // Trigger jQuery events for record color selection
+                if (typeof jQuery !== "undefined") {
+                  // Remove selected class from all record color options
+                  jQuery(".record-color-option").removeClass(
+                    "selected-effect-color"
+                  );
+                  jQuery(".record-color-option").removeClass(
+                    "selected-record-color"
+                  );
+
+                  // Add selected classes to clicked option
+                  jQuery(e.target).addClass("selected-effect-color");
+                  jQuery(e.target).addClass("selected-record-color");
+
+                  // Trigger click event for jQuery handlers
+                  jQuery(e.target).trigger("click");
+                }
+
+                // Trigger change event for builder.js
+                if (recordColorInput) {
+                  recordColorInput.dispatchEvent(
+                    new Event("change", { bubbles: true })
+                  );
+                  recordColorInput.dispatchEvent(
+                    new Event("input", { bubbles: true })
+                  );
+                }
+              } else if (currentColorSelectionTarget === "splatter-1") {
+                // Handle splatter color 1 selection
+                const splatterColorOneInput =
+                  document.getElementById("splatter-color-one");
+                const splatterColorOneButton = document.getElementById(
+                  "splatter-color-one-button"
+                );
+                const splatterColorOneDisplay = document.getElementById(
+                  "selected-splatter-color-one-name"
+                );
+
+                if (splatterColorOneInput) {
+                  splatterColorOneInput.value = colorName;
+                  // Trigger both change and input events to ensure effect listeners fire
+                  splatterColorOneInput.dispatchEvent(
+                    new Event("change", { bubbles: true })
+                  );
+                  splatterColorOneInput.dispatchEvent(
+                    new Event("input", { bubbles: true })
+                  );
+                }
+
+                if (splatterColorOneButton) {
+                  splatterColorOneButton.classList.add("color-selected");
+                }
+
+                if (splatterColorOneDisplay) {
+                  splatterColorOneDisplay.innerText = colorName;
+                  splatterColorOneDisplay.parentElement.style.color = "black";
+                }
+
+                if (typeof selected !== "undefined") {
+                  selected.splatterOneColorName = colorName;
+                }
+
+                // Trigger effect application immediately
+                if (typeof window.applySplatterEffect === "function") {
+                  setTimeout(() => {
+                    window.applySplatterEffect();
+                  }, 50);
+                }
+
+                // Trigger jQuery events for splatter color selection
+                if (typeof jQuery !== "undefined") {
+                  // Toggle selected class
+                  if (jQuery(e.target).hasClass("selected-effect-color")) {
+                    jQuery(e.target).removeClass("selected-effect-color");
+                    jQuery(e.target).css("pointer-events", "");
+                  } else {
+                    jQuery(e.target).addClass("selected-effect-color");
+                    jQuery(e.target).css("pointer-events", "none");
+                  }
+                  // Trigger click event for jQuery handlers
+                  jQuery(e.target).trigger("click");
+                }
+              } else if (currentColorSelectionTarget === "splatter-2") {
+                // Handle splatter color 2 selection
+                const splatterColorTwoInput =
+                  document.getElementById("splatter-color-two");
+                const splatterColorTwoButton = document.getElementById(
+                  "splatter-color-two-button"
+                );
+                const splatterColorTwoDisplay = document.getElementById(
+                  "selected-splatter-color-two-name"
+                );
+
+                if (splatterColorTwoInput) {
+                  splatterColorTwoInput.value = colorName;
+                  // Trigger both change and input events to ensure effect listeners fire
+                  splatterColorTwoInput.dispatchEvent(
+                    new Event("change", { bubbles: true })
+                  );
+                  splatterColorTwoInput.dispatchEvent(
+                    new Event("input", { bubbles: true })
+                  );
+                }
+
+                if (splatterColorTwoButton) {
+                  splatterColorTwoButton.classList.add("color-selected");
+                }
+
+                if (splatterColorTwoDisplay) {
+                  splatterColorTwoDisplay.innerText = colorName;
+                  splatterColorTwoDisplay.parentElement.style.color = "black";
+                }
+
+                if (typeof selected !== "undefined") {
+                  selected.splatterTwoColorName = colorName;
+                }
+
+                // Trigger effect application immediately
+                if (typeof window.applySplatterEffect === "function") {
+                  setTimeout(() => {
+                    window.applySplatterEffect();
+                  }, 50);
+                }
+
+                // Trigger jQuery events for splatter color selection
+                if (typeof jQuery !== "undefined") {
+                  // Toggle selected class
+                  if (jQuery(e.target).hasClass("selected-effect-color")) {
+                    jQuery(e.target).removeClass("selected-effect-color");
+                    jQuery(e.target).css("pointer-events", "");
+                  } else {
+                    jQuery(e.target).addClass("selected-effect-color");
+                    jQuery(e.target).css("pointer-events", "none");
+                  }
+                  // Trigger click event for jQuery handlers
+                  jQuery(e.target).trigger("click");
+                }
+              } else if (currentColorSelectionTarget === "splatter-3") {
+                // Handle splatter color 3 selection
+                const splatterColorThreeInput = document.getElementById(
+                  "splatter-color-three"
+                );
+                const splatterColorThreeButton = document.getElementById(
+                  "splatter-color-three-button"
+                );
+                const splatterColorThreeDisplay = document.getElementById(
+                  "selected-splatter-color-three-name"
+                );
+
+                if (splatterColorThreeInput) {
+                  splatterColorThreeInput.value = colorName;
+                  // Trigger both change and input events to ensure effect listeners fire
+                  splatterColorThreeInput.dispatchEvent(
+                    new Event("change", { bubbles: true })
+                  );
+                  splatterColorThreeInput.dispatchEvent(
+                    new Event("input", { bubbles: true })
+                  );
+                }
+
+                if (splatterColorThreeButton) {
+                  splatterColorThreeButton.classList.add("color-selected");
+                }
+
+                if (splatterColorThreeDisplay) {
+                  splatterColorThreeDisplay.innerText = colorName;
+                  splatterColorThreeDisplay.parentElement.style.color = "black";
+                }
+
+                if (typeof selected !== "undefined") {
+                  selected.splatterThreeColorName = colorName;
+                }
+
+                // Trigger effect application immediately
+                if (typeof window.applySplatterEffect === "function") {
+                  setTimeout(() => {
+                    window.applySplatterEffect();
+                  }, 50);
+                }
+
+                // Trigger jQuery events for splatter color selection
+                if (typeof jQuery !== "undefined") {
+                  // Toggle selected class
+                  if (jQuery(e.target).hasClass("selected-effect-color")) {
+                    jQuery(e.target).removeClass("selected-effect-color");
+                    jQuery(e.target).css("pointer-events", "");
+                  } else {
+                    jQuery(e.target).addClass("selected-effect-color");
+                    jQuery(e.target).css("pointer-events", "none");
+                  }
+                  // Trigger click event for jQuery handlers
+                  jQuery(e.target).trigger("click");
+                }
+              }
+
+              // Close modal
+              setTimeout(() => {
+                closeColorPickerModal();
+              }, 100);
+            }
+          });
+        }
+
+        // Sync swatch when builder.js updates color name
+        function syncColorSwatch() {
+          const recordColorNameDisplay = document.getElementById(
+            "selected-record-color-name"
+          );
+          const recordColorSwatch = document.getElementById(
+            "selected-record-color-swatch"
+          );
+
+          if (recordColorNameDisplay && recordColorSwatch) {
+            const colorName = recordColorNameDisplay.innerText.trim();
+
+            // If a color is selected, find its image URL from the colors data
+            if (colorName && colorName !== "No color selected" && colorsData) {
+              const color = colorsData.find((c) => c.name === colorName);
+              if (color && color.imageUrl) {
+                recordColorSwatch.style.backgroundImage = `url(${color.imageUrl})`;
+                recordColorSwatch.style.backgroundSize = "cover";
+                recordColorSwatch.style.backgroundPosition = "center";
+                recordColorSwatch.style.backgroundRepeat = "no-repeat";
+                recordColorSwatch.style.display = "block";
+              } else {
+                recordColorSwatch.style.display = "none";
+              }
+            } else {
+              // Hide swatch if no color selected
+              recordColorSwatch.style.backgroundImage = "";
+              recordColorSwatch.style.display = "none";
+            }
+          }
+        }
+
+        // Watch for changes to the color name display
+        function setupColorSwatchSync() {
+          const recordColorNameDisplay = document.getElementById(
+            "selected-record-color-name"
+          );
+
+          if (recordColorNameDisplay) {
+            const observer = new MutationObserver(() => {
+              syncColorSwatch();
+            });
+
+            observer.observe(recordColorNameDisplay, {
+              childList: true,
+              characterData: true,
+              subtree: true,
+            });
+
+            // Initial sync
+            syncColorSwatch();
+          }
+        }
+
+        // Set up swatch sync after colors are loaded
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", () => {
+            setTimeout(() => {
+              if (colorsData) {
+                setupColorSwatchSync();
+              }
+            }, 2000);
+          });
+        } else {
+          setTimeout(() => {
+            if (colorsData) {
+              setupColorSwatchSync();
+            }
+          }, 2000);
+        }
+
+        window.addEventListener("load", () => {
+          setTimeout(() => {
+            if (colorsData) {
+              setupColorSwatchSync();
+            }
+          }, 2500);
+        });
+
+        // Load and apply effects
+        (function () {
+          let effectsData = null;
+          let colorsDataForEffects = null;
+
+          // Get colorsData from the color picker function scope
+          // We'll need to access it from the parent scope or reload it
+          async function loadColorsForEffects() {
+            try {
+              const response = await fetch("./colors.json");
+              if (!response.ok) {
+                throw new Error("Failed to load colors.json");
+              }
+              colorsDataForEffects = await response.json();
+            } catch (error) {
+              console.error("Error loading colors for effects:", error);
+            }
+          }
+
+          // Load effects.json
+          async function loadEffects() {
+            try {
+              const response = await fetch("./effects.json");
+              if (!response.ok) {
+                throw new Error("Failed to load effects.json");
+              }
+              effectsData = await response.json();
+              // Also load colors for effects
+              await loadColorsForEffects();
+              setupEffectListeners();
+              // Expose function to window for external calls
+              window.applySplatterEffect = applySplatterEffect;
+            } catch (error) {
+              console.error("Error loading effects:", error);
+            }
+          }
+
+          // Apply splatter effect to record displays
+          function applySplatterEffect() {
+            const splatterEffect = effectsData?.find(
+              (e) => e.slug === "splatter"
+            );
+            if (!splatterEffect) {
+              console.log(
+                "Splatter effect not found in effectsData",
+                effectsData
+              );
+              return;
+            }
+
+            // Get splatter color selections
+            const splatterColorOneInput =
+              document.getElementById("splatter-color-one");
+            const splatterColorTwoInput =
+              document.getElementById("splatter-color-two");
+            const splatterColorThreeInput = document.getElementById(
+              "splatter-color-three"
+            );
+
+            const splatterColor1 = splatterColorOneInput?.value || null;
+            const splatterColor2 = splatterColorTwoInput?.value || null;
+            const splatterColor3 = splatterColorThreeInput?.value || null;
+
+            console.log("Applying splatter effect:", {
+              splatterColor1,
+              splatterColor2,
+              splatterColor3,
+              effectImage: splatterEffect.effectImage,
+            });
+
+            // Get base color (should be from solids-opaque for splatter)
+            const recordColorInput = document.getElementById("record-color");
+            const baseColorName = recordColorInput?.value || null;
+
+            // Get all record discs
+            const recordDisc1 = document.getElementById(
+              "builder-record-display"
+            );
+            const recordDisc2 = document.getElementById(
+              "builder-record-display-2"
+            );
+            const recordDisc3 = document.getElementById(
+              "builder-record-display-3"
+            );
+
+            const recordDiscs = [recordDisc1, recordDisc2, recordDisc3];
+
+            console.log(
+              "Record discs found:",
+              recordDiscs.map((d) => (d ? "found" : "missing"))
+            );
+
+            recordDiscs.forEach((disc, index) => {
+              if (!disc) return;
+
+              // Get effect layers for this disc
+              const layer1 = disc.querySelector(".effect-layer-1");
+              const layer2 = disc.querySelector(".effect-layer-2");
+              const layer3 = disc.querySelector(".effect-layer-3");
+
+              console.log(`Disc ${index + 1} layers:`, {
+                layer1: layer1 ? "found" : "missing",
+                layer2: layer2 ? "found" : "missing",
+                layer3: layer3 ? "found" : "missing",
+              });
+
+              // Apply base color to record (if selected)
+              // This applies to splatter base colors, but also handle eco-mix if selected
+              if (baseColorName && colorsDataForEffects) {
+                const baseColor = colorsDataForEffects.find(
+                  (c) => c.name === baseColorName
+                );
+                if (baseColor && baseColor.imageUrl) {
+                  disc.style.backgroundImage = `url(${baseColor.imageUrl})`;
+                  disc.style.backgroundSize = "cover";
+                  disc.style.backgroundPosition = "center";
+                  disc.style.backgroundRepeat = "no-repeat";
+                }
+              }
+
+              // Apply layer 1 with splatter color 1 (if selected)
+              if (layer1 && splatterEffect.effectImage) {
+                if (splatterColor1 && colorsDataForEffects) {
+                  const color1 = colorsDataForEffects.find(
+                    (c) => c.name === splatterColor1
+                  );
+                  if (color1 && color1.imageUrl) {
+                    // Use the effect image as a mask
+                    // The effect image has black splatter on white background
+                    // We want: black areas = show color, white areas = transparent
+                    // CSS mask with luminance: white=visible, black=hidden
+                    // So we need to invert the mask
+                    // We'll use mask-composite to subtract from white, or use a filter
+                    layer1.style.backgroundImage = `url(${color1.imageUrl})`;
+                    // The effect image has black splatter on white background
+                    // We want: black areas = show color, white areas = transparent
+                    // Use mask-composite to invert: white gradient minus effect image
+                    layer1.style.maskImage = `linear-gradient(white, white), url(${splatterEffect.effectImage})`;
+                    layer1.style.webkitMaskImage = `linear-gradient(white, white), url(${splatterEffect.effectImage})`;
+                    // Use exclude to invert (white - effect = black areas visible)
+                    layer1.style.maskComposite = "exclude";
+                    layer1.style.webkitMaskComposite = "xor";
+                    // Ensure mask mode is set
+                    layer1.style.maskMode = "luminance";
+                    layer1.style.webkitMaskMode = "luminance";
+                    layer1.style.maskSize = "cover, cover";
+                    layer1.style.webkitMaskSize = "cover, cover";
+                    layer1.style.maskPosition = "center, center";
+                    layer1.style.webkitMaskPosition = "center, center";
+                    layer1.style.maskRepeat = "no-repeat, no-repeat";
+                    layer1.style.webkitMaskRepeat = "no-repeat, no-repeat";
+                    layer1.style.opacity = "1";
+                    layer1.style.display = "block";
+
+                    console.log("Applied layer1 mask:", {
+                      maskImage: layer1.style.maskImage,
+                      maskComposite: layer1.style.maskComposite,
+                      backgroundImage: layer1.style.backgroundImage,
+                    });
+                  }
+                } else {
+                  layer1.style.opacity = "0";
+                }
+              }
+
+              // Apply layer 2 with splatter color 2 (if selected)
+              if (layer2 && splatterEffect.effectLayer2) {
+                if (splatterColor2 && colorsDataForEffects) {
+                  const color2 = colorsDataForEffects.find(
+                    (c) => c.name === splatterColor2
+                  );
+                  if (color2 && color2.imageUrl) {
+                    layer2.style.backgroundImage = `url(${color2.imageUrl})`;
+                    // Invert mask for layer 2
+                    layer2.style.maskImage = `linear-gradient(white, white), url(${splatterEffect.effectLayer2})`;
+                    layer2.style.webkitMaskImage = `linear-gradient(white, white), url(${splatterEffect.effectLayer2})`;
+                    layer2.style.maskComposite = "exclude";
+                    layer2.style.webkitMaskComposite = "xor";
+                    layer2.style.maskMode = "luminance";
+                    layer2.style.webkitMaskMode = "luminance";
+                    layer2.style.maskSize = "cover, cover";
+                    layer2.style.webkitMaskSize = "cover, cover";
+                    layer2.style.maskPosition = "center, center";
+                    layer2.style.webkitMaskPosition = "center, center";
+                    layer2.style.maskRepeat = "no-repeat, no-repeat";
+                    layer2.style.webkitMaskRepeat = "no-repeat, no-repeat";
+                    layer2.style.opacity = "1";
+                    layer2.style.display = "block";
+                  }
+                } else {
+                  layer2.style.opacity = "0";
+                }
+              }
+
+              // Apply layer 3 with splatter color 3 (if selected)
+              if (layer3 && splatterEffect.effectLayer3) {
+                if (splatterColor3 && colorsDataForEffects) {
+                  const color3 = colorsDataForEffects.find(
+                    (c) => c.name === splatterColor3
+                  );
+                  if (color3 && color3.imageUrl) {
+                    layer3.style.backgroundImage = `url(${color3.imageUrl})`;
+                    // Invert mask for layer 3
+                    layer3.style.maskImage = `linear-gradient(white, white), url(${splatterEffect.effectLayer3})`;
+                    layer3.style.webkitMaskImage = `linear-gradient(white, white), url(${splatterEffect.effectLayer3})`;
+                    layer3.style.maskComposite = "exclude";
+                    layer3.style.webkitMaskComposite = "xor";
+                    layer3.style.maskMode = "luminance";
+                    layer3.style.webkitMaskMode = "luminance";
+                    layer3.style.maskSize = "cover, cover";
+                    layer3.style.webkitMaskSize = "cover, cover";
+                    layer3.style.maskPosition = "center, center";
+                    layer3.style.webkitMaskPosition = "center, center";
+                    layer3.style.maskRepeat = "no-repeat, no-repeat";
+                    layer3.style.webkitMaskRepeat = "no-repeat, no-repeat";
+                    layer3.style.opacity = "1";
+                    layer3.style.display = "block";
+                  }
+                } else {
+                  layer3.style.opacity = "0";
+                }
+              }
+            });
+
+            // Sync effect layers from disc 1 to other visible discs
+            if (recordDisc1) {
+              const syncLayers = () => {
+                const layer1 = recordDisc1.querySelector(".effect-layer-1");
+                const layer2 = recordDisc1.querySelector(".effect-layer-2");
+                const layer3 = recordDisc1.querySelector(".effect-layer-3");
+
+                // Helper function to copy all mask and style properties
+                const copyLayerStyles = (source, target) => {
+                  if (!source || !target) return;
+                  target.style.backgroundImage = source.style.backgroundImage;
+                  target.style.opacity = source.style.opacity;
+                  target.style.maskImage = source.style.maskImage;
+                  target.style.webkitMaskImage = source.style.webkitMaskImage;
+                  target.style.maskComposite = source.style.maskComposite;
+                  target.style.webkitMaskComposite =
+                    source.style.webkitMaskComposite;
+                  target.style.maskSize = source.style.maskSize;
+                  target.style.webkitMaskSize = source.style.webkitMaskSize;
+                  target.style.maskPosition = source.style.maskPosition;
+                  target.style.webkitMaskPosition =
+                    source.style.webkitMaskPosition;
+                  target.style.maskRepeat = source.style.maskRepeat;
+                  target.style.webkitMaskRepeat = source.style.webkitMaskRepeat;
+                };
+
+                if (layer1 && recordDisc2) {
+                  const layer2_1 = recordDisc2.querySelector(".effect-layer-1");
+                  copyLayerStyles(layer1, layer2_1);
+                }
+                if (layer2 && recordDisc2) {
+                  const layer2_2 = recordDisc2.querySelector(".effect-layer-2");
+                  copyLayerStyles(layer2, layer2_2);
+                }
+                if (layer3 && recordDisc2) {
+                  const layer2_3 = recordDisc2.querySelector(".effect-layer-3");
+                  copyLayerStyles(layer3, layer2_3);
+                }
+
+                if (layer1 && recordDisc3) {
+                  const layer3_1 = recordDisc3.querySelector(".effect-layer-1");
+                  copyLayerStyles(layer1, layer3_1);
+                }
+                if (layer2 && recordDisc3) {
+                  const layer3_2 = recordDisc3.querySelector(".effect-layer-2");
+                  copyLayerStyles(layer2, layer3_2);
+                }
+                if (layer3 && recordDisc3) {
+                  const layer3_3 = recordDisc3.querySelector(".effect-layer-3");
+                  copyLayerStyles(layer3, layer3_3);
+                }
+              };
+
+              // Sync immediately
+              syncLayers();
+
+              // Watch for changes to disc 1's effect layers
+              const layers = recordDisc1.querySelectorAll(
+                ".record-effect-layer"
+              );
+              layers.forEach((layer) => {
+                const observer = new MutationObserver(() => {
+                  syncLayers();
+                });
+                observer.observe(layer, {
+                  attributes: true,
+                  attributeFilter: ["style"],
+                  subtree: false,
+                });
+              });
+            }
+          }
+
+          // Remove all effects
+          function removeEffects() {
+            const recordDiscs = [
+              document.getElementById("builder-record-display"),
+              document.getElementById("builder-record-display-2"),
+              document.getElementById("builder-record-display-3"),
+            ];
+
+            recordDiscs.forEach((disc) => {
+              if (!disc) return;
+
+              const layers = disc.querySelectorAll(".record-effect-layer");
+              layers.forEach((layer) => {
+                layer.style.backgroundImage = "";
+                layer.style.opacity = "0";
+                layer.style.maskImage = "";
+                layer.style.webkitMaskImage = "";
+                layer.style.maskComposite = "";
+                layer.style.webkitMaskComposite = "";
+                layer.style.maskSize = "";
+                layer.style.webkitMaskSize = "";
+                layer.style.maskPosition = "";
+                layer.style.webkitMaskPosition = "";
+                layer.style.maskRepeat = "";
+                layer.style.webkitMaskRepeat = "";
+              });
+            });
+          }
+
+          // Set up listeners for record type changes and splatter color changes
+          function setupEffectListeners() {
+            const recordTypeInput = document.getElementById("record-type");
+            const recordColorInput = document.getElementById("record-color");
+            const splatterColorOneInput =
+              document.getElementById("splatter-color-one");
+            const splatterColorTwoInput =
+              document.getElementById("splatter-color-two");
+            const splatterColorThreeInput = document.getElementById(
+              "splatter-color-three"
+            );
+
+            // Function to check if splatter should be applied
+            function checkAndApplySplatter() {
+              const recordType = recordTypeInput?.value;
+              if (recordType === "splatter") {
+                applySplatterEffect();
+              } else {
+                removeEffects();
+              }
+            }
+
+            if (recordTypeInput) {
+              // Watch for changes to record type
+              recordTypeInput.addEventListener("change", checkAndApplySplatter);
+
+              // Initial check
+              checkAndApplySplatter();
+            }
+
+            // Watch for base color changes (for splatter base)
+            if (recordColorInput) {
+              recordColorInput.addEventListener(
+                "change",
+                checkAndApplySplatter
+              );
+            }
+
+            // Watch for splatter color changes
+            if (splatterColorOneInput) {
+              splatterColorOneInput.addEventListener(
+                "change",
+                checkAndApplySplatter
+              );
+            }
+            if (splatterColorTwoInput) {
+              splatterColorTwoInput.addEventListener(
+                "change",
+                checkAndApplySplatter
+              );
+            }
+            if (splatterColorThreeInput) {
+              splatterColorThreeInput.addEventListener(
+                "change",
+                checkAndApplySplatter
+              );
+            }
+
+            // Also watch for programmatic changes via MutationObserver
+            if (recordTypeInput) {
+              const observer = new MutationObserver(() => {
+                checkAndApplySplatter();
+              });
+
+              observer.observe(recordTypeInput, {
+                attributes: true,
+                attributeFilter: ["value"],
+                subtree: false,
+              });
+
+              // Also poll for value changes (in case builder.js changes it directly)
+              let lastRecordType = recordTypeInput.value;
+              let lastBaseColor = recordColorInput?.value;
+              let lastSplatter1 = splatterColorOneInput?.value;
+              let lastSplatter2 = splatterColorTwoInput?.value;
+              let lastSplatter3 = splatterColorThreeInput?.value;
+
+              setInterval(() => {
+                const currentRecordType = recordTypeInput.value;
+                const currentBaseColor = recordColorInput?.value;
+                const currentSplatter1 = splatterColorOneInput?.value;
+                const currentSplatter2 = splatterColorTwoInput?.value;
+                const currentSplatter3 = splatterColorThreeInput?.value;
+
+                if (
+                  currentRecordType !== lastRecordType ||
+                  currentBaseColor !== lastBaseColor ||
+                  currentSplatter1 !== lastSplatter1 ||
+                  currentSplatter2 !== lastSplatter2 ||
+                  currentSplatter3 !== lastSplatter3
+                ) {
+                  lastRecordType = currentRecordType;
+                  lastBaseColor = currentBaseColor;
+                  lastSplatter1 = currentSplatter1;
+                  lastSplatter2 = currentSplatter2;
+                  lastSplatter3 = currentSplatter3;
+                  checkAndApplySplatter();
+                }
+              }, 200);
+            }
+          }
+
+          // Initialize
+          if (document.readyState === "loading") {
+            document.addEventListener("DOMContentLoaded", () => {
+              setTimeout(loadEffects, 100);
+            });
+          } else {
+            setTimeout(loadEffects, 100);
+          }
+
+          window.addEventListener("load", () => {
+            setTimeout(loadEffects, 500);
+          });
+        })();
+
+        // Ensure black record displays on page load
+        function ensureBlackRecordDisplay() {
+          const recordDisc1 = document.getElementById("builder-record-display");
+          if (recordDisc1) {
+            const currentImage =
+              window.getComputedStyle(recordDisc1).backgroundImage;
+            // If no image is set or it's the default placeholder, set black record
+            if (
+              !currentImage ||
+              currentImage === "none" ||
+              currentImage === 'url("")' ||
+              currentImage.includes("default_record_image")
+            ) {
+              recordDisc1.style.backgroundImage =
+                "url(https://uploads-ssl.webflow.com/65ce69671190e385bf638294/66c35137e88fe82114818e60_Black_Record.png)";
+              recordDisc1.style.backgroundSize = "contain";
+              recordDisc1.style.backgroundRepeat = "no-repeat";
+              recordDisc1.style.backgroundPosition = "center";
+            }
+          }
+        }
+
+        // Run on page load
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", () => {
+            setTimeout(ensureBlackRecordDisplay, 200);
+          });
+        } else {
+          setTimeout(ensureBlackRecordDisplay, 200);
+        }
+
+        // Also ensure after builder.js initializes
+        window.addEventListener("load", () => {
+          setTimeout(ensureBlackRecordDisplay, 800);
+        });
       })();
     </script>
   </body>

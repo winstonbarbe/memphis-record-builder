@@ -99,15 +99,15 @@ body {
 
 /* Visualizer Record Discs */
 .visualizer-record-display {
-  width: 250px;
-  height: 250px;
+  width: 280px;
+  height: 280px;
   border-radius: 50%;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
   transition: all 0.3s ease;
-  border: 2px solid #000;
+  border: none;
 }
 
 .visualizer-record-display.record-disc-1 {
@@ -127,11 +127,11 @@ body {
 
 /* Record Center Label */
 .record-label-center {
-  width: 80px;
-  height: 80px;
+  width: 96px;
+  height: 96px;
   border-radius: 50%;
-  background-color: #ffffff;
-  border: 2px solid #000;
+  background-color: transparent;
+  border: none;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -139,7 +139,55 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 10;
+  z-index: 7;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Record Effect Layers */
+.record-effect-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  /* Mask properties for splatter effect */
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  mask-position: center;
+  -webkit-mask-position: center;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  /* Use alpha mode for better control */
+  mask-mode: alpha;
+  -webkit-mask-mode: alpha;
+  /* We'll invert the mask using mask-composite or filter */
+  isolation: isolate;
+}
+
+.record-effect-layer.effect-layer-1 {
+  z-index: 4;
+}
+
+.record-effect-layer.effect-layer-2 {
+  z-index: 5;
+}
+
+.record-effect-layer.effect-layer-3 {
+  z-index: 6;
+}
+
+
+/* Show center label when it has a background image */
+.record-label-center[style*="background-image"]:not([style*="background-image: \"\""]):not([style*="background-image: none"]) {
+  opacity: 1;
 }
 
 /* Visualizer Quantity Section */
@@ -439,7 +487,38 @@ body {
   border-color: #007bff;
 }
 
-/* Color Picker Container */
+/* Selected Color Display */
+.selected-color-display {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0;
+  min-height: 50px;
+}
+
+.selected-color-swatch {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+}
+
+/* Swatch visibility is controlled by JavaScript */
+
+#selected-record-color-name {
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Color Picker Container (Legacy - keeping for splatter colors only) */
 .color-picker-container {
   display: none;
   position: absolute;
@@ -449,28 +528,125 @@ body {
   padding: 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   z-index: 1000;
-  max-height: 400px;
+  max-height: 500px;
   overflow-y: auto;
   margin-top: 0.5rem;
+  min-width: 300px;
 }
 
 .color-picker-container.visible {
   display: block;
 }
 
+/* Hide the main record color picker container - using modal instead */
+#record-color-picker-container {
+  display: none !important;
+}
+
+/* Color Picker Modal */
+.color-picker-modal-container {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 900px;
+  width: 90%;
+  max-height: 85vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.color-picker-modal-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+}
+
+.color-picker-modal-content {
+  padding: 0;
+}
+
+#color-picker-modal-options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* Modal color option containers */
+#ecomix-options-container-modal,
+#soilds-translucent-options-container-modal,
+#soilds-opaque-options-container-modal,
+#standard-blends-options-container-modal,
+#deluxe-blends-options-container-modal {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 1rem;
+  padding: 0;
+}
+
+/* Color options container - grid layout */
+#memphis-color-options-container,
+#memphis-color-options-container-splatter-one,
+#memphis-color-options-container-splatter-two,
+#memphis-color-options-container-splatter-three {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+  gap: 0.75rem;
+  padding: 0.5rem;
+}
+
+/* Individual color option containers */
+#ecomix-options-container,
+#soilds-translucent-options-container,
+#soilds-opaque-options-container,
+#standard-blends-options-container,
+#deluxe-blends-options-container,
+#soilds-translucent-options-container-splatter-one,
+#soilds-translucent-options-container-splatter-two,
+#soilds-translucent-options-container-splatter-three {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+  gap: 0.75rem;
+}
+
 .memphis-color-option {
   width: 60px;
   height: 60px;
-  border-radius: 4px;
-  margin: 0.5rem;
+  border-radius: 6px;
   cursor: pointer;
-  border: 2px solid transparent;
-  display: inline-block;
-  transition: border-color 0.2s;
+  border: 2px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
 }
 
 .memphis-color-option:hover {
   border-color: #007bff;
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.memphis-color-option:active {
+  transform: scale(1.05);
+}
+
+/* Larger color options in modal */
+.color-picker-modal-container .memphis-color-option {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+}
+
+.color-picker-modal-container .memphis-color-option:hover {
+  transform: scale(1.15);
 }
 
 /* File Upload Display */
@@ -671,11 +847,14 @@ body {
   margin: 1rem;
 }
 
-/* Default record image */
+/* Default record image - Black record by default */
 #builder-record-display,
 #builder-record-display-2,
 #builder-record-display-3 {
-  background-image: url("https://uploads-ssl.webflow.com/65ce69671190e385bf638294/66bf9b13573b54cfa514ec51_default_record_image.png");
+  background-image: url("https://uploads-ssl.webflow.com/65ce69671190e385bf638294/66c35137e88fe82114818e60_Black_Record.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* Missing Info Display */
