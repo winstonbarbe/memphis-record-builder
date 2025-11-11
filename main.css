@@ -38,6 +38,10 @@ body {
   gap: 1.5rem;
 }
 
+.mobile-header {
+  display: none;
+}
+
 #visualizer-column {
   width: 60%;
   height: 100vh;
@@ -934,26 +938,75 @@ body {
 }
 
 @media (max-width: 768px) {
+  body {
+    overflow: auto;
+    height: auto;
+  }
+
   #builder-container {
+    height: auto;
+    min-height: 100vh;
     flex-direction: column;
   }
 
   #form-column {
+    order: 0;
     width: 100%;
     height: auto;
-    max-height: 50vh;
+    max-height: none;
+    overflow: visible;
+    padding: 1.5rem 1rem 2.5rem;
+  }
+
+  #form-column h1 {
+    font-size: 1.75rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .mobile-header {
+    display: block;
+    margin: 1.5rem 0 1.25rem;
   }
 
   #visualizer-column {
+    order: 1;
     width: 100%;
-    height: 50vh;
+    height: auto;
     position: relative;
-    padding: 1rem;
+    padding: 0;
+    margin: 1.5rem 0 2.5rem;
+  }
+
+  .visualizer {
+    position: relative;
+    padding: 0 0 6rem;
+    min-height: 360px;
+  }
+
+  .visualizer-jacket-display {
+    width: 240px;
+    height: 240px;
+    left: 50%;
+    top: 45%;
+    transform: translate(-78%, -50%);
+    margin: 0;
+  }
+
+  .visualizer-records-container {
+    left: 50%;
+    top: 45%;
+    transform: translate(-3%, -50%);
+  }
+
+  .visualizer-record-display {
+    width: 220px;
+    height: 220px;
   }
 
   /* Mobile: Show quantity in form, hide in visualizer */
   .desktop-hide-quantity {
     display: block;
+    margin-top: 1.25rem;
   }
 
   .desktop-show-quantity {
@@ -966,5 +1019,47 @@ body {
 
   .visualizer-quantity-section {
     margin-bottom: 1rem;
+  }
+
+  .desktop-hide-pricing {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem 1rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .mobile-pricing-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    width: 100%;
+  }
+
+  .desktop-hide-pricing #slider-total-price-display {
+    font-size: 2.4rem;
+    line-height: 1.1;
+    font-weight: 700;
+    flex: 1;
+  }
+
+  .desktop-hide-pricing #slider-total-price-per-unit {
+    order: 2;
+    width: 100%;
+    margin: 0;
+    font-size: 1rem;
+    color: #666666;
+  }
+
+  .desktop-hide-pricing .button-primary {
+    order: 1;
+    white-space: nowrap;
+    padding: 0.85rem 1.4rem;
+    font-size: 1rem;
   }
 }

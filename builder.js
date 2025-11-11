@@ -179,6 +179,33 @@ const sliderTotalPriceDisplayPerUnitMobile = document.getElementById(
 const pricingBreakdownButtonMobile = document.getElementById(
   "pricing-breakdown-button-mobile"
 );
+const builderContainer = document.getElementById("builder-container");
+const formColumn = document.getElementById("form-column");
+const builderForm = document.getElementById("wf-form-Record-Builder-Form");
+const visualizerColumn = document.getElementById("visualizer-column");
+
+let responsiveLayoutResizeTimeout = null;
+
+function handleResponsiveLayout() {
+  if (!builderContainer || !formColumn || !builderForm || !visualizerColumn) {
+    return;
+  }
+
+  const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+  if (isMobile) {
+    if (visualizerColumn.parentElement !== formColumn) {
+      formColumn.insertBefore(visualizerColumn, builderForm);
+    }
+  } else if (visualizerColumn.parentElement !== builderContainer) {
+    builderContainer.appendChild(visualizerColumn);
+  }
+}
+
+window.addEventListener("resize", () => {
+  clearTimeout(responsiveLayoutResizeTimeout);
+  responsiveLayoutResizeTimeout = setTimeout(handleResponsiveLayout, 150);
+});
 
 // breakdown display selectors
 const masteringBreakdownDisplay = document.getElementById(
@@ -2740,6 +2767,7 @@ function getTotalPrice() {
 }
 
 fetchPrices();
+handleResponsiveLayout();
 
 function toTitleCase(str) {
   if (typeof str !== "string" || !str.length) {
