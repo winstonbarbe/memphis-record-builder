@@ -1561,6 +1561,8 @@ pricingBreakdownButton.addEventListener("click", (e) => {
   document.body.style.overflow = "hidden";
 
   modalBackground.classList.add("visible");
+  getAllPrices();
+  getTotalPrice();
   updatePricingBreakdownDisplays();
 });
 
@@ -1570,6 +1572,8 @@ pricingBreakdownButtonMobile.addEventListener("click", (e) => {
   document.body.style.overflow = "hidden";
 
   modalBackground.classList.add("visible");
+  getAllPrices();
+  getTotalPrice();
   updatePricingBreakdownDisplays();
 });
 
@@ -1600,6 +1604,23 @@ function formatPrice(num) {
 }
 
 function updatePricingBreakdownDisplays() {
+  if (typeof window !== "undefined") {
+    window.debugInsertionBreakdown = () => {
+      console.table({
+        insertionPrice,
+        insertionOfRecordPrice,
+        insertionOfInnerSleevePrice,
+        insertionOfPrintedInsertPrice,
+        insertionOfJacketPrice,
+        selectedAmount: selected.amount,
+        selectedJacketType: selected.jacketType,
+        selectedOuterWrapType: selected.outerWrapType,
+        selectedPrintedInsertType: selected.printedInsertType,
+        selectedQuantity: selected.quantity,
+      });
+    };
+  }
+
   projectTitleDisplay.innerText = selected.projectTitle || "Project Title";
   setupFeeBreakdownDisplay.innerText = "$" + formatPrice(setupPrice);
   cuttingFeeBreakdownDisplay.innerText = "$" + formatPrice(cuttingPrice);
@@ -1889,6 +1910,8 @@ prepareToSubmit.addEventListener("click", (e) => {
 
   document.body.style.overflow = "hidden";
   modalBackground.classList.add("visible");
+  getAllPrices();
+  getTotalPrice();
   updatePricingBreakdownDisplays();
 
   if (!isComplete) {
