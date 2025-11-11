@@ -184,29 +184,6 @@ const formColumn = document.getElementById("form-column");
 const builderForm = document.getElementById("wf-form-Record-Builder-Form");
 const visualizerColumn = document.getElementById("visualizer-column");
 
-let responsiveLayoutResizeTimeout = null;
-
-function handleResponsiveLayout() {
-  if (!builderContainer || !formColumn || !builderForm || !visualizerColumn) {
-    return;
-  }
-
-  const isMobile = window.matchMedia("(max-width: 768px)").matches;
-
-  if (isMobile) {
-    if (visualizerColumn.parentElement !== formColumn) {
-      formColumn.insertBefore(visualizerColumn, builderForm);
-    }
-  } else if (visualizerColumn.parentElement !== builderContainer) {
-    builderContainer.appendChild(visualizerColumn);
-  }
-}
-
-window.addEventListener("resize", () => {
-  clearTimeout(responsiveLayoutResizeTimeout);
-  responsiveLayoutResizeTimeout = setTimeout(handleResponsiveLayout, 150);
-});
-
 // breakdown display selectors
 const masteringBreakdownDisplay = document.getElementById(
   "mastering-breakdown-display"
@@ -444,6 +421,14 @@ const jacketVisualDisplay = document.getElementById(
   "builder-jacket-front-display"
 );
 const recordVisualDisplay = document.getElementById("builder-record-display");
+const mobileJacketVisualDisplay = document.getElementById(
+  "mobile-builder-jacket-display"
+);
+const mobileRecordVisualDisplay = document.getElementById(
+  "mobile-builder-record-display"
+);
+const DEFAULT_RECORD_IMAGE =
+  "url(https://uploads-ssl.webflow.com/65ce69671190e385bf638294/66c35137e88fe82114818e60_Black_Record.png)";
 
 function init() {
   // hide anything that is not an option with the default 100 quantity
@@ -502,6 +487,8 @@ function setDefaultOptions() {
   selected.downloadCardType = "none";
   outerWrapTypeInput.value = "polybag";
   selected.outerWrapType = "polybag";
+
+  setRecordBackground();
 }
 
 const selected = {
@@ -588,6 +575,31 @@ function setInputsRequiredFalse(nodeList) {
   });
 }
 
+function setJacketBackground(imageValue) {
+  if (jacketVisualDisplay) {
+    jacketVisualDisplay.style.backgroundImage = imageValue || "";
+  }
+  if (mobileJacketVisualDisplay) {
+    mobileJacketVisualDisplay.style.backgroundImage = imageValue || "";
+  }
+}
+
+function setRecordBackground(imageValue) {
+  const background = imageValue || DEFAULT_RECORD_IMAGE;
+  if (recordVisualDisplay) {
+    recordVisualDisplay.style.backgroundImage = background;
+    recordVisualDisplay.style.backgroundSize = "contain";
+    recordVisualDisplay.style.backgroundPosition = "center";
+    recordVisualDisplay.style.backgroundRepeat = "no-repeat";
+  }
+  if (mobileRecordVisualDisplay) {
+    mobileRecordVisualDisplay.style.backgroundImage = background;
+    mobileRecordVisualDisplay.style.backgroundSize = "contain";
+    mobileRecordVisualDisplay.style.backgroundPosition = "center";
+    mobileRecordVisualDisplay.style.backgroundRepeat = "no-repeat";
+  }
+}
+
 function setRecordTypeBasedOnSize() {
   if (selected.recordSize === "7") {
     const invalidOptions = [];
@@ -617,8 +629,7 @@ function setRecordTypeBasedOnSize() {
 
       recordColorButton.classList.remove("color-selected");
       recordColorButton.style.backgroundColor = "#f2efec";
-      recordVisualDisplay.style.backgroundImage =
-        "url(https://uploads-ssl.webflow.com/65ce69671190e385bf638294/66bf9b13573b54cfa514ec51_default_record_image.png)";
+      setRecordBackground();
     }
   } else {
     const validOptions = [];
@@ -800,8 +811,7 @@ recordTypeInput.addEventListener("change", () => {
     clearInput(splatterColorThreeInput, "splatterThreeColorName");
 
     clearSelectedColors();
-    recordVisualDisplay.style.backgroundImage =
-      "url(https://uploads-ssl.webflow.com/65ce69671190e385bf638294/66c35137e88fe82114818e60_Black_Record.png)";
+    setRecordBackground();
   } else if (recordTypeInput.value === "splatter") {
     clearSelectedColors();
     // Hide and clear picture disc upload if it exists
@@ -823,9 +833,13 @@ recordTypeInput.addEventListener("change", () => {
         const recordDisc1 = document.getElementById("builder-record-display");
         const recordDisc2 = document.getElementById("builder-record-display-2");
         const recordDisc3 = document.getElementById("builder-record-display-3");
-        const defaultImage =
-          "url(https://uploads-ssl.webflow.com/65ce69671190e385bf638294/66c35137e88fe82114818e60_Black_Record.png)";
-        const discs = [recordDisc1, recordDisc2, recordDisc3];
+        const defaultImage = DEFAULT_RECORD_IMAGE;
+        const discs = [
+          recordDisc1,
+          recordDisc2,
+          recordDisc3,
+          mobileRecordVisualDisplay,
+        ];
         discs.forEach((disc) => {
           if (disc) {
             disc.style.backgroundImage = defaultImage;
@@ -918,9 +932,13 @@ recordTypeInput.addEventListener("change", () => {
         const recordDisc1 = document.getElementById("builder-record-display");
         const recordDisc2 = document.getElementById("builder-record-display-2");
         const recordDisc3 = document.getElementById("builder-record-display-3");
-        const defaultImage =
-          "url(https://uploads-ssl.webflow.com/65ce69671190e385bf638294/66c35137e88fe82114818e60_Black_Record.png)";
-        const discs = [recordDisc1, recordDisc2, recordDisc3];
+        const defaultImage = DEFAULT_RECORD_IMAGE;
+        const discs = [
+          recordDisc1,
+          recordDisc2,
+          recordDisc3,
+          mobileRecordVisualDisplay,
+        ];
         discs.forEach((disc) => {
           if (disc) {
             disc.style.backgroundImage = defaultImage;
@@ -1348,7 +1366,7 @@ recordColorPicker.addEventListener("click", (e) => {
     recordColorInput.value = colorName;
 
     if (selected.recordType !== "eco-mix") {
-      recordVisualDisplay.style.backgroundImage = `url(${imageUrl})`;
+      setRecordBackground(`url(${imageUrl})`);
     }
 
     selected.recordColorName = colorName;
@@ -1420,10 +1438,10 @@ jacketFrontUpload.addEventListener("change", () => {
     let imageUrl = URL.createObjectURL(file);
     setElementsDisplay([jacketFrontFilenameDisplay.parentElement], "block");
     jacketFrontFilenameDisplay.innerText = file.name;
-    jacketVisualDisplay.style.backgroundImage = `url(${imageUrl})`;
+    setJacketBackground(`url(${imageUrl})`);
   } else {
     setElementsDisplay([jacketFrontFilenameDisplay.parentElement], "none");
-    jacketVisualDisplay.style.backgroundImage = "";
+    setJacketBackground("");
   }
 });
 
@@ -1451,7 +1469,12 @@ if (pictureDiscUpload) {
       const recordDisc2 = document.getElementById("builder-record-display-2");
       const recordDisc3 = document.getElementById("builder-record-display-3");
 
-      const discs = [recordDisc1, recordDisc2, recordDisc3];
+      const discs = [
+        recordDisc1,
+        recordDisc2,
+        recordDisc3,
+        mobileRecordVisualDisplay,
+      ];
       discs.forEach((disc) => {
         if (disc) {
           disc.style.backgroundImage = `url(${imageUrl})`;
@@ -1463,13 +1486,17 @@ if (pictureDiscUpload) {
     } else {
       setElementsDisplay([pictureDiscFilenameDisplay.parentElement], "none");
       // Reset to default black record
-      const defaultImage =
-        "url(https://uploads-ssl.webflow.com/65ce69671190e385bf638294/66c35137e88fe82114818e60_Black_Record.png)";
+      const defaultImage = DEFAULT_RECORD_IMAGE;
       const recordDisc1 = document.getElementById("builder-record-display");
       const recordDisc2 = document.getElementById("builder-record-display-2");
       const recordDisc3 = document.getElementById("builder-record-display-3");
 
-      const discs = [recordDisc1, recordDisc2, recordDisc3];
+      const discs = [
+        recordDisc1,
+        recordDisc2,
+        recordDisc3,
+        mobileRecordVisualDisplay,
+      ];
       discs.forEach((disc) => {
         if (disc) {
           disc.style.backgroundImage = defaultImage;
@@ -1507,7 +1534,7 @@ removeJacketFrontImage.addEventListener("click", () => {
   jacketFrontUpload.value = "";
 
   setElementsDisplay([jacketFrontFilenameDisplay.parentElement], "none");
-  jacketVisualDisplay.style.backgroundImage = "";
+  setJacketBackground("");
 });
 
 if (removePictureDiscImage && pictureDiscUpload) {
@@ -1515,13 +1542,17 @@ if (removePictureDiscImage && pictureDiscUpload) {
     pictureDiscUpload.value = "";
     setElementsDisplay([pictureDiscFilenameDisplay.parentElement], "none");
     // Reset to default black record
-    const defaultImage =
-      "url(https://uploads-ssl.webflow.com/65ce69671190e385bf638294/66c35137e88fe82114818e60_Black_Record.png)";
+    const defaultImage = DEFAULT_RECORD_IMAGE;
     const recordDisc1 = document.getElementById("builder-record-display");
     const recordDisc2 = document.getElementById("builder-record-display-2");
     const recordDisc3 = document.getElementById("builder-record-display-3");
 
-    const discs = [recordDisc1, recordDisc2, recordDisc3];
+    const discs = [
+      recordDisc1,
+      recordDisc2,
+      recordDisc3,
+      mobileRecordVisualDisplay,
+    ];
     discs.forEach((disc) => {
       if (disc) {
         disc.style.backgroundImage = defaultImage;
@@ -1553,8 +1584,7 @@ removeInsertImage.addEventListener("click", () => {
 
 // functions to reset certain inputs and
 function clearSelectedColors() {
-  recordVisualDisplay.style.backgroundImage =
-    "url(https://uploads-ssl.webflow.com/65ce69671190e385bf638294/66bf9b13573b54cfa514ec51_default_record_image.png)";
+  setRecordBackground();
 
   // clear color inputs of previously selected values
   recordColorInput.value = "";
@@ -2767,7 +2797,6 @@ function getTotalPrice() {
 }
 
 fetchPrices();
-handleResponsiveLayout();
 
 function toTitleCase(str) {
   if (typeof str !== "string" || !str.length) {

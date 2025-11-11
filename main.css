@@ -38,10 +38,25 @@ body {
   gap: 1.5rem;
 }
 
+#mobile-visualizer-column {
+  display: none;
+}
+
+.mobile-visualizer {
+  display: none;
+}
+
 .mobile-header {
   display: none;
 }
 
+#mobile-visualizer-column {
+  display: none;
+}
+
+.mobile-visualizer {
+  display: none;
+}
 #visualizer-column {
   width: 60%;
   height: 100vh;
@@ -955,7 +970,7 @@ body {
     height: auto;
     max-height: none;
     overflow: visible;
-    padding: 1.5rem 1rem 2.5rem;
+    padding: 1.5rem 1rem 3rem;
   }
 
   #form-column h1 {
@@ -964,102 +979,103 @@ body {
   }
 
   .mobile-header {
-    display: block;
-    margin: 1.5rem 0 1.25rem;
+    display: none;
+    margin: 0;
+    padding: 0 0 1.5rem;
   }
 
   #visualizer-column {
-    order: 1;
+    display: none;
+  }
+
+  #mobile-visualizer-column {
+    display: block;
     width: 100%;
-    height: auto;
-    position: relative;
-    padding: 0;
-    margin: 1.5rem 0 2.5rem;
+    padding: 1.5rem 0 2rem;
+    margin-bottom: 1rem;
   }
 
   .visualizer {
     position: relative;
-    padding: 0 0 6rem;
-    min-height: 360px;
+    width: 320px;
+    height: 260px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: visible;
   }
 
   .visualizer-jacket-display {
-    width: 240px;
-    height: 240px;
-    left: 50%;
-    top: 45%;
-    transform: translate(-78%, -50%);
-    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    transform: translateY(-50%);
+    z-index: 2;
   }
 
   .visualizer-records-container {
-    left: 50%;
-    top: 45%;
-    transform: translate(-3%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 130px;
+    width: 200px;
+    height: 200px;
+    transform: translateY(-50%);
+    z-index: 1;
   }
 
   .visualizer-record-display {
-    width: 220px;
-    height: 220px;
+    width: 200px;
+    height: 200px;
   }
 
-  /* Mobile: Show quantity in form, hide in visualizer */
-  .desktop-hide-quantity {
+  .mobile-visualizer {
     display: block;
-    margin-top: 1.25rem;
+    position: relative;
+    width: 320px;
+    height: 260px;
+    margin: 0 auto;
   }
 
-  .desktop-show-quantity {
-    display: none;
+  .mobile-visualizer-jacket {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    transform: translateY(-50%);
+    border: 2px solid #000;
+    background-color: #fdb813;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
   }
 
+  .mobile-visualizer-records-container {
+    position: absolute;
+    top: 50%;
+    left: 130px;
+    width: 200px;
+    height: 200px;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+
+  .mobile-visualizer-record {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: url("https://uploads-ssl.webflow.com/65ce69671190e385bf638294/66c35137e88fe82114818e60_Black_Record.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /* Mobile: hide quantity & pricing */
+  .desktop-hide-quantity,
+  .desktop-show-quantity,
   .desktop-hide-pricing {
-    display: block;
-  }
-
-  .visualizer-quantity-section {
-    margin-bottom: 1rem;
-  }
-
-  .desktop-hide-pricing {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 1.25rem 1rem;
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
-    margin-bottom: 1rem;
-    flex-wrap: wrap;
-  }
-
-  .mobile-pricing-main {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.75rem;
-    width: 100%;
-  }
-
-  .desktop-hide-pricing #slider-total-price-display {
-    font-size: 2.4rem;
-    line-height: 1.1;
-    font-weight: 700;
-    flex: 1;
-  }
-
-  .desktop-hide-pricing #slider-total-price-per-unit {
-    order: 2;
-    width: 100%;
-    margin: 0;
-    font-size: 1rem;
-    color: #666666;
-  }
-
-  .desktop-hide-pricing .button-primary {
-    order: 1;
-    white-space: nowrap;
-    padding: 0.85rem 1.4rem;
-    font-size: 1rem;
+    display: none !important;
   }
 }
