@@ -768,19 +768,37 @@
             <!-- Project Name -->
             <div class="form-section">
               <label for="project-name">Project Name</label>
-              <input type="text" name="project-name" id="project-name" />
+              <input
+                type="text"
+                name="project-name"
+                id="project-name"
+                required
+                data-display-name="Project Name"
+              />
             </div>
 
             <!-- Full Name -->
             <div class="form-section">
               <label for="full-name">Full Name</label>
-              <input type="text" name="full-name" id="full-name" />
+              <input
+                type="text"
+                name="full-name"
+                id="full-name"
+                required
+                data-display-name="Full Name"
+              />
             </div>
 
             <!-- Email -->
             <div class="form-section">
               <label for="email">Email</label>
-              <input type="email" name="email" id="email" />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                data-display-name="Email"
+              />
             </div>
           </div>
 
@@ -892,14 +910,6 @@
           <div class="form-section">
             <button type="button" id="prepare-to-submit" class="button-primary">
               Prepare to Submit
-            </button>
-            <button
-              type="submit"
-              id="builder-submit-button"
-              class="button-primary"
-              style="display: none"
-            >
-              Submit Order
             </button>
           </div>
 
@@ -1619,9 +1629,19 @@
           </p>
         </div>
 
-        <button id="continue-editing-button" class="button-primary">
-          Continue Editing
-        </button>
+        <div class="breakdown-action-buttons">
+          <button id="continue-editing-button" class="button-primary">
+            Continue Editing
+          </button>
+          <button
+            type="submit"
+            id="builder-submit-button"
+            class="button-primary"
+            form="wf-form-Record-Builder-Form"
+          >
+            Submit Order
+          </button>
+        </div>
       </div>
     </div>
 

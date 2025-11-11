@@ -748,6 +748,23 @@ recordTypeInput.addEventListener("change", () => {
       [recordColorOptionContainer, splatterOptionsContainer],
       "none"
     );
+    // Hide and clear picture disc upload if it exists
+    const pictureDiscUploadContainer = document.getElementById(
+      "picture-disc-upload-container"
+    );
+    if (pictureDiscUploadContainer) {
+      setElementsDisplay([pictureDiscUploadContainer], "none");
+      if (pictureDiscUpload) {
+        pictureDiscUpload.value = "";
+        if (pictureDiscFilenameDisplay) {
+          setElementsDisplay(
+            [pictureDiscFilenameDisplay.parentElement],
+            "none"
+          );
+          pictureDiscFilenameDisplay.innerText = "";
+        }
+      }
+    }
     setInputsRequiredFalse([recordColorInput]);
 
     clearInput(splatterColorsInput, "splatterColors");
@@ -760,6 +777,36 @@ recordTypeInput.addEventListener("change", () => {
       "url(https://uploads-ssl.webflow.com/65ce69671190e385bf638294/66c35137e88fe82114818e60_Black_Record.png)";
   } else if (recordTypeInput.value === "splatter") {
     clearSelectedColors();
+    // Hide and clear picture disc upload if it exists
+    const pictureDiscUploadContainer = document.getElementById(
+      "picture-disc-upload-container"
+    );
+    if (pictureDiscUploadContainer) {
+      setElementsDisplay([pictureDiscUploadContainer], "none");
+      if (pictureDiscUpload) {
+        pictureDiscUpload.value = "";
+        if (pictureDiscFilenameDisplay) {
+          setElementsDisplay(
+            [pictureDiscFilenameDisplay.parentElement],
+            "none"
+          );
+          pictureDiscFilenameDisplay.innerText = "";
+        }
+        // Reset record disc images to default
+        const recordDisc1 = document.getElementById("builder-record-display");
+        const recordDisc2 = document.getElementById("builder-record-display-2");
+        const recordDisc3 = document.getElementById("builder-record-display-3");
+        const defaultImage =
+          "url(https://uploads-ssl.webflow.com/65ce69671190e385bf638294/66c35137e88fe82114818e60_Black_Record.png)";
+        const discs = [recordDisc1, recordDisc2, recordDisc3];
+        discs.forEach((disc) => {
+          if (disc) {
+            disc.style.backgroundImage = defaultImage;
+            disc.style.backgroundSize = "contain";
+          }
+        });
+      }
+    }
     setElementsDisplay(
       [splatterOptionsContainer, recordColorOptionContainer],
       "block"
@@ -829,6 +876,31 @@ recordTypeInput.addEventListener("change", () => {
     );
     if (pictureDiscUploadContainer) {
       setElementsDisplay([pictureDiscUploadContainer], "none");
+      // Clear the picture disc upload file
+      if (pictureDiscUpload) {
+        pictureDiscUpload.value = "";
+        // Clear the file display
+        if (pictureDiscFilenameDisplay) {
+          setElementsDisplay(
+            [pictureDiscFilenameDisplay.parentElement],
+            "none"
+          );
+          pictureDiscFilenameDisplay.innerText = "";
+        }
+        // Reset record disc images to default
+        const recordDisc1 = document.getElementById("builder-record-display");
+        const recordDisc2 = document.getElementById("builder-record-display-2");
+        const recordDisc3 = document.getElementById("builder-record-display-3");
+        const defaultImage =
+          "url(https://uploads-ssl.webflow.com/65ce69671190e385bf638294/66c35137e88fe82114818e60_Black_Record.png)";
+        const discs = [recordDisc1, recordDisc2, recordDisc3];
+        discs.forEach((disc) => {
+          if (disc) {
+            disc.style.backgroundImage = defaultImage;
+            disc.style.backgroundSize = "contain";
+          }
+        });
+      }
     }
     setInputsRequiredTrue([recordColorInput]);
 
@@ -1760,12 +1832,16 @@ modalBackground.addEventListener("click", (e) => {
 });
 
 function checkRequiredInputs() {
-  let requiredInputs = Array.from(document.querySelectorAll("input[required]"));
+  const requiredFields = Array.from(
+    document.querySelectorAll(
+      "input[required], select[required], textarea[required]"
+    )
+  );
 
   let isComplete = true;
 
-  requiredInputs.forEach((input) => {
-    if (!input.checkValidity()) {
+  requiredFields.forEach((field) => {
+    if (!field.checkValidity()) {
       isComplete = false;
       setElementsDisplay([missingInfoContainer], "block");
       let arrow = `
@@ -1779,12 +1855,14 @@ function checkRequiredInputs() {
       p.innerHTML =
         arrow +
         "&nbsp;&nbsp;" +
-        input.getAttribute("name").replaceAll("-", " ");
+        (field.getAttribute("data-display-name") ||
+          field.getAttribute("name")?.replaceAll("-", " ") ||
+          field.id);
       p.classList.add("missing-info-p");
 
       missingInfoDisplay.appendChild(p);
 
-      p.addEventListener("click", () => scollToInput(input));
+      p.addEventListener("click", () => scollToInput(field));
     }
   });
 
@@ -1793,17 +1871,29 @@ function checkRequiredInputs() {
   } else {
     setElementsDisplay([formVerificationSuccessDiv], "none");
   }
+
+  return isComplete;
 }
 
 prepareToSubmit.addEventListener("click", (e) => {
   e.preventDefault();
+  e.stopPropagation();
 
   setElementsDisplay([missingInfoContainer], "none");
 
   Array.from(missingInfoDisplay.children).forEach((child) => {
     child.parentElement.removeChild(child);
   });
-  checkRequiredInputs();
+
+  const isComplete = checkRequiredInputs();
+
+  document.body.style.overflow = "hidden";
+  modalBackground.classList.add("visible");
+  updatePricingBreakdownDisplays();
+
+  if (!isComplete) {
+    formVerificationSuccessDiv.style.display = "none";
+  }
 });
 
 function scollToInput(node) {
@@ -2146,6 +2236,7 @@ function getCenterLabelPrice() {
 const recordMap = {
   black: "CB",
   splatter: "TC",
+  "picture-disc": "PD",
   7: "07R",
   12: "12R",
   10: "12R",
