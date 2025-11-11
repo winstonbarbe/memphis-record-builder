@@ -46,6 +46,20 @@ body {
   display: none;
 }
 
+.mobile-sticky-pricing {
+  display: none;
+}
+
+.mobile-form-quantity {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .mobile-form-quantity {
+    display: none !important;
+  }
+}
+
 .mobile-header {
   display: none;
 }
@@ -995,6 +1009,10 @@ body {
     margin-bottom: 1rem;
   }
 
+  #form-column {
+    padding-bottom: 6rem;
+  }
+
   .visualizer {
     position: relative;
     width: 320px;
@@ -1072,7 +1090,50 @@ body {
     background-repeat: no-repeat;
   }
 
+  .mobile-sticky-pricing {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.12);
+    z-index: 100;
+    gap: 1rem;
+  }
+
+  .mobile-sticky-price-group {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+  }
+
+  .mobile-sticky-total {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+  }
+
+  .mobile-sticky-per-unit {
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+  .mobile-sticky-button {
+    flex-shrink: 0;
+    white-space: nowrap;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.95rem;
+  }
+
   /* Mobile: hide quantity & pricing */
+  .mobile-form-quantity {
+    display: block;
+  }
+
   .desktop-hide-quantity,
   .desktop-show-quantity,
   .desktop-hide-pricing {

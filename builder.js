@@ -170,6 +170,9 @@ const mobileSliderContainer = document.getElementById(
   "mobile-slider-container"
 );
 const mobileQuantityInput = document.getElementById("record-quantity-mobile");
+const mobileFormQuantityInput = document.getElementById(
+  "mobile-record-quantity"
+);
 const sliderTotalPriceDisplayMobile = document.getElementById(
   "slider-total-price-display-mobile"
 );
@@ -178,6 +181,16 @@ const sliderTotalPriceDisplayPerUnitMobile = document.getElementById(
 );
 const pricingBreakdownButtonMobile = document.getElementById(
   "pricing-breakdown-button-mobile"
+);
+const mobileStickyPricingContainer = document.getElementById(
+  "mobile-sticky-pricing"
+);
+const mobileStickyTotalDisplay = document.getElementById("mobile-sticky-total");
+const mobileStickyPerUnitDisplay = document.getElementById(
+  "mobile-sticky-per-unit"
+);
+const mobileStickyPricingButton = document.getElementById(
+  "mobile-sticky-pricing-button"
 );
 const builderContainer = document.getElementById("builder-container");
 const formColumn = document.getElementById("form-column");
@@ -487,6 +500,13 @@ function setDefaultOptions() {
   selected.downloadCardType = "none";
   outerWrapTypeInput.value = "polybag";
   selected.outerWrapType = "polybag";
+
+  if (mobileQuantityInput) {
+    mobileQuantityInput.value = quantityInput.value;
+  }
+  if (mobileFormQuantityInput) {
+    mobileFormQuantityInput.value = quantityInput.value;
+  }
 
   setRecordBackground();
 }
@@ -1280,22 +1300,46 @@ projectTitleInput.addEventListener("input", () => {
 
 quantityInput.addEventListener("input", () => {
   selected.quantity = quantityInput.value;
+  if (mobileQuantityInput) {
+    mobileQuantityInput.value = quantityInput.value;
+  }
+  if (mobileFormQuantityInput) {
+    mobileFormQuantityInput.value = quantityInput.value;
+  }
 });
 
 mobileQuantityInput.addEventListener("input", () => {
   selected.quantity = mobileQuantityInput.value;
+  if (quantityInput) {
+    quantityInput.value = mobileQuantityInput.value;
+  }
+  if (mobileFormQuantityInput) {
+    mobileFormQuantityInput.value = mobileQuantityInput.value;
+  }
 });
 
 quantityInput.addEventListener("change", () => {
   setJacketOptions();
   getAllPrices();
   getTotalPrice();
+  if (mobileQuantityInput) {
+    mobileQuantityInput.value = quantityInput.value;
+  }
+  if (mobileFormQuantityInput) {
+    mobileFormQuantityInput.value = quantityInput.value;
+  }
 });
 
 mobileQuantityInput.addEventListener("change", () => {
   setJacketOptions();
   getAllPrices();
   getTotalPrice();
+  if (quantityInput) {
+    quantityInput.value = mobileQuantityInput.value;
+  }
+  if (mobileFormQuantityInput) {
+    mobileFormQuantityInput.value = mobileQuantityInput.value;
+  }
 });
 
 recordColorButton.addEventListener("click", (e) => {
@@ -1623,16 +1667,66 @@ pricingBreakdownButton.addEventListener("click", (e) => {
   updatePricingBreakdownDisplays();
 });
 
-pricingBreakdownButtonMobile.addEventListener("click", (e) => {
-  e.stopPropagation();
-  e.preventDefault();
-  document.body.style.overflow = "hidden";
+if (pricingBreakdownButtonMobile) {
+  pricingBreakdownButtonMobile.addEventListener("click", (e) => {
+    e.stopPropagation();
+    e.preventDefault();
+    document.body.style.overflow = "hidden";
 
-  modalBackground.classList.add("visible");
-  getAllPrices();
-  getTotalPrice();
-  updatePricingBreakdownDisplays();
-});
+    modalBackground.classList.add("visible");
+    getAllPrices();
+    getTotalPrice();
+    updatePricingBreakdownDisplays();
+  });
+}
+
+if (mobileStickyPricingButton) {
+  mobileStickyPricingButton.addEventListener("click", (e) => {
+    e.stopPropagation();
+    e.preventDefault();
+    document.body.style.overflow = "hidden";
+
+    modalBackground.classList.add("visible");
+    getAllPrices();
+    getTotalPrice();
+    updatePricingBreakdownDisplays();
+  });
+}
+
+if (mobileFormQuantityInput) {
+  mobileFormQuantityInput.value = selected.quantity;
+
+  mobileFormQuantityInput.addEventListener("change", () => {
+    const newValue = mobileFormQuantityInput.value;
+
+    if (quantityInput) {
+      quantityInput.value = newValue;
+      quantityInput.dispatchEvent(new Event("input", { bubbles: true }));
+      quantityInput.dispatchEvent(new Event("change", { bubbles: true }));
+    } else {
+      selected.quantity = newValue;
+    }
+
+    if (mobileQuantityInput) {
+      mobileQuantityInput.value = newValue;
+      mobileQuantityInput.dispatchEvent(new Event("input", { bubbles: true }));
+      mobileQuantityInput.dispatchEvent(new Event("change", { bubbles: true }));
+    }
+
+    const visualizerQuantity = document.getElementById(
+      "record-quantity-visualizer"
+    );
+    if (visualizerQuantity) {
+      visualizerQuantity.value = newValue;
+      visualizerQuantity.dispatchEvent(new Event("change", { bubbles: true }));
+    }
+
+    selected.quantity = newValue;
+    setJacketOptions();
+    getAllPrices();
+    getTotalPrice();
+  });
+}
 
 builderSubmitButton.addEventListener("click", () => {
   document.body.style.overflow = "auto";
@@ -2761,6 +2855,13 @@ function getTotalPrice() {
   sliderTotalPriceDisplayMobile.innerText = "$" + formatPrice(totalPrice);
   sliderTotalPriceDisplayPerUnitMobile.innerText =
     "$" + formatPrice(totalPrice / selected.quantity);
+  if (mobileStickyTotalDisplay) {
+    mobileStickyTotalDisplay.innerText = "$" + formatPrice(totalPrice);
+  }
+  if (mobileStickyPerUnitDisplay) {
+    mobileStickyPerUnitDisplay.innerText =
+      "$" + formatPrice(totalPrice / selected.quantity);
+  }
 
   // update hidden price inputs
   surchargePriceInput.value = formatPrice(surchargePrice);
